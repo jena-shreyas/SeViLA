@@ -25,7 +25,7 @@ from lavis.datasets.builders.classification_builder import (
 from lavis.datasets.builders.imagefolder_builder import ImageNetBuilder
 from lavis.datasets.builders.video_qa_builder import (
     MSRVTTQABuilder, MSVDQABuilder, MCVideoQABuilder, 
-    NextQABuilder, STARBuilder, TVQABuilder, How2QABuilder, VLEPBuilder, QVHBuilder)
+    NextQABuilder, STARBuilder, TVQABuilder, How2QABuilder, VLEPBuilder, QVHBuilder, CausalVidQABuilder)
 
 from lavis.datasets.builders.vqa_builder import (
     COCOVQABuilder,
@@ -72,7 +72,8 @@ __all__ = [
     "How2QABuilder",
     "TVQABuilder",
     "VLEPBuilder",
-    "QVHBuilder"
+    "QVHBuilder",
+    "CausalVidQABuilder"
 ]
 
 

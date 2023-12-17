@@ -1,0 +1,4 @@
+data/
+*.pth
+expts*/
+sevila_checkpoints/

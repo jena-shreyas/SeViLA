@@ -35,6 +35,8 @@ class BaseDatasetBuilder:
             # when called from task.build_dataset()
             self.config = cfg
 
+        print("Config keys : ", cfg.keys())
+        print("Config : \n\n", cfg)
         self.data_type = self.config.data_type
         self.vis_processors = {"train": BaseProcessor(), "eval": BaseProcessor()}
         self.text_processors = {"train": BaseProcessor(), "eval": BaseProcessor()}
@@ -56,6 +58,7 @@ class BaseDatasetBuilder:
         return datasets
 
     def build_processors(self):
+        print("Inside build processors ...")
         vis_proc_cfg = self.config.get("vis_processor")
         txt_proc_cfg = self.config.get("text_processor")
 
@@ -75,6 +78,8 @@ class BaseDatasetBuilder:
 
     @staticmethod
     def _build_proc_from_cfg(cfg):
+        if cfg is not None:
+            print("Config name : ", cfg.name)
         return (
             registry.get_processor_class(cfg.name).from_config(cfg)
             if cfg is not None
@@ -167,7 +172,7 @@ class BaseDatasetBuilder:
         # build() can be dataset-specific. Overwrite to customize.
         """
         self.build_processors()
-
+        print("in build() fn, Processors built")
         build_info = self.config.build_info
 
         ann_info = build_info.annotations

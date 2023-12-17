@@ -111,6 +111,7 @@ class VQATask(BaseTask):
         pred_qa_pairs = []
 
         question_id = samples["question_id"]
+        # print("valid_step(); Question id : ", question_id)
         for answer, ques_id in zip(answers, question_id):
             ques_id = int(ques_id.item())
             pred_qa_pairs.append({"question_id": ques_id, "answer": answer})
@@ -428,6 +429,7 @@ class VideoQA(BaseTask):
 
         answer = outputs["answer"]
         qid = outputs["qid"]
+        print("Qid : ", qid)
         output_text = outputs['output_text']
         if 'frame_idx' in outputs:
             frame_idx = outputs['frame_idx']
@@ -471,24 +473,31 @@ class VideoQA(BaseTask):
         acc = 0
         qtype_correct_dict = {}
         qtype_total_dict = {}
+        predictions = []
         for r in results:    
-            qtype = r['qid'].split('_')[0]
-            if qtype not in qtype_total_dict:
-                qtype_total_dict[qtype] = 1
-            else:
-                qtype_total_dict[qtype] += 1 
+            prediction = {'qid': r['qid'],
+                          'prediction': r['prediction'],
+                          'target': r['target']
+                          }
+            predictions.append(prediction)
+            # print(r['qid'])
+            # qtype = r['qid'].split('_')[0]
+            # if qtype not in qtype_total_dict:
+            #     qtype_total_dict[qtype] = 1
+            # else:
+            #     qtype_total_dict[qtype] += 1 
 
             if r['prediction'] == r['target']:
                 acc += 1
-                if qtype not in qtype_correct_dict:
-                    qtype_correct_dict[qtype] = 1
-                else:
-                    qtype_correct_dict[qtype] += 1 
+                # if qtype not in qtype_correct_dict:
+                #     qtype_correct_dict[qtype] = 1
+                # else:
+                #     qtype_correct_dict[qtype] += 1 
         
         metrics = {"agg_metrics": acc/total_num , 'total':total_num}
         
-        for qtype in qtype_total_dict:
-            metrics[qtype] = qtype_correct_dict[qtype] / qtype_total_dict[qtype] * 100
+        # for qtype in qtype_total_dict:
+        #     metrics[qtype] = qtype_correct_dict[qtype] / qtype_total_dict[qtype] * 100
             
         # for STAR
         if ('Interaction' in metrics) and ('Sequence' in metrics) and ('Prediction' in metrics) and ('Feasibility' in metrics):
@@ -500,6 +509,11 @@ class VideoQA(BaseTask):
             os.path.join(registry.get_path("output_dir"), "evaluate.txt"), "a"
         ) as f:
             f.write(json.dumps(log_stats) + "\n")
+
+        with open(
+            os.path.join(registry.get_path("output_dir"), "predictions.json"), "a"
+        ) as f:
+            json.dump(predictions, f)
 
         logging.info(metrics)
         return metrics

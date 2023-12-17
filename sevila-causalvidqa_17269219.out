@@ -1,0 +1,2229 @@
+type 1
+0
+1
+0
+| distributed init (rank 0, world 1): env://
+cdr2636:52292:52292 [0] NCCL INFO Bootstrap : Using ib0:172.19.146.73<0>
+cdr2636:52292:52292 [0] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2636:52292:52292 [0] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.146.73<0>
+cdr2636:52292:52292 [0] NCCL INFO Using network IB
+NCCL version 2.12.12+cuda11.7
+cdr2636:52292:52321 [0] NCCL INFO Setting affinity for GPU 0 to 01
+cdr2636:52292:52321 [0] NCCL INFO Channel 00/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 01/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 02/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 03/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 04/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 05/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 06/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 07/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 08/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 09/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 10/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 11/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 12/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 13/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 14/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 15/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 16/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 17/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 18/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 19/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 20/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 21/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 22/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 23/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 24/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 25/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 26/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 27/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 28/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 29/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 30/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Channel 31/32 :    0
+cdr2636:52292:52321 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+cdr2636:52292:52321 [0] NCCL INFO Connected all rings
+cdr2636:52292:52321 [0] NCCL INFO Connected all trees
+cdr2636:52292:52321 [0] NCCL INFO 32 coll channels, 32 p2p channels, 32 p2p channels per peer
+cdr2636:52292:52321 [0] NCCL INFO comm 0x2b7dd40090d0 rank 0 nranks 1 cudaDev 0 busId 18000 - Init COMPLETE
+Dataset config :  {'data_type': 'videos', 'build_info': {'annotations': {'val': {'url': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/annotations/val.json', 'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/annotations/val.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/videos/'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Config keys :  dict_keys(['data_type', 'build_info', 'vis_processor', 'text_processor'])
+Config : 
+
+ {'data_type': 'videos', 'build_info': {'annotations': {'val': {'url': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/annotations/val.json', 'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/annotations/val.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/videos/'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Building datasets in base task ...
+Inside build processors ...
+Config name :  blip_video_eval
+Config name :  blip_question
+in build() fn, Processors built
+Run config :  {'task': 'videoqa', 'lr_sched': 'linear_warmup_cosine_lr', 'init_lr': 1e-05, 'min_lr': 0, 'warmup_lr': 1e-08, 'warmup_steps': 200, 'weight_decay': 0.05, 'max_epoch': 5, 'batch_size_train': 32, 'batch_size_eval': 1, 'num_workers': 0, 'accum_grad_iters': 1, 'max_len': 30, 'min_len': 8, 'num_beams': 5, 'seed': 42, 'output_dir': 'expts/causalvidqa_infer', 'amp': True, 'resume_ckpt_path': None, 'evaluate': False, 'train_splits': ['train'], 'valid_splits': ['val'], 'test_splits': ['val'], 'device': 'cuda', 'world_size': 1, 'dist_url': 'env://', 'distributed': True, 'find_unused_parameters': True, 'rank': 0, 'gpu': 0, 'dist_backend': 'nccl'}
+Evaluating ...
+evaluate(); Test splits :  ['val']
+Obtained frames
+Obtained frames
+Qid :  ['']
+Evaluation  [   0/1000]  eta: 2:50:09    time: 10.2096  data: 1.9373  max mem: 13147
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  10/1000]  eta: 1:44:48    time: 6.3517  data: 0.6373  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  20/1000]  eta: 1:41:47    time: 6.0334  data: 0.4957  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  30/1000]  eta: 1:54:53    time: 7.5218  data: 1.9721  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  40/1000]  eta: 1:50:15    time: 7.5829  data: 2.0415  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  50/1000]  eta: 1:46:20    time: 6.1109  data: 0.6701  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  60/1000]  eta: 1:42:55    time: 5.9108  data: 0.5619  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  70/1000]  eta: 1:41:13    time: 6.0560  data: 0.5446  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: M_hGGjxqB5M_000003_000013
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  80/1000]  eta: 1:38:19    time: 5.9335  data: 0.5358  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [  90/1000]  eta: 1:38:32    time: 6.3780  data: 1.0060  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 100/1000]  eta: 1:37:29    time: 6.8484  data: 1.0538  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 110/1000]  eta: 1:35:34    time: 6.2000  data: 0.4575  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 120/1000]  eta: 1:35:53    time: 6.7367  data: 1.3665  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 130/1000]  eta: 1:33:51    time: 6.6387  data: 1.4224  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 140/1000]  eta: 1:32:18    time: 5.8495  data: 0.5569  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 150/1000]  eta: 1:30:45    time: 5.9686  data: 0.6308  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 160/1000]  eta: 1:29:15    time: 5.9168  data: 0.6181  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 170/1000]  eta: 1:27:50    time: 5.9232  data: 0.5904  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 180/1000]  eta: 1:26:30    time: 5.9666  data: 0.6648  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 190/1000]  eta: 1:30:58    time: 10.0713  data: 4.7032  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 200/1000]  eta: 1:29:21    time: 10.0628  data: 4.5606  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 210/1000]  eta: 1:28:28    time: 6.5266  data: 0.4260  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 220/1000]  eta: 1:27:12    time: 6.7725  data: 0.4226  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 230/1000]  eta: 1:25:55    time: 6.4405  data: 0.5634  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 240/1000]  eta: 1:25:45    time: 7.4641  data: 0.7199  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: 3IwnNgKg9nk_000092_000102
+Obtained frames
+Qid :  ['']
+Evaluation  [ 250/1000]  eta: 1:25:09    time: 8.1713  data: 1.0426  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 260/1000]  eta: 1:24:08    time: 7.4408  data: 0.9216  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 270/1000]  eta: 1:23:01    time: 6.9653  data: 0.4379  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 280/1000]  eta: 1:21:28    time: 6.3708  data: 0.4694  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: 9WHL7tNio90_000115_000125
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 290/1000]  eta: 1:20:02    time: 5.9455  data: 0.6615  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 300/1000]  eta: 1:19:16    time: 6.8562  data: 1.2977  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 310/1000]  eta: 1:17:46    time: 6.7450  data: 1.0732  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 320/1000]  eta: 1:16:23    time: 5.9226  data: 0.4086  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 330/1000]  eta: 1:15:06    time: 6.1539  data: 0.5581  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 340/1000]  eta: 1:13:51    time: 6.2890  data: 0.6339  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 350/1000]  eta: 1:12:41    time: 6.4510  data: 0.8436  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 360/1000]  eta: 1:11:20    time: 6.2675  data: 0.7801  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 370/1000]  eta: 1:10:01    time: 5.9421  data: 0.5091  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 380/1000]  eta: 1:08:55    time: 6.3223  data: 0.7561  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 390/1000]  eta: 1:07:37    time: 6.3404  data: 0.7916  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 400/1000]  eta: 1:06:18    time: 5.8743  data: 0.5280  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 410/1000]  eta: 1:05:01    time: 5.8422  data: 0.5193  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 420/1000]  eta: 1:03:45    time: 5.8990  data: 0.5266  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 430/1000]  eta: 1:02:27    time: 5.7895  data: 0.4456  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 440/1000]  eta: 1:01:20    time: 6.0916  data: 0.6613  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: tA-L1DGr_Pk_000012_000022
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 450/1000]  eta: 1:00:04    time: 6.1165  data: 0.6922  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 460/1000]  eta: 0:58:51    time: 5.8093  data: 0.4986  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 470/1000]  eta: 0:57:41    time: 6.0379  data: 0.4422  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 480/1000]  eta: 0:56:34    time: 6.2426  data: 0.6570  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 490/1000]  eta: 0:55:24    time: 6.1965  data: 0.7863  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 500/1000]  eta: 0:54:11    time: 5.9361  data: 0.5113  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 510/1000]  eta: 0:52:58    time: 5.7189  data: 0.4593  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 520/1000]  eta: 0:51:52    time: 6.0205  data: 0.5160  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 530/1000]  eta: 0:50:40    time: 6.0344  data: 0.4858  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: ZnJ4FZEgFLg_000119_000129
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: aKND4GMSmRE_000041_000051
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 540/1000]  eta: 0:49:34    time: 5.9797  data: 0.5443  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 550/1000]  eta: 0:48:30    time: 6.4037  data: 0.8795  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 560/1000]  eta: 0:47:22    time: 6.3305  data: 0.7958  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 570/1000]  eta: 0:46:17    time: 6.2128  data: 0.5297  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 580/1000]  eta: 0:45:17    time: 6.6979  data: 1.2340  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 590/1000]  eta: 0:44:11    time: 6.6714  data: 1.4173  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 600/1000]  eta: 0:43:02    time: 6.1010  data: 0.7037  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 610/1000]  eta: 0:41:53    time: 5.8560  data: 0.4266  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 620/1000]  eta: 0:40:46    time: 5.8922  data: 0.5021  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 630/1000]  eta: 0:39:41    time: 6.1233  data: 0.5883  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 640/1000]  eta: 0:38:37    time: 6.4015  data: 0.7716  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: l5G1D3ArPr8_000054_000064
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 650/1000]  eta: 0:37:54    time: 8.4594  data: 2.9665  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 660/1000]  eta: 0:36:47    time: 8.2937  data: 2.6816  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 670/1000]  eta: 0:35:38    time: 5.9162  data: 0.4269  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: PCTQN-MYMs0_000002_000012
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 680/1000]  eta: 0:34:30    time: 5.6531  data: 0.4452  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: NxJWeh90F3Q_000021_000031
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: 6LSkFIsSp4M_000000_000010
+Obtained frames
+Qid :  ['']
+Evaluation  [ 690/1000]  eta: 0:33:24    time: 6.0304  data: 0.5147  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 700/1000]  eta: 0:32:16    time: 6.0036  data: 0.4696  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 710/1000]  eta: 0:31:11    time: 5.9406  data: 0.4916  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 720/1000]  eta: 0:30:05    time: 6.2091  data: 0.6128  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 730/1000]  eta: 0:29:00    time: 6.1844  data: 0.6908  max mem: 13155
+Obtained frames
+
+Error while read file idx
+video is: vK4QIXWoBVc_000055_000065
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 740/1000]  eta: 0:27:53    time: 6.0305  data: 0.5997  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 750/1000]  eta: 0:26:49    time: 6.1775  data: 0.6561  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 760/1000]  eta: 0:25:43    time: 6.2488  data: 0.6773  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 770/1000]  eta: 0:24:38    time: 6.0610  data: 0.5447  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 780/1000]  eta: 0:23:33    time: 6.0585  data: 0.5655  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 790/1000]  eta: 0:22:26    time: 5.7992  data: 0.4933  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: CxYyR_fePVE_000044_000054
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 800/1000]  eta: 0:21:24    time: 6.4480  data: 1.1232  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 810/1000]  eta: 0:20:19    time: 6.5660  data: 1.0931  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 820/1000]  eta: 0:19:13    time: 5.8313  data: 0.5356  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 830/1000]  eta: 0:18:09    time: 6.2273  data: 0.8721  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 840/1000]  eta: 0:17:05    time: 6.3048  data: 0.7959  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 850/1000]  eta: 0:16:00    time: 6.0343  data: 0.6856  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 860/1000]  eta: 0:14:55    time: 5.8119  data: 0.6462  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 870/1000]  eta: 0:13:51    time: 6.0914  data: 0.5245  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 880/1000]  eta: 0:12:47    time: 6.3274  data: 0.6243  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 890/1000]  eta: 0:11:42    time: 5.9890  data: 0.5392  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 900/1000]  eta: 0:10:38    time: 6.0670  data: 0.5344  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 910/1000]  eta: 0:09:34    time: 5.9972  data: 0.5079  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: c-u1HcNyYrM_000007_000017
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 920/1000]  eta: 0:08:30    time: 5.9869  data: 0.5701  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 930/1000]  eta: 0:07:25    time: 6.0588  data: 0.7278  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 940/1000]  eta: 0:06:21    time: 5.8320  data: 0.6038  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 950/1000]  eta: 0:05:18    time: 6.5661  data: 1.2313  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 960/1000]  eta: 0:04:15    time: 6.8881  data: 1.3885  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 970/1000]  eta: 0:03:11    time: 6.6194  data: 0.7503  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 980/1000]  eta: 0:02:07    time: 6.5165  data: 0.7350  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+
+Error while read file idx
+video is: XZrTLb2ANoM_000003_000013
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Evaluation  [ 990/1000]  eta: 0:01:03    time: 6.0525  data: 0.6366  max mem: 13155
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Obtained frames
+Qid :  ['']
+Qid :  ['']
+Evaluation  [ 999/1000]  eta: 0:00:06    time: 5.9070  data: 0.5335  max mem: 13155
+Evaluation Total time: 1:46:10 (6.3707 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_infer/result/val_epochbest.json
+cdr2636:52292:52292 [0] NCCL INFO comm 0x2b7dd40090d0 rank 0 nranks 1 cudaDev 0 busId 18000 - Abort COMPLETE

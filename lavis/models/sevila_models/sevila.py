@@ -67,7 +67,7 @@ class SeViLA(Blip2Base):
         # freeze T5
         for name, param in self.t5_model.named_parameters():
             param.requires_grad = False
-            param.data = param.data.bfloat16() 
+            param.data = param.data.half() # bfloat16
 
         # Q-Former for Answerer
         self.Qformer, self.query_tokens = self.init_Qformer(
@@ -157,7 +157,7 @@ class SeViLA(Blip2Base):
                 answer = samples['qa_output']
                 ans_idx = [self.ANS_MAP[a[-1]] for a in answer]
 
-                with torch.cuda.amp.autocast(dtype=torch.bfloat16):
+                with torch.cuda.amp.autocast(dtype=torch.float16): # bfloat16
                     # Frame Prefix
                     frame_prefix = self.t5_tokenizer(
                         self.frame_prefix, padding="longest", add_special_tokens=False,
@@ -214,7 +214,7 @@ class SeViLA(Blip2Base):
                 encoder_attention_mask=image_atts, return_dict=True) # bt, n, c
             inputs_t5_loc = self.t5_proj_loc(query_output_loc.last_hidden_state) # bt, n, c
             atts_t5_loc = torch.ones(inputs_t5_loc.size()[:-1], dtype=torch.long).to(image.device)
-            with torch.cuda.amp.autocast(dtype=torch.bfloat16):
+            with torch.cuda.amp.autocast(dtype=torch.float16):
                 frame_prefix = self.t5_tokenizer(
                     self.frame_prefix, padding="longest", add_special_tokens=False,
                     truncation=True, max_length=self.max_txt_len, return_tensors="pt").to(image.device) 
@@ -263,7 +263,7 @@ class SeViLA(Blip2Base):
                 inputs_t5_loc = self.t5_proj_loc(query_output_loc.last_hidden_state)
 
                 atts_t5_loc = torch.ones(inputs_t5_loc.size()[:-1], dtype=torch.long).to(image.device)
-                with torch.cuda.amp.autocast(dtype=torch.bfloat16):
+                with torch.cuda.amp.autocast(dtype=torch.float16):
 
                     frame_prefix = self.t5_tokenizer(
                         self.frame_prefix, padding="longest", add_special_tokens=False,
@@ -318,7 +318,7 @@ class SeViLA(Blip2Base):
             inputs_t5_qa = inputs_t5_qa.reshape(b, -1, inputs_t5_qa.shape[-2], inputs_t5_qa.shape[-1])
             atts_t5_qa = torch.ones(inputs_t5_qa.size()[:-1], dtype=torch.long).to(image.device)
             
-            with torch.cuda.amp.autocast(dtype=torch.bfloat16):        
+            with torch.cuda.amp.autocast(dtype=torch.float16):        
                 vid_prefix = self.t5_tokenizer(
                     self.vid_prefix, padding="longest", add_special_tokens=False,
                     truncation=True, max_length=self.max_txt_len, return_tensors="pt",).to(image.device) # 
@@ -365,7 +365,7 @@ class SeViLA(Blip2Base):
             text_input_qa = samples['qa_input'] 
             answer = samples['qa_output'] 
 
-            with torch.cuda.amp.autocast(dtype=torch.bfloat16):
+            with torch.cuda.amp.autocast(dtype=torch.float16):
                     # Frame Prefix
                 if 'qa_vid' not in self.task:
                     atts_t5_qa = torch.ones(inputs_t5_qa.size()[:-1], dtype=torch.long).to(image.device) 
@@ -475,7 +475,7 @@ class SeViLA(Blip2Base):
                 encoder_attention_mask=image_atts, return_dict=True)
             inputs_t5_qa = self.t5_proj(query_output_qa.last_hidden_state)
             
-            with torch.cuda.amp.autocast(dtype=torch.bfloat16):
+            with torch.cuda.amp.autocast(dtype=torch.float16):
                     # Frame Prefix
                 if 'vid' not in self.task: 
                     atts_t5_qa = torch.ones(inputs_t5_qa.size()[:-1], dtype=torch.long).to(image.device) 
@@ -555,7 +555,9 @@ class SeViLA(Blip2Base):
             inputs_t5_loc = self.t5_proj_loc(query_output_loc.last_hidden_state)
 
             atts_t5_loc = torch.ones(inputs_t5_loc.size()[:-1], dtype=torch.long).to(image.device)
-            with torch.cuda.amp.autocast(dtype=torch.bfloat16):
+            # bfloat16 (brain-float16) gives the same accuracy as float32 with space needed = float16 !
+            # though, it does not work on Tesla V100 GPUs, so convert to float32 (float16 gives wrong values)
+            with torch.cuda.amp.autocast(dtype=torch.float16):  
 
                 frame_prefix = self.t5_tokenizer(
                     self.frame_prefix, padding="longest", add_special_tokens=False,
@@ -737,7 +739,7 @@ class SeViLA(Blip2Base):
         inputs_t5_loc = self.t5_proj_loc(query_output_loc.last_hidden_state)
 
         atts_t5_loc = torch.ones(inputs_t5_loc.size()[:-1], dtype=torch.long).to(image.device)
-        with torch.cuda.amp.autocast(dtype=torch.bfloat16):
+        with torch.cuda.amp.autocast(dtype=torch.float16): # torch.bfloat16
 
             frame_prefix = self.t5_tokenizer(
                 self.frame_prefix, padding="longest", add_special_tokens=False,
@@ -914,7 +916,7 @@ class SeViLA(Blip2Base):
         encoder_atts = torch.cat([atts_t5, input_tokens.attention_mask], dim=1)
 
         device_type = "cuda" if "cuda" in str(self.device) else "cpu"
-        with torch.amp.autocast(device_type=device_type, dtype=torch.bfloat16):
+        with torch.amp.autocast(device_type=device_type, dtype=torch.float16):
             inputs_embeds = self.t5_model.encoder.embed_tokens(input_tokens.input_ids)
             inputs_embeds = torch.cat([inputs_t5, inputs_embeds], dim=1)
 

@@ -56,12 +56,19 @@ def is_main_process():
 
 def init_distributed_mode(args):
     if "RANK" in os.environ and "WORLD_SIZE" in os.environ:
+        print("type 1")
         args.rank = int(os.environ["RANK"])
+        print(args.rank)
         args.world_size = int(os.environ["WORLD_SIZE"])
+        print(args.world_size)
         args.gpu = int(os.environ["LOCAL_RANK"])
+        print(args.gpu)
     elif "SLURM_PROCID" in os.environ:
+        print("type 2")
         args.rank = int(os.environ["SLURM_PROCID"])
+        print(args.rank)
         args.gpu = args.rank % torch.cuda.device_count()
+        print(args.gpu)
     else:
         print("Not using distributed mode")
         args.distributed = False
@@ -69,7 +76,8 @@ def init_distributed_mode(args):
 
     args.distributed = True
 
-    torch.cuda.set_device(args.gpu)
+    if torch.cuda.is_available():
+        torch.cuda.set_device(args.gpu)
     args.dist_backend = "nccl"
     print(
         "| distributed init (rank {}, world {}): {}".format(

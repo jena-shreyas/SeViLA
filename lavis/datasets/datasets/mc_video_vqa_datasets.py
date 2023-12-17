@@ -46,7 +46,10 @@ class MCVideoQADataset(MultimodalClassificationDataset, __DisplMixin):
         while result is None:
 
             ann = self.annotation[index]
-            qid = ann['qid'] 
+            try:
+                qid = ann['qid'] 
+            except:   # changed
+                qid = ""
 
             if 'QVHighlight' in qid:
                 q = ann['query']
@@ -97,10 +100,11 @@ class MCVideoQADataset(MultimodalClassificationDataset, __DisplMixin):
                 hints += ')'
                 qa_prompt = prompt + ' Considering the information presented in the frame, select the correct answer from the options.'
                 loc_prompt = 'Question: ' + q +  ' ' + hints + ' Does the information within the frame provide the necessary details to accurately answer the given question?'                
-                answers = 'Option ' + ANS_MAPPING[int(ann['answer'])]
+                answers = 'Option ' + ANS_MAPPING[abs(int(ann['answer']))]  # an option had -1 as answer !
                 duration = 1
             
             try:
+                # print("Vis Root : ", self.vis_root)
                 if 'VLEP' in qid:
                     video_id = ann['video']
                     if ':' in video_id:
@@ -115,6 +119,7 @@ class MCVideoQADataset(MultimodalClassificationDataset, __DisplMixin):
                     vpath = os.path.join(self.vis_root, str(ann['video']) + '.mp4')   
                     
                 frms, indices, fps = self.vis_processor(vpath, clip_proposal=clip)
+                print("Obtained frames")
                 frms = frms.permute(1, 0, 2, 3)
                 assert len(frms) == self.vis_processor.n_frms
                 
@@ -139,7 +144,7 @@ class MCVideoQADataset(MultimodalClassificationDataset, __DisplMixin):
                               
                 result = True
             except Exception as e:
-                
+                print(e)
                 print(f"Error while read file idx")
                 print("video is: {}".format(ann['video']))
                 index = random.randint(0, len(self.annotation) - 1)

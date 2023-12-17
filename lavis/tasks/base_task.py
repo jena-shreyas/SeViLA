@@ -51,7 +51,9 @@ class BaseTask:
 
         for name in datasets_config:
             dataset_config = datasets_config[name]
+            print("Dataset config : ", dataset_config)
             builder = registry.get_builder_class(name)(dataset_config)
+            print("Building datasets in base task ...")
             dataset = builder.build_datasets()
 
             datasets[name] = dataset
@@ -88,6 +90,10 @@ class BaseTask:
             eval_output = self.valid_step(model=model, samples=samples)
             results.extend(eval_output)
             #break
+
+            # if results is not None and len(results) % 100 == 0:
+            #     self.
+
 
         if is_dist_avail_and_initialized():
             dist.barrier()

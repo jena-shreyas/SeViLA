@@ -1,0 +1,231 @@
+type 1
+0
+1
+0
+| distributed init (rank 0, world 1): env://
+cdr2653:226431:226431 [0] NCCL INFO Bootstrap : Using ib0:172.19.146.90<0>
+cdr2653:226431:226431 [0] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2653:226431:226431 [0] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.146.90<0>
+cdr2653:226431:226431 [0] NCCL INFO Using network IB
+NCCL version 2.12.12+cuda11.7
+cdr2653:226431:226484 [0] NCCL INFO Setting affinity for GPU 0 to 01
+cdr2653:226431:226484 [0] NCCL INFO Channel 00/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 01/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 02/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 03/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 04/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 05/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 06/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 07/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 08/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 09/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 10/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 11/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 12/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 13/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 14/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 15/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 16/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 17/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 18/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 19/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 20/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 21/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 22/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 23/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 24/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 25/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 26/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 27/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 28/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 29/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 30/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Channel 31/32 :    0
+cdr2653:226431:226484 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+cdr2653:226431:226484 [0] NCCL INFO Connected all rings
+cdr2653:226431:226484 [0] NCCL INFO Connected all trees
+cdr2653:226431:226484 [0] NCCL INFO 32 coll channels, 32 p2p channels, 32 p2p channels per peer
+cdr2653:226431:226484 [0] NCCL INFO comm 0x2bab7c0090d0 rank 0 nranks 1 cudaDev 0 busId 18000 - Init COMPLETE
+Dataset config :  {'data_type': 'videos', 'build_info': {'annotations': {'val': {'url': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json', 'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/videos/'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Config keys :  dict_keys(['data_type', 'build_info', 'vis_processor', 'text_processor'])
+Config : 
+
+ {'data_type': 'videos', 'build_info': {'annotations': {'val': {'url': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json', 'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/videos/'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Building datasets in base task ...
+Inside build processors ...
+Config name :  blip_video_eval
+Config name :  blip_question
+in build() fn, Processors built
+Run config :  {'task': 'videoqa', 'lr_sched': 'linear_warmup_cosine_lr', 'init_lr': 1e-05, 'min_lr': 0, 'warmup_lr': 1e-08, 'warmup_steps': 200, 'weight_decay': 0.05, 'max_epoch': 5, 'batch_size_train': 32, 'batch_size_eval': 1, 'num_workers': 0, 'accum_grad_iters': 1, 'max_len': 30, 'min_len': 8, 'num_beams': 5, 'seed': 42, 'output_dir': 'expts/causalvidqa_infer/counterfactual', 'amp': True, 'resume_ckpt_path': None, 'evaluate': False, 'train_splits': ['train'], 'valid_splits': ['val'], 'test_splits': ['val'], 'device': 'cuda', 'world_size': 1, 'dist_url': 'env://', 'distributed': True, 'find_unused_parameters': True, 'rank': 0, 'gpu': 0, 'dist_backend': 'nccl'}
+Evaluating ...
+evaluate(); Test splits :  ['val']
+Obtained frames
+Obtained frames
+Qid :  ['CTGugSZ2FCI_000007_000017']
+Evaluation  [   0/3000]  eta: 10:30:45    time: 12.6153  data: 1.8651  max mem: 13147
+Obtained frames
+Qid :  ['8TdleXIsShE_000064_000074']
+Obtained frames
+Qid :  ['6M60dLLBBP4_000004_000014']
+Obtained frames
+Qid :  ['woGuhC9gJz8_000088_000098']
+Obtained frames
+Qid :  ['LYRzEAIfTFs_000000_000010']
+Obtained frames
+Qid :  ['5lUMCCWKcng_000009_000019']
+Obtained frames
+Qid :  ['x-T7V-sNlTU_000000_000010']
+Obtained frames
+Qid :  ['4ap0jcZH9RY_000026_000036']
+Obtained frames
+Qid :  ['eZnAbEPxNRk_000004_000014']
+Obtained frames
+Qid :  ['kS_zZfk1f4Y_000067_000077']
+Obtained frames
+Qid :  ['m76cYvacok4_000001_000011']
+Evaluation  [  10/3000]  eta: 5:27:37    time: 6.5745  data: 0.6418  max mem: 13155
+Obtained frames
+Qid :  ['_2MeprGYj70_000001_000011']
+Obtained frames
+Qid :  ['B9Xeyt09MIE_000009_000019']
+Obtained frames
+Qid :  ['dTcANXGe3eA_000127_000137']
+Obtained frames
+Qid :  ['3Jw1QmH3GRI_000046_000056']
+Obtained frames
+Qid :  ['QTQtkxqZFCc_000042_000052']
+Obtained frames
+Qid :  ['U3V9_6DfxVM_000009_000019']
+Obtained frames
+Qid :  ['ucq1noo-Zlg_000055_000065']
+Obtained frames
+Qid :  ['FYQtiyGNa5E_000260_000270']
+Obtained frames
+Qid :  ['x9NhB4iMum0_000029_000039']
+Obtained frames
+Qid :  ['mFPx7lV1vo4_000022_000032']
+Evaluation  [  20/3000]  eta: 5:10:11    time: 5.9270  data: 0.4595  max mem: 13155
+Obtained frames
+Qid :  ['mh8GkTqLQu4_000019_000029']
+Obtained frames
+Qid :  ['toPmanguQZo_000022_000032']
+Obtained frames
+Qid :  ['d4q40olutAU_000000_000010']
+Obtained frames
+Qid :  ['nKk_mcXDm7M_000023_000033']
+Obtained frames
+Qid :  ['2mDTWQ1XGks_000015_000025']
+Obtained frames
+Qid :  ['tDPHFsMTCB0_000000_000010']
+Obtained frames
+Qid :  ['-Ogl8Gs9uwA_000002_000012']
+Obtained frames
+Qid :  ['eNKpxL0UE8c_000098_000108']
+Obtained frames
+Qid :  ['MVmz4dhfrPc_000022_000032']
+Obtained frames
+Qid :  ['s2uPXyB01ik_000027_000037']
+Evaluation  [  30/3000]  eta: 5:00:27    time: 5.7924  data: 0.3684  max mem: 13155
+Obtained frames
+Qid :  ['eDN4HtaKpOI_000000_000010']
+Obtained frames
+Qid :  ['x1PPzO3yD9k_000012_000022']
+Obtained frames
+Qid :  ['6FM2ImTetak_000005_000015']
+Obtained frames
+Qid :  ['UyRWY2JNuho_000136_000146']
+Obtained frames
+Qid :  ['N304sW1I1Mw_000000_000010']
+Obtained frames
+Qid :  ['7E2ctzRe0Jk_000030_000040']
+Obtained frames
+Qid :  ['Fl5Z22GbI7c_000121_000131']
+Obtained frames
+Qid :  ['OE45pzRJwCk_000139_000149']
+Obtained frames
+Qid :  ['gfuS2ul5zF0_000276_000286']
+Obtained frames
+Qid :  ['waaJU200GeU_000037_000047']
+Evaluation  [  40/3000]  eta: 4:58:48    time: 5.8590  data: 0.4277  max mem: 13155
+Obtained frames
+Qid :  ['6HH4G3pVxIs_000033_000043']
+Obtained frames
+Qid :  ['Km6Ii_Z4uPE_000306_000316']
+Obtained frames
+Qid :  ['rRaajP40Mbs_000046_000056']
+Obtained frames
+Qid :  ['UFmBEhFLVeo_000006_000016']
+Obtained frames
+Qid :  ['NrwML9to9fM_000034_000044']
+Obtained frames
+Qid :  ['MxxkHDfObs8_000010_000020']
+Obtained frames
+Qid :  ['Zi6JT_M2Ss8_000136_000146']
+Obtained frames
+Qid :  ['xVejPAcFR4E_000040_000050']
+Obtained frames
+Qid :  ['46BJgiKGl_c_000000_000010']
+Obtained frames
+Qid :  ['LvnJFd0QZMs_000000_000010']
+Evaluation  [  50/3000]  eta: 4:56:11    time: 5.9532  data: 0.5131  max mem: 13155
+Obtained frames
+Qid :  ['4lnsKGuPkiM_000001_000011']
+Obtained frames
+Qid :  ['V98hstBShMM_000076_000086']
+Obtained frames
+Qid :  ['VYMuwIga6kc_000006_000016']
+Obtained frames
+Qid :  ['naaiD-t5ieg_000059_000069']
+Obtained frames
+Qid :  ['-r04_uMgfF0_000083_000093']
+Obtained frames
+Qid :  ['8yN_UXYnry0_000477_000487']
+Obtained frames
+Qid :  ['IFr0l0goftg_000001_000011']
+Obtained frames
+Qid :  ['McjGSovOPH4_000000_000010']
+Obtained frames
+Qid :  ['dySnqtboRkk_000110_000120']
+Obtained frames
+Qid :  ['6FiTqb7E0qc_000023_000033']
+Evaluation  [  60/3000]  eta: 4:55:49    time: 5.9972  data: 0.5449  max mem: 13155
+Obtained frames
+Qid :  ['WfdxbL3NDtI_000000_000010']
+Obtained frames
+Qid :  ['6t0ZwoKlKSI_000038_000048']
+Obtained frames
+Qid :  ['YeqlCQqEd48_000012_000022']
+Obtained frames
+Qid :  ['eJ7EJU0It6k_000008_000018']
+Obtained frames
+Qid :  ['53SPIxhe3ms_000047_000057']
+Obtained frames
+Qid :  ['bUaAmwUdxTo_000060_000070']
+Obtained frames
+Qid :  ['7bRvpkRpPmw_000010_000020']
+Obtained frames
+Qid :  ['aSdniPOD1n0_000002_000012']
+Obtained frames
+Qid :  ['JpNakPouMGA_000069_000079']
+Obtained frames
+Qid :  ['HkcZMm24h0s_000047_000057']
+Evaluation  [  70/3000]  eta: 4:55:07    time: 6.0935  data: 0.5164  max mem: 13155
+Obtained frames
+Qid :  ['nL4kOH70CwQ_000000_000010']
+Obtained frames
+Qid :  ['jXLDCwU3QAE_000179_000189']
+Obtained frames
+Qid :  ['3UrLbbgqmf0_000116_000126']
+Obtained frames
+Qid :  ['G0bb9R6YvCU_000041_000051']
+Obtained frames
+Qid :  ['FD8SHAUDCt8_000007_000017']
+Obtained frames
+Qid :  ['ss1np51H2qE_000023_000033']
+Obtained frames
+Qid :  ['M0nZTrnFjEA_000114_000124']
+Obtained frames
+Qid :  ['LrP6M0fYKWI_000009_000019']
+Obtained frames
+Qid :  ['HIJuRhkRn-A_000002_000012']
+Obtained frames

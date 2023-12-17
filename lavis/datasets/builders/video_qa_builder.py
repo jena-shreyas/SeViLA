@@ -90,4 +90,9 @@ class QVHBuilder(MCVideoQABuilder):
         "default": "configs/datasets/qvh/defaults.yaml",
     }
     
+@registry.register_builder("causalvidqa")
+class CausalVidQABuilder(MCVideoQABuilder):
+    DATASET_CONFIG_DICT = {
+        "default": "configs/datasets/causalvidqa/defaults_qa.yaml",
+    }
 # open-ended QA

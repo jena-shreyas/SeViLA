@@ -85,6 +85,7 @@ def main():
     runner = RunnerBase(
         cfg=cfg, job_id=job_id, task=task, model=model, datasets=datasets
     )
+    print("Evaluating ...")
     runner.evaluate(skip_reload=True)
 
 

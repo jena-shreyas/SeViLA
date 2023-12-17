@@ -1,0 +1,65 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig         4) imkl/2020.1.217    7) libfabric/1.10.1
+  2) gentoo/2020      5) intel/2020.1.217   8) openmpi/4.0.3
+  3) gcccore/.9.3.0   6) ucx/1.8.0          9) StdEnv/2020
+
+Lmod is automatically replacing "intel/2020.1.217" with "gcc/9.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) libfabric/1.10.1     2) openmpi/4.0.3     3) ucx/1.8.0
+
+[I socket.cpp:566] [c10d] The server socket has started to listen on [::]:29500.
+[I socket.cpp:787] [c10d] The client socket has connected to [localhost]:29500 on [localhost]:37664.
+[I socket.cpp:787] [c10d] The client socket has connected to [localhost]:29500 on [localhost]:37666.
+Traceback (most recent call last):
+  File "/scratch/jenas/BTP/SeViLA/evaluate.py", line 15, in <module>
+    import lavis.tasks as tasks
+  File "/scratch/jenas/BTP/SeViLA/lavis/__init__.py", line 16, in <module>
+    from lavis.models import *
+  File "/scratch/jenas/BTP/SeViLA/lavis/models/__init__.py", line 47, in <module>
+    from lavis.models.clip_models.model import CLIP
+  File "/scratch/jenas/BTP/SeViLA/lavis/models/clip_models/model.py", line 37, in <module>
+    from lavis.tasks.multimodal_classification import MultimodalClassificationTask
+  File "/scratch/jenas/BTP/SeViLA/lavis/tasks/__init__.py", line 9, in <module>
+    from lavis.tasks.base_task import BaseTask
+  File "/scratch/jenas/BTP/SeViLA/lavis/tasks/base_task.py", line 95
+    self.
+         ^
+SyntaxError: invalid syntax
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 52021) of binary: /home/jenas/sevila/bin/python
+Traceback (most recent call last):
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.9.6/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.9.6/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/jenas/sevila/lib/python3.9/site-packages/torch/distributed/run.py", line 798, in <module>
+    main()
+  File "/home/jenas/sevila/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/jenas/sevila/lib/python3.9/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/home/jenas/sevila/lib/python3.9/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/home/jenas/sevila/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/jenas/sevila/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+evaluate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-11-03_09:55:41
+  host      : cdr2636.int.cedar.computecanada.ca
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 52021)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

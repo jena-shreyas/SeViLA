@@ -46,6 +46,7 @@ class RunnerBase:
 
     def __init__(self, cfg, task, model, datasets, job_id):
         self.config = cfg
+        print("Run config : ", cfg.run_cfg)
         self.job_id = job_id
 
         self.task = task
@@ -308,7 +309,7 @@ class RunnerBase:
     @property
     def test_splits(self):
         test_splits = self.config.run_cfg.get("test_splits", [])
-
+        
         return test_splits
 
     @property
@@ -417,7 +418,7 @@ class RunnerBase:
 
     def evaluate(self, cur_epoch="best", skip_reload=False):
         test_logs = dict()
-
+        print("evaluate(); Test splits : ", self.test_splits)
         if len(self.test_splits) > 0:
             for split_name in self.test_splits:
                 test_logs[split_name] = self.eval_epoch(

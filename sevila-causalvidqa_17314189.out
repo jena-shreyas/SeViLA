@@ -1,0 +1,3543 @@
+type 1
+0
+1
+0
+| distributed init (rank 0, world 1): env://
+cdr2649:108678:108678 [0] NCCL INFO Bootstrap : Using ib0:172.19.146.86<0>
+cdr2649:108678:108678 [0] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2649:108678:108678 [0] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.146.86<0>
+cdr2649:108678:108678 [0] NCCL INFO Using network IB
+NCCL version 2.12.12+cuda11.7
+cdr2649:108678:108726 [0] NCCL INFO Setting affinity for GPU 0 to 01
+cdr2649:108678:108726 [0] NCCL INFO Channel 00/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 01/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 02/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 03/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 04/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 05/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 06/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 07/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 08/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 09/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 10/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 11/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 12/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 13/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 14/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 15/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 16/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 17/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 18/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 19/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 20/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 21/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 22/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 23/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 24/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 25/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 26/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 27/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 28/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 29/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 30/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Channel 31/32 :    0
+cdr2649:108678:108726 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+cdr2649:108678:108726 [0] NCCL INFO Connected all rings
+cdr2649:108678:108726 [0] NCCL INFO Connected all trees
+cdr2649:108678:108726 [0] NCCL INFO 32 coll channels, 32 p2p channels, 32 p2p channels per peer
+cdr2649:108678:108726 [0] NCCL INFO comm 0x2ac8f00090d0 rank 0 nranks 1 cudaDev 0 busId 18000 - Init COMPLETE
+Dataset config :  {'data_type': 'videos', 'build_info': {'annotations': {'val': {'url': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json', 'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/videos/'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Config keys :  dict_keys(['data_type', 'build_info', 'vis_processor', 'text_processor'])
+Config : 
+
+ {'data_type': 'videos', 'build_info': {'annotations': {'val': {'url': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json', 'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/annotations/val.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/Causal-VidQA/data/sample_data/counterfactual/videos/'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Building datasets in base task ...
+Inside build processors ...
+Config name :  blip_video_eval
+Config name :  blip_question
+in build() fn, Processors built
+Run config :  {'task': 'videoqa', 'lr_sched': 'linear_warmup_cosine_lr', 'init_lr': 1e-05, 'min_lr': 0, 'warmup_lr': 1e-08, 'warmup_steps': 200, 'weight_decay': 0.05, 'max_epoch': 5, 'batch_size_train': 32, 'batch_size_eval': 1, 'num_workers': 0, 'accum_grad_iters': 1, 'max_len': 30, 'min_len': 8, 'num_beams': 5, 'seed': 42, 'output_dir': 'expts/causalvidqa_infer/counterfactual', 'amp': True, 'resume_ckpt_path': None, 'evaluate': False, 'train_splits': ['train'], 'valid_splits': ['val'], 'test_splits': ['val'], 'device': 'cuda', 'world_size': 1, 'dist_url': 'env://', 'distributed': True, 'find_unused_parameters': True, 'rank': 0, 'gpu': 0, 'dist_backend': 'nccl'}
+Evaluating ...
+evaluate(); Test splits :  ['val']
+Obtained frames
+Obtained frames
+Qid :  ['CTGugSZ2FCI_000007_000017']
+Evaluation  [   0/3000]  eta: 10:15:30    time: 12.3103  data: 1.5408  max mem: 13147
+Obtained frames
+Qid :  ['8TdleXIsShE_000064_000074']
+Obtained frames
+Qid :  ['6M60dLLBBP4_000004_000014']
+Obtained frames
+Qid :  ['woGuhC9gJz8_000088_000098']
+Obtained frames
+Qid :  ['LYRzEAIfTFs_000000_000010']
+Obtained frames
+Qid :  ['5lUMCCWKcng_000009_000019']
+Obtained frames
+Qid :  ['x-T7V-sNlTU_000000_000010']
+Obtained frames
+Qid :  ['4ap0jcZH9RY_000026_000036']
+Obtained frames
+Qid :  ['eZnAbEPxNRk_000004_000014']
+Obtained frames
+Qid :  ['kS_zZfk1f4Y_000067_000077']
+Obtained frames
+Qid :  ['m76cYvacok4_000001_000011']
+Evaluation  [  10/3000]  eta: 6:12:18    time: 7.4711  data: 1.5797  max mem: 13155
+Obtained frames
+Qid :  ['_2MeprGYj70_000001_000011']
+Obtained frames
+Qid :  ['B9Xeyt09MIE_000009_000019']
+Obtained frames
+Qid :  ['dTcANXGe3eA_000127_000137']
+Obtained frames
+Qid :  ['3Jw1QmH3GRI_000046_000056']
+Obtained frames
+Qid :  ['QTQtkxqZFCc_000042_000052']
+Obtained frames
+Qid :  ['U3V9_6DfxVM_000009_000019']
+Obtained frames
+Qid :  ['ucq1noo-Zlg_000055_000065']
+Obtained frames
+Qid :  ['FYQtiyGNa5E_000260_000270']
+Obtained frames
+Qid :  ['x9NhB4iMum0_000029_000039']
+Obtained frames
+Qid :  ['mFPx7lV1vo4_000022_000032']
+Evaluation  [  20/3000]  eta: 5:29:21    time: 6.3474  data: 0.9805  max mem: 13155
+Obtained frames
+Qid :  ['mh8GkTqLQu4_000019_000029']
+Obtained frames
+Qid :  ['toPmanguQZo_000022_000032']
+Obtained frames
+Qid :  ['d4q40olutAU_000000_000010']
+Obtained frames
+Qid :  ['nKk_mcXDm7M_000023_000033']
+Obtained frames
+Qid :  ['2mDTWQ1XGks_000015_000025']
+Obtained frames
+Qid :  ['tDPHFsMTCB0_000000_000010']
+Obtained frames
+Qid :  ['-Ogl8Gs9uwA_000002_000012']
+Obtained frames
+Qid :  ['eNKpxL0UE8c_000098_000108']
+Obtained frames
+Qid :  ['MVmz4dhfrPc_000022_000032']
+Obtained frames
+Qid :  ['s2uPXyB01ik_000027_000037']
+Evaluation  [  30/3000]  eta: 5:13:18    time: 5.7014  data: 0.3842  max mem: 13155
+Obtained frames
+Qid :  ['eDN4HtaKpOI_000000_000010']
+Obtained frames
+Qid :  ['x1PPzO3yD9k_000012_000022']
+Obtained frames
+Qid :  ['6FM2ImTetak_000005_000015']
+Obtained frames
+Qid :  ['UyRWY2JNuho_000136_000146']
+Obtained frames
+Qid :  ['N304sW1I1Mw_000000_000010']
+Obtained frames
+Qid :  ['7E2ctzRe0Jk_000030_000040']
+Obtained frames
+Qid :  ['Fl5Z22GbI7c_000121_000131']
+Obtained frames
+Qid :  ['OE45pzRJwCk_000139_000149']
+Obtained frames
+Qid :  ['gfuS2ul5zF0_000276_000286']
+Obtained frames
+Qid :  ['waaJU200GeU_000037_000047']
+Evaluation  [  40/3000]  eta: 5:08:27    time: 5.8550  data: 0.4287  max mem: 13155
+Obtained frames
+Qid :  ['6HH4G3pVxIs_000033_000043']
+Obtained frames
+Qid :  ['Km6Ii_Z4uPE_000306_000316']
+Obtained frames
+Qid :  ['rRaajP40Mbs_000046_000056']
+Obtained frames
+Qid :  ['UFmBEhFLVeo_000006_000016']
+Obtained frames
+Qid :  ['NrwML9to9fM_000034_000044']
+Obtained frames
+Qid :  ['MxxkHDfObs8_000010_000020']
+Obtained frames
+Qid :  ['Zi6JT_M2Ss8_000136_000146']
+Obtained frames
+Qid :  ['xVejPAcFR4E_000040_000050']
+Obtained frames
+Qid :  ['46BJgiKGl_c_000000_000010']
+Obtained frames
+Qid :  ['LvnJFd0QZMs_000000_000010']
+Evaluation  [  50/3000]  eta: 5:03:06    time: 5.9096  data: 0.4713  max mem: 13155
+Obtained frames
+Qid :  ['4lnsKGuPkiM_000001_000011']
+Obtained frames
+Qid :  ['V98hstBShMM_000076_000086']
+Obtained frames
+Qid :  ['VYMuwIga6kc_000006_000016']
+Obtained frames
+Qid :  ['naaiD-t5ieg_000059_000069']
+Obtained frames
+Qid :  ['-r04_uMgfF0_000083_000093']
+Obtained frames
+Qid :  ['8yN_UXYnry0_000477_000487']
+Obtained frames
+Qid :  ['IFr0l0goftg_000001_000011']
+Obtained frames
+Qid :  ['McjGSovOPH4_000000_000010']
+Obtained frames
+Qid :  ['dySnqtboRkk_000110_000120']
+Obtained frames
+Qid :  ['6FiTqb7E0qc_000023_000033']
+Evaluation  [  60/3000]  eta: 5:00:30    time: 5.8872  data: 0.4799  max mem: 13155
+Obtained frames
+Qid :  ['WfdxbL3NDtI_000000_000010']
+Obtained frames
+Qid :  ['6t0ZwoKlKSI_000038_000048']
+Obtained frames
+Qid :  ['YeqlCQqEd48_000012_000022']
+Obtained frames
+Qid :  ['eJ7EJU0It6k_000008_000018']
+Obtained frames
+Qid :  ['53SPIxhe3ms_000047_000057']
+Obtained frames
+Qid :  ['bUaAmwUdxTo_000060_000070']
+Obtained frames
+Qid :  ['7bRvpkRpPmw_000010_000020']
+Obtained frames
+Qid :  ['aSdniPOD1n0_000002_000012']
+Obtained frames
+Qid :  ['JpNakPouMGA_000069_000079']
+Obtained frames
+Qid :  ['HkcZMm24h0s_000047_000057']
+Evaluation  [  70/3000]  eta: 4:57:39    time: 5.9184  data: 0.4546  max mem: 13155
+Obtained frames
+Qid :  ['nL4kOH70CwQ_000000_000010']
+Obtained frames
+Qid :  ['jXLDCwU3QAE_000179_000189']
+Obtained frames
+Qid :  ['3UrLbbgqmf0_000116_000126']
+Obtained frames
+Qid :  ['G0bb9R6YvCU_000041_000051']
+Obtained frames
+Qid :  ['FD8SHAUDCt8_000007_000017']
+Obtained frames
+Qid :  ['ss1np51H2qE_000023_000033']
+Obtained frames
+Qid :  ['M0nZTrnFjEA_000114_000124']
+Obtained frames
+Qid :  ['LrP6M0fYKWI_000009_000019']
+Obtained frames
+Qid :  ['HIJuRhkRn-A_000002_000012']
+Obtained frames
+Qid :  ['kpXWRlZtJhM_000045_000055']
+Evaluation  [  80/3000]  eta: 4:55:34    time: 5.8929  data: 0.4187  max mem: 13155
+Obtained frames
+Qid :  ['TbkWDTMBPng_000190_000200']
+Obtained frames
+Qid :  ['TEUeTwV6ZPQ_000002_000012']
+Obtained frames
+Qid :  ['-wgojtq2Nzw_000020_000030']
+Obtained frames
+Qid :  ['KiTFSKD_Bjo_000001_000011']
+Obtained frames
+Qid :  ['2_0TNf4cV0M_000000_000010']
+Obtained frames
+Qid :  ['rhCb_loKFEY_000002_000012']
+Obtained frames
+Qid :  ['rDrpUj7K05Y_000000_000010']
+Obtained frames
+Qid :  ['on4OZfa43g4_000083_000093']
+Obtained frames
+Qid :  ['iVxBqbRCQtw_000047_000057']
+Obtained frames
+Qid :  ['98FPDiM22lM_000012_000022']
+Evaluation  [  90/3000]  eta: 4:55:08    time: 6.0507  data: 0.4478  max mem: 13155
+Obtained frames
+Qid :  ['BAbS29Gi_2w_000247_000257']
+Obtained frames
+Qid :  ['YOAMoQYAj70_000028_000038']
+Obtained frames
+Qid :  ['_j2-JqO_g94_000004_000014']
+Obtained frames
+Qid :  ['DclHEXc2nb0_000007_000017']
+Obtained frames
+Qid :  ['lRkBKhuVotk_000179_000189']
+Obtained frames
+Qid :  ['5QLCuXsEZBc_000027_000037']
+Obtained frames
+Qid :  ['EAhWa4Vr2X4_000026_000036']
+Obtained frames
+Qid :  ['297w36RpOLs_000032_000042']
+Obtained frames
+Qid :  ['Jm8OhXAq3I8_000086_000096']
+Obtained frames
+Qid :  ['2oxYm5dNYDY_000020_000030']
+Evaluation  [ 100/3000]  eta: 4:53:23    time: 6.0557  data: 0.4464  max mem: 13155
+Obtained frames
+Qid :  ['fJAKSTtByGk_000028_000038']
+Obtained frames
+Qid :  ['FAzpz-VRDhk_000271_000281']
+Obtained frames
+Qid :  ['GVbKacITA6M_000199_000209']
+Obtained frames
+Qid :  ['w5390M4jdFE_000032_000042']
+Obtained frames
+Qid :  ['fAzvNkm-O-c_000002_000012']
+Obtained frames
+Qid :  ['M7f0WCzkky4_000001_000011']
+Obtained frames
+Qid :  ['CBjK2a2mpPA_000047_000057']
+Obtained frames
+Qid :  ['3FEClXSfuGA_000021_000031']
+Obtained frames
+Qid :  ['-NTT1dXebb4_000046_000056']
+Obtained frames
+Qid :  ['SDgEHle_wPI_000000_000010']
+Evaluation  [ 110/3000]  eta: 4:51:48    time: 5.9345  data: 0.3782  max mem: 13155
+Obtained frames
+Qid :  ['Ab1KEpD6CEI_000026_000036']
+Obtained frames
+Qid :  ['DUVmZBCQUvw_000171_000181']
+Obtained frames
+Qid :  ['BjCiFjWpRTU_000020_000030']
+Obtained frames
+Qid :  ['zgXi19JT1pI_000013_000023']
+Obtained frames
+Qid :  ['hmo6RI_DDX8_000049_000059']
+Obtained frames
+Qid :  ['vMguu9U8qrM_000063_000073']
+Obtained frames
+Qid :  ['9G1LGoB-8as_000003_000013']
+Obtained frames
+Qid :  ['vM2OUzFNyfs_000008_000018']
+Obtained frames
+Qid :  ['2P6iKAbBjWw_000090_000100']
+Obtained frames
+Qid :  ['4CvmyPUDt5E_000275_000285']
+Evaluation  [ 120/3000]  eta: 4:50:15    time: 5.9306  data: 0.4615  max mem: 13155
+Obtained frames
+Qid :  ['frfp4-OT4_o_000158_000168']
+Obtained frames
+Qid :  ['5aKxwQCUcQs_000002_000012']
+Obtained frames
+Qid :  ['TlhGIOyLG9I_000003_000013']
+Obtained frames
+Qid :  ['qtFqOS3QOVE_000068_000078']
+Obtained frames
+Qid :  ['1flO0_3ca0o_000079_000089']
+Obtained frames
+Qid :  ['kPCnLcW8jpY_000004_000014']
+Obtained frames
+Qid :  ['R1wTxRKpuYA_000031_000041']
+Obtained frames
+Qid :  ['5PyrATIoadg_000032_000042']
+Obtained frames
+Qid :  ['7M7Xgs_APo0_000095_000105']
+Obtained frames
+Qid :  ['GT0mKzV3UTQ_000011_000021']
+Evaluation  [ 130/3000]  eta: 4:46:55    time: 5.6664  data: 0.4678  max mem: 13155
+Obtained frames
+Qid :  ['WjZh_f7C2rc_000127_000137']
+Obtained frames
+Qid :  ['l7s898idtx8_000040_000050']
+Obtained frames
+Qid :  ['bBPrgpKrcMQ_000019_000029']
+Obtained frames
+Qid :  ['kaR5MAdv74g_000000_000010']
+Obtained frames
+Qid :  ['27CZYrIfiUM_000066_000076']
+Obtained frames
+Qid :  ['6pwmDKBYYF8_000006_000016']
+Obtained frames
+Qid :  ['vq_cD9YWXF8_000415_000425']
+Obtained frames
+Qid :  ['licCV5EHmFk_000000_000010']
+Obtained frames
+Qid :  ['T-O7jl_lsFk_000000_000010']
+Obtained frames
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Obtained frames
+Qid :  ['MJdQEgky7yc_000140_000150']
+Evaluation  [ 140/3000]  eta: 4:45:17    time: 5.6120  data: 0.4590  max mem: 13155
+Obtained frames
+Qid :  ['1AliEA5__OU_000064_000074']
+Obtained frames
+Qid :  ['IBkMTdvp79w_000215_000225']
+Obtained frames
+Qid :  ['aQjA2mitFK0_000015_000025']
+Obtained frames
+Qid :  ['tWiPKCYj2qw_000119_000129']
+Obtained frames
+Qid :  ['oORqzjH15hk_000040_000050']
+Obtained frames
+Qid :  ['d8ZUZTN2aLY_000049_000059']
+Obtained frames
+Qid :  ['7PBkbCMz7T8_000042_000052']
+Obtained frames
+Qid :  ['tQJRkysthik_000036_000046']
+Obtained frames
+Qid :  ['SIWgECBLMn0_000039_000049']
+Obtained frames
+Qid :  ['Fr_6AGCTUe8_000005_000015']
+Evaluation  [ 150/3000]  eta: 4:43:41    time: 5.8020  data: 0.4584  max mem: 13155
+Obtained frames
+Qid :  ['YGulEjA3_d0_000046_000056']
+Obtained frames
+Qid :  ['xdqtN-zptyU_000002_000012']
+Obtained frames
+Qid :  ['TiN7rosFTPc_000025_000035']
+Obtained frames
+Qid :  ['84TuxB64sAg_000052_000062']
+Obtained frames
+Qid :  ['lsUHXUkb3s8_000006_000016']
+Obtained frames
+Qid :  ['rfsFxvSgmmA_000049_000059']
+Obtained frames
+Qid :  ['j8-RiT6a-Ok_000000_000010']
+Obtained frames
+Qid :  ['MTo50ReVNmU_000002_000012']
+Obtained frames
+Qid :  ['w4_el20-Idk_000000_000010']
+Obtained frames
+Qid :  ['LLAEGU4-W3M_000004_000014']
+Evaluation  [ 160/3000]  eta: 4:42:26    time: 5.8379  data: 0.4431  max mem: 13155
+Obtained frames
+Qid :  ['25so2DhgGiQ_000019_000029']
+Obtained frames
+Qid :  ['KAwYfY23G3U_000020_000030']
+Obtained frames
+Qid :  ['B-eArrKdQW8_000023_000033']
+Obtained frames
+Qid :  ['n2Yr80rN9gY_000058_000068']
+Obtained frames
+Qid :  ['aejchqqd0LQ_000136_000146']
+Obtained frames
+Qid :  ['NCH1k5kTF5s_000069_000079']
+Obtained frames
+Qid :  ['MdvM8lhJ2mI_000005_000015']
+Obtained frames
+Qid :  ['WZpdy4LtWQs_000270_000280']
+Obtained frames
+Qid :  ['fDjL1Jcs_jo_000141_000151']
+Obtained frames
+Qid :  ['wcMUJN59upg_000007_000017']
+Evaluation  [ 170/3000]  eta: 4:41:51    time: 6.0007  data: 0.5237  max mem: 13155
+Obtained frames
+Qid :  ['UB4gI6ggo4Q_000410_000420']
+Obtained frames
+Qid :  ['QAEx6dcrm9U_000002_000012']
+Obtained frames
+Qid :  ['RnxT0GXeJgA_000000_000010']
+Obtained frames
+Qid :  ['-jOqJwZ2SHI_000084_000094']
+Obtained frames
+Qid :  ['PbxYvQPrq68_000035_000045']
+Obtained frames
+Qid :  ['eDLs5JClTt4_000072_000082']
+Obtained frames
+Qid :  ['BKG7phjghco_000110_000120']
+Obtained frames
+Qid :  ['2xIhtl7rU9E_000047_000057']
+Obtained frames
+Qid :  ['8rF-4zM21_c_000132_000142']
+Obtained frames
+Qid :  ['Uo2ZhNPuTm8_000053_000063']
+Evaluation  [ 180/3000]  eta: 4:40:30    time: 5.9788  data: 0.5659  max mem: 13155
+Obtained frames
+Qid :  ['86XpuR9RCzc_000000_000010']
+Obtained frames
+Qid :  ['X8qcDLvZMA0_000016_000026']
+Obtained frames
+Qid :  ['WEpZjjUicqE_000016_000026']
+Obtained frames
+Qid :  ['jeU-91x-RxU_000010_000020']
+Obtained frames
+Qid :  ['hE_Wd0LZc_g_000013_000023']
+Obtained frames
+Qid :  ['hi3fKGyQTDA_000029_000039']
+Obtained frames
+Qid :  ['kgwH_FwnFW0_000063_000073']
+Obtained frames
+Qid :  ['iffsQFQaD2I_000040_000050']
+Obtained frames
+Qid :  ['gCH24Lrq6Yg_000015_000025']
+Obtained frames
+Qid :  ['eXgwjgTKehM_000002_000012']
+Evaluation  [ 190/3000]  eta: 4:38:46    time: 5.7537  data: 0.4916  max mem: 13155
+Obtained frames
+Qid :  ['PA9PkylPX58_000000_000010']
+Obtained frames
+Qid :  ['-rLJKYexyHk_000069_000079']
+Obtained frames
+Qid :  ['cA2znOfmaHE_000000_000010']
+Obtained frames
+Qid :  ['HcJBA022mb4_000020_000030']
+Obtained frames
+Qid :  ['-k9kN82seDg_000266_000276']
+Obtained frames
+Qid :  ['OPVwn_Ojt7I_000012_000022']
+Obtained frames
+Qid :  ['sYBMkMO6VyA_000090_000100']
+Obtained frames
+Qid :  ['pd0kWNKAgkM_000009_000019']
+Obtained frames
+Qid :  ['iiUd-HQq_NA_000001_000011']
+Obtained frames
+Qid :  ['oY_ALRgQEOQ_000010_000020']
+Evaluation  [ 200/3000]  eta: 4:38:13    time: 5.9046  data: 0.4651  max mem: 13155
+Obtained frames
+Qid :  ['ggmc8Z7HwJs_000532_000542']
+Obtained frames
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+Obtained frames
+Qid :  ['rkSwW8OEE4g_000040_000050']
+Obtained frames
+
+Error while read file idx
+video is: M_hGGjxqB5M_000003_000013
+Obtained frames
+Qid :  ['PkVX4PVtCMo_000380_000390']
+Obtained frames
+Qid :  ['FAzpz-VRDhk_000271_000281']
+Obtained frames
+Qid :  ['PDeyumoizNc_000021_000031']
+Obtained frames
+Qid :  ['8WxbeDqVX-c_000010_000020']
+Obtained frames
+Qid :  ['OgMPLBZZpIY_000114_000124']
+Obtained frames
+Qid :  ['tNsQISQ5s4Y_000116_000126']
+Obtained frames
+Qid :  ['ShjVVOz2dXs_000012_000022']
+Obtained frames
+Qid :  ['_jYFaUvnxYI_000072_000082']
+Evaluation  [ 210/3000]  eta: 4:37:06    time: 6.0236  data: 0.4797  max mem: 13155
+Obtained frames
+Qid :  ['4EpcKvk_Z9E_000007_000017']
+Obtained frames
+Qid :  ['zfIAMTO-95A_000000_000010']
+Obtained frames
+Qid :  ['qw6ljudEmoE_000032_000042']
+Obtained frames
+Qid :  ['GVFApgg9jLI_000020_000030']
+Obtained frames
+Qid :  ['p2M-oplJzbk_000000_000010']
+Obtained frames
+Qid :  ['UIf5Hmaq1Nk_000071_000081']
+Obtained frames
+Qid :  ['h3sb_BQoiPw_000045_000055']
+Obtained frames
+Qid :  ['rCoGWFl_KAo_000013_000023']
+Obtained frames
+Qid :  ['GU4GX22Es2A_000033_000043']
+Obtained frames
+Qid :  ['usakFhPy7ng_000540_000550']
+Evaluation  [ 220/3000]  eta: 4:36:33    time: 6.0368  data: 0.4683  max mem: 13155
+Obtained frames
+Qid :  ['BhWmj8s_Z4w_000002_000012']
+Obtained frames
+Qid :  ['of3i0vPTk8c_000009_000019']
+Obtained frames
+Qid :  ['UQP8kz5kAKg_000021_000031']
+Obtained frames
+Qid :  ['VCKeP8LybQc_000216_000226']
+Obtained frames
+Qid :  ['ThA3sbn00Ks_000036_000046']
+Obtained frames
+Qid :  ['L-baiEeY9qU_000006_000016']
+Obtained frames
+Qid :  ['NuU0phSsqBk_000036_000046']
+Obtained frames
+Qid :  ['86NQ0DhV4-c_000005_000015']
+Obtained frames
+Qid :  ['g_3W2SOnKdg_000549_000559']
+Obtained frames
+Qid :  ['tBKLLVA9r2U_000145_000155']
+Evaluation  [ 230/3000]  eta: 4:34:45    time: 5.8675  data: 0.5160  max mem: 13155
+Obtained frames
+Qid :  ['zcF-4yoOnJ0_000117_000127']
+Obtained frames
+Qid :  ['SM744DtLRLk_000102_000112']
+Obtained frames
+Qid :  ['UEUSc_i-UN8_000004_000014']
+Obtained frames
+Qid :  ['953C8eOy9rY_000015_000025']
+Obtained frames
+Qid :  ['pAJBzqsn_cg_000010_000020']
+Obtained frames
+Qid :  ['Vd2k7tSAmaI_000005_000015']
+Obtained frames
+Qid :  ['wJxTGTe-w3k_000040_000050']
+Obtained frames
+Qid :  ['_qmKYh3BlH8_000017_000027']
+Obtained frames
+Qid :  ['sSNfdWkN6o4_000057_000067']
+Obtained frames
+Qid :  ['T7uGjh-df-c_000001_000011']
+Evaluation  [ 240/3000]  eta: 4:33:00    time: 5.5631  data: 0.4972  max mem: 13155
+Obtained frames
+Qid :  ['Tt3RBxfAgQc_000024_000034']
+Obtained frames
+Qid :  ['ZCpywHbpHZo_000168_000178']
+Obtained frames
+Qid :  ['LjQXZqUz6Pg_000004_000014']
+Obtained frames
+Qid :  ['Ky9azX5WHDs_000376_000386']
+Obtained frames
+Qid :  ['ysGZhhPXUbk_000003_000013']
+Obtained frames
+Qid :  ['NlT_TGvK6I8_000013_000023']
+Obtained frames
+Qid :  ['J3uQY6uRPeo_000013_000023']
+Obtained frames
+Qid :  ['gO6rgeLL1gQ_000033_000043']
+Obtained frames
+Qid :  ['z-U0EoJ-Sv4_000000_000010']
+Obtained frames
+Qid :  ['7LVGErf_tHs_000019_000029']
+Evaluation  [ 250/3000]  eta: 4:32:18    time: 5.8272  data: 0.4585  max mem: 13155
+Obtained frames
+Qid :  ['jvW9_3Dtdko_000058_000068']
+Obtained frames
+Qid :  ['mHvscp-ZE9c_000029_000039']
+Obtained frames
+Qid :  ['xZ9zmoP07Ek_000013_000023']
+Obtained frames
+Qid :  ['Egzk1_cW2gM_000031_000041']
+Obtained frames
+Qid :  ['t9ctgfG-NeQ_000020_000030']
+Obtained frames
+Qid :  ['IcVYeUWGtQI_000040_000050']
+Obtained frames
+Qid :  ['0n9AGWsf-Tk_000003_000013']
+Obtained frames
+Qid :  ['qs_YUqOh00g_000364_000374']
+Obtained frames
+Qid :  ['EwuMr0x_fPc_000329_000339']
+Obtained frames
+Qid :  ['aq7uOS4noWU_000000_000010']
+Evaluation  [ 260/3000]  eta: 4:31:19    time: 6.0198  data: 0.3867  max mem: 13155
+Obtained frames
+Qid :  ['CZaqLlh36rw_000014_000024']
+Obtained frames
+Qid :  ['mDaPOiaTFHs_000037_000047']
+Obtained frames
+Qid :  ['j7QSRmAYc8k_000006_000016']
+Obtained frames
+Qid :  ['Ry3T8sSjcac_000013_000023']
+Obtained frames
+Qid :  ['r86xclA1r9k_000034_000044']
+Obtained frames
+Qid :  ['-sL2hdVlly8_000126_000136']
+Obtained frames
+Qid :  ['Fgx_XsxBl90_000002_000012']
+Obtained frames
+Qid :  ['r5nYtjZl7Ww_000019_000029']
+Obtained frames
+Qid :  ['tqGXGgxZrpc_000050_000060']
+Obtained frames
+Qid :  ['V4ZHj15xF9o_000005_000015']
+Evaluation  [ 270/3000]  eta: 4:30:20    time: 5.9434  data: 0.4316  max mem: 13155
+Obtained frames
+Qid :  ['y1RSppZyo_o_000001_000011']
+Obtained frames
+Qid :  ['4mvDjJ0oeck_000022_000032']
+Obtained frames
+Qid :  ['4FzHEFerQdM_000243_000253']
+Obtained frames
+Qid :  ['MVs69YL-9ww_000005_000015']
+Obtained frames
+Qid :  ['voCxOZCNRJ0_000154_000164']
+Obtained frames
+Qid :  ['fBQqc9Zx4ZU_000087_000097']
+Obtained frames
+Qid :  ['uOIjZNefyPU_000022_000032']
+Obtained frames
+Qid :  ['duviC6CVkbs_000069_000079']
+Obtained frames
+Qid :  ['QaaTWR58np0_000003_000013']
+Obtained frames
+Qid :  ['hdnrppU-3Cw_000000_000010']
+Evaluation  [ 280/3000]  eta: 4:28:47    time: 5.7670  data: 0.4691  max mem: 13155
+Obtained frames
+Qid :  ['sfzTPQ2TyF4_000000_000010']
+Obtained frames
+
+Error while read file idx
+video is: gjlL-ckcDHE_000015_000025
+Obtained frames
+Qid :  ['lO3Ys2X9NqY_000008_000018']
+Obtained frames
+Qid :  ['45hx1259-uk_000015_000025']
+Obtained frames
+Qid :  ['zCRMJLIEl5M_000021_000031']
+Obtained frames
+Qid :  ['kAN41N18Ct0_000001_000011']
+Obtained frames
+Qid :  ['5_hdfOtEMU4_000034_000044']
+Obtained frames
+Qid :  ['HrNPVN_rD1A_000029_000039']
+Obtained frames
+Qid :  ['PMx6U_9nmb4_000067_000077']
+Obtained frames
+Qid :  ['WShqxPvES6I_000154_000164']
+Obtained frames
+Qid :  ['7i0x8JYLK4A_000030_000040']
+Evaluation  [ 290/3000]  eta: 4:27:44    time: 5.7398  data: 0.4327  max mem: 13155
+Obtained frames
+Qid :  ['uFtIvWqEGuI_000117_000127']
+Obtained frames
+Qid :  ['Uj5mb6wIlV4_000046_000056']
+Obtained frames
+Qid :  ['ruMv9I9pkdo_000080_000090']
+Obtained frames
+Qid :  ['0bDly_OjfW4_000004_000014']
+Obtained frames
+Qid :  ['19AUZA-lLXE_002773_002783']
+Obtained frames
+Qid :  ['ZRR2RwvL2Jk_000406_000416']
+Obtained frames
+Qid :  ['xc02rcwsfdY_000013_000023']
+Obtained frames
+Qid :  ['cdgoGeGVYYE_000010_000020']
+Obtained frames
+Qid :  ['ZfQubMnoF20_000000_000010']
+Obtained frames
+Qid :  ['F3b2nKmRSGA_000022_000032']
+Evaluation  [ 300/3000]  eta: 4:26:23    time: 5.7882  data: 0.3748  max mem: 13155
+Obtained frames
+Qid :  ['nt2yuhiOaio_000009_000019']
+Obtained frames
+Qid :  ['Oi-T-rgJGeI_000000_000010']
+Obtained frames
+Qid :  ['VU_PZqOxmJ0_000097_000107']
+Obtained frames
+Qid :  ['Saf9oGP34IA_000027_000037']
+Obtained frames
+Qid :  ['VklFBRPZmnw_000255_000265']
+Obtained frames
+Qid :  ['Ox54m6n6HZo_000099_000109']
+Obtained frames
+Qid :  ['nPrCDJlwK3I_000020_000030']
+Obtained frames
+Qid :  ['fZJT3VuloQM_000005_000015']
+Obtained frames
+Qid :  ['6DzBcVvNjLE_000039_000049']
+Obtained frames
+Qid :  ['bmJzE24UcSs_000000_000010']
+Evaluation  [ 310/3000]  eta: 4:25:22    time: 5.7924  data: 0.4686  max mem: 13155
+Obtained frames
+Qid :  ['NceQvKFRXWc_000002_000012']
+Obtained frames
+Qid :  ['qlSUig1fYOA_000027_000037']
+Obtained frames
+Qid :  ['p9E9ljlBct4_000045_000055']
+Obtained frames
+Qid :  ['zE7PSjOoErs_000010_000020']
+Obtained frames
+Qid :  ['8kUR7VtNjqw_000001_000011']
+Obtained frames
+Qid :  ['Nanbt00ZIpM_000009_000019']
+Obtained frames
+Qid :  ['wZxS6G4FHJ4_000032_000042']
+Obtained frames
+Qid :  ['YVuChCkgfSU_000013_000023']
+Obtained frames
+Qid :  ['TgnsQuSVGvI_000037_000047']
+Obtained frames
+Qid :  ['hKfWGvjsGCk_000047_000057']
+Evaluation  [ 320/3000]  eta: 4:24:23    time: 5.9080  data: 0.5974  max mem: 13155
+Obtained frames
+Qid :  ['8Dq-zmnL1NU_000022_000032']
+Obtained frames
+Qid :  ['g_cGyV7wmac_000046_000056']
+Obtained frames
+Qid :  ['UDfihMXPnuc_000004_000014']
+Obtained frames
+Qid :  ['gSxbTg_EGz4_000046_000056']
+Obtained frames
+Qid :  ['TsqdWZPheyc_000043_000053']
+Obtained frames
+Qid :  ['ebzqTNz9V9w_000017_000027']
+Obtained frames
+Qid :  ['RTiK83yIt54_000124_000134']
+Obtained frames
+Qid :  ['eOxCJTqpRMs_000023_000033']
+Obtained frames
+Qid :  ['mbeex3mz4Do_000008_000018']
+Obtained frames
+Qid :  ['egckvMAQxoU_000060_000070']
+Evaluation  [ 330/3000]  eta: 4:22:55    time: 5.7454  data: 0.5553  max mem: 13155
+Obtained frames
+Qid :  ['TQtOo5x5ACI_000001_000011']
+Obtained frames
+Qid :  ['q2UhQNU0GLs_000217_000227']
+Obtained frames
+Qid :  ['2QFRhSiKsAA_000038_000048']
+Obtained frames
+Qid :  ['DJzuWdAOSFw_000087_000097']
+Obtained frames
+Qid :  ['OyFL1sSwcPQ_000139_000149']
+Obtained frames
+Qid :  ['SBYWUh_kkr0_000159_000169']
+Obtained frames
+Qid :  ['GEIHQZHrinw_000077_000087']
+Obtained frames
+Qid :  ['oNsSZUhSHe8_000003_000013']
+Obtained frames
+Qid :  ['FZZigyMTFpg_000289_000299']
+Obtained frames
+Qid :  ['fpLWyo0Idfs_000101_000111']
+Evaluation  [ 340/3000]  eta: 4:21:52    time: 5.7138  data: 0.5350  max mem: 13155
+Obtained frames
+Qid :  ['BZnPh1OLlgs_000110_000120']
+Obtained frames
+Qid :  ['mdE4cw126b4_000103_000113']
+Obtained frames
+Qid :  ['81s4QpWE6iQ_000077_000087']
+Obtained frames
+Qid :  ['FIiW0iRFjMA_000007_000017']
+Obtained frames
+Qid :  ['azyLja295v4_000026_000036']
+Obtained frames
+Qid :  ['9Nbx3XG-g4A_000000_000010']
+Obtained frames
+Qid :  ['9JQawq0er5s_000390_000400']
+Obtained frames
+Qid :  ['c2szWcwrw1w_000035_000045']
+Obtained frames
+Qid :  ['J7v00FzlcZ4_000000_000010']
+Obtained frames
+Qid :  ['IwGbDIbg58c_000021_000031']
+Evaluation  [ 350/3000]  eta: 4:20:53    time: 5.8803  data: 0.5353  max mem: 13155
+Obtained frames
+Qid :  ['czMsxN43Sj0_000277_000287']
+Obtained frames
+Qid :  ['5qPLAkWUi4A_000007_000017']
+Obtained frames
+Qid :  ['cnJ1u4Xg2oM_000039_000049']
+Obtained frames
+Qid :  ['NRd7LqoMpO8_000019_000029']
+Obtained frames
+Qid :  ['is9Pcqz9kek_000000_000010']
+Obtained frames
+Qid :  ['fpLf6Fz3ZY8_000149_000159']
+Obtained frames
+Qid :  ['Jq6f2gRkblw_000027_000037']
+Obtained frames
+Qid :  ['q34cmTXQe_M_000026_000036']
+Obtained frames
+Qid :  ['u1He0O1qunU_000070_000080']
+Obtained frames
+Qid :  ['dDeI-uzOZuA_000011_000021']
+Evaluation  [ 360/3000]  eta: 4:19:19    time: 5.6712  data: 0.5002  max mem: 13155
+Obtained frames
+Qid :  ['0KRximLrxDw_000480_000490']
+Obtained frames
+Qid :  ['SfQmBYW3IRE_000301_000311']
+Obtained frames
+Qid :  ['3CWxCLr3Xbk_000011_000021']
+Obtained frames
+Qid :  ['-GK6Jb7Dyng_000000_000010']
+Obtained frames
+Qid :  ['nmB939B4C3A_000040_000050']
+Obtained frames
+Qid :  ['wduiTN5eP9g_000033_000043']
+Obtained frames
+Qid :  ['6_DfXAxY9DU_000003_000013']
+Obtained frames
+Qid :  ['IdI3-5Y1tys_000320_000330']
+Obtained frames
+Qid :  ['qzleJDvedyA_000031_000041']
+Obtained frames
+Qid :  ['uw7vvhbbwQQ_000067_000077']
+Evaluation  [ 370/3000]  eta: 4:18:32    time: 5.7469  data: 0.5542  max mem: 13155
+Obtained frames
+Qid :  ['H1azEaVGXyo_000014_000024']
+Obtained frames
+Qid :  ['hbqlbdiGEGs_000000_000010']
+Obtained frames
+Qid :  ['A-WeGrRek7E_000038_000048']
+Obtained frames
+Qid :  ['0NN2c3H81tI_000002_000012']
+Obtained frames
+Qid :  ['92pNjQGceug_000003_000013']
+Obtained frames
+Qid :  ['DF9Y2y4LKhI_000002_000012']
+Obtained frames
+Qid :  ['b6oLh_lHy1U_000034_000044']
+Obtained frames
+Qid :  ['KPFLEznOIjk_000183_000193']
+Obtained frames
+Qid :  ['Vc47k1w9wWM_000070_000080']
+Obtained frames
+Qid :  ['P2RKqw-bDHI_000044_000054']
+Evaluation  [ 380/3000]  eta: 4:17:09    time: 5.8048  data: 0.6056  max mem: 13155
+Obtained frames
+Qid :  ['2RUYzs0G8FE_000042_000052']
+Obtained frames
+Qid :  ['tYzCXDeHXkg_000129_000139']
+Obtained frames
+Qid :  ['t6qQ5n1KhPY_000016_000026']
+Obtained frames
+Qid :  ['EpJCgC_R4Vs_000000_000010']
+Obtained frames
+Qid :  ['e9WSb3tdjCs_000053_000063']
+Obtained frames
+Qid :  ['_4XY2p2fowY_000072_000082']
+Obtained frames
+Qid :  ['SuXhcH0rmEo_000003_000013']
+Obtained frames
+Qid :  ['4tALIhL45Sc_000012_000022']
+Obtained frames
+Qid :  ['FqYGsNq_C78_000015_000025']
+Obtained frames
+Qid :  ['UFymNyt35Bk_000040_000050']
+Evaluation  [ 390/3000]  eta: 4:16:04    time: 5.6758  data: 0.5677  max mem: 13155
+Obtained frames
+Qid :  ['gnpbjQRQ13s_000114_000124']
+Obtained frames
+Qid :  ['TDcIcwpz6UU_000027_000037']
+Obtained frames
+Qid :  ['tc2r5n54BE8_000034_000044']
+Obtained frames
+Qid :  ['TH04aKgMOZc_000000_000010']
+Obtained frames
+Qid :  ['TdyRnC2JK8Q_000031_000041']
+Obtained frames
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Obtained frames
+Qid :  ['GvstpkW4ORI_000000_000010']
+Obtained frames
+Qid :  ['0NIzLI3uk-A_000142_000152']
+Obtained frames
+Qid :  ['d9w_gIo7ANQ_000002_000012']
+Obtained frames
+Qid :  ['NOoN1Ru8LaQ_000033_000043']
+Obtained frames
+Qid :  ['ltIbWNg67SU_000050_000060']
+Evaluation  [ 400/3000]  eta: 4:15:09    time: 5.8704  data: 0.5318  max mem: 13155
+Obtained frames
+Qid :  ['44oF-GJ3JYQ_000011_000021']
+Obtained frames
+Qid :  ['bzLgrbtsAeA_000005_000015']
+Obtained frames
+Qid :  ['2E0sg8vzZdU_000111_000121']
+Obtained frames
+Qid :  ['nK1DtqhZ-Ro_000071_000081']
+Obtained frames
+Qid :  ['gE3-lSvqwDo_000185_000195']
+Obtained frames
+Qid :  ['2AmET9cKNCI_000006_000016']
+Obtained frames
+Qid :  ['_-kclLM0Mak_000012_000022']
+Obtained frames
+Qid :  ['5B2xo9_hGBo_000008_000018']
+Obtained frames
+Qid :  ['6k-Uob0qzW4_000011_000021']
+Obtained frames
+Qid :  ['uhqzhHD7zYk_000188_000198']
+Evaluation  [ 410/3000]  eta: 4:13:53    time: 5.7785  data: 0.5088  max mem: 13155
+Obtained frames
+Qid :  ['jCGkI1eZwVk_000081_000091']
+Obtained frames
+Qid :  ['69bfN6wg9TI_000031_000041']
+Obtained frames
+Qid :  ['LUsx9ElLHXY_000004_000014']
+Obtained frames
+Qid :  ['5xmsh6iuv_c_000054_000064']
+Obtained frames
+Qid :  ['RJkMdp5ZV8E_000142_000152']
+Obtained frames
+Qid :  ['r2Lm5FCaM-w_000006_000016']
+Obtained frames
+Qid :  ['q6nTQXpr6LA_000098_000108']
+Obtained frames
+Qid :  ['oNI5wA2yxJk_000049_000059']
+Obtained frames
+Qid :  ['x6Mqk9qjmAA_000031_000041']
+Obtained frames
+Qid :  ['2KdGSknUK1Y_000002_000012']
+Evaluation  [ 420/3000]  eta: 4:13:03    time: 5.8177  data: 0.5088  max mem: 13155
+Obtained frames
+Qid :  ['qscR3WhPSEM_000000_000010']
+Obtained frames
+Qid :  ['L2vcoOUwD2M_000115_000125']
+Obtained frames
+Qid :  ['eE1m9iE5J9w_000002_000012']
+Obtained frames
+Qid :  ['FGvflMo27WQ_000106_000116']
+Obtained frames
+Qid :  ['HFgIXxJyGmg_000021_000031']
+Obtained frames
+Qid :  ['8U3HqeSfbrM_000012_000022']
+Obtained frames
+Qid :  ['3uEm_0g4nrc_000012_000022']
+Obtained frames
+Qid :  ['qaZ0ZH4kO3s_000101_000111']
+Obtained frames
+Qid :  ['Hy8svWyLi2c_000009_000019']
+Obtained frames
+Qid :  ['ssd-9ZDGpN0_000025_000035']
+Evaluation  [ 430/3000]  eta: 4:11:32    time: 5.6879  data: 0.4310  max mem: 13155
+Obtained frames
+Qid :  ['2WNmdiJ4UAU_000104_000114']
+Obtained frames
+Qid :  ['1lrCR3vG-_Y_000012_000022']
+Obtained frames
+Qid :  ['EZvZfmBBJ8E_000032_000042']
+Obtained frames
+Qid :  ['v7hnVS4QoAs_000019_000029']
+Obtained frames
+Qid :  ['WJipgy0vUWE_000496_000506']
+Obtained frames
+Qid :  ['vzOODo7RgGk_000001_000011']
+Obtained frames
+Qid :  ['eWL7cn3UddM_000012_000022']
+Obtained frames
+Qid :  ['pr-YyAm0-Ns_000007_000017']
+Obtained frames
+Qid :  ['j0Ge97IEK8k_001721_001731']
+Obtained frames
+Qid :  ['0CYQCu-dIkk_000043_000053']
+Evaluation  [ 440/3000]  eta: 4:10:30    time: 5.5804  data: 0.4718  max mem: 13155
+Obtained frames
+Qid :  ['3wKTfq_72hY_000048_000058']
+Obtained frames
+Qid :  ['dvY4MrybvGs_000069_000079']
+Obtained frames
+Qid :  ['CHi9EhfaxBU_000002_000012']
+Obtained frames
+Qid :  ['-FiJ2PKalgI_000022_000032']
+Obtained frames
+Qid :  ['lZRslBHBEJ8_000285_000295']
+Obtained frames
+Qid :  ['N5i81erVqqI_000008_000018']
+Obtained frames
+Qid :  ['NiChut47NH8_000239_000249']
+Obtained frames
+Qid :  ['rDqtyeyoS_A_000004_000014']
+Obtained frames
+Qid :  ['4PFppQPsUwU_000071_000081']
+Obtained frames
+Qid :  ['TdjsYw64a-4_000023_000033']
+Evaluation  [ 450/3000]  eta: 4:09:36    time: 5.8800  data: 0.4611  max mem: 13155
+Obtained frames
+Qid :  ['sOHBUjoJddg_000044_000054']
+Obtained frames
+Qid :  ['-MfVZopgATw_000139_000149']
+Obtained frames
+Qid :  ['aoarq4gcMBA_000013_000023']
+Obtained frames
+Qid :  ['MfVYrhV91zM_000019_000029']
+Obtained frames
+Qid :  ['dGAii46yMUw_000068_000078']
+Obtained frames
+Qid :  ['PkVX4PVtCMo_000380_000390']
+Obtained frames
+Qid :  ['0VCPV_Jff9w_000000_000010']
+Obtained frames
+Qid :  ['Hfn2ZUnK9tA_000025_000035']
+Obtained frames
+Qid :  ['tlJN9RTRrMU_000087_000097']
+Obtained frames
+Qid :  ['ens4KRCNQto_000007_000017']
+Evaluation  [ 460/3000]  eta: 4:08:36    time: 5.9033  data: 0.3830  max mem: 13155
+Obtained frames
+Qid :  ['QWkaGI2Lpjg_000171_000181']
+Obtained frames
+Qid :  ['GEcgV3xyhAQ_000000_000010']
+Obtained frames
+Qid :  ['10gJjyK2TXQ_000001_000011']
+Obtained frames
+Qid :  ['bazQOzpiwGU_000074_000084']
+Obtained frames
+Qid :  ['NMN5nRTVmzo_000003_000013']
+Obtained frames
+Qid :  ['Xuu84_znpH0_000044_000054']
+Obtained frames
+Qid :  ['5PNhIiDwX7Q_000006_000016']
+Obtained frames
+Qid :  ['3iSPgmoRRLc_000052_000062']
+Obtained frames
+Qid :  ['KRAzD05J3j4_000002_000012']
+Obtained frames
+Qid :  ['AbhjInUUY4g_000042_000052']
+Evaluation  [ 470/3000]  eta: 4:07:26    time: 5.7575  data: 0.4214  max mem: 13155
+Obtained frames
+Qid :  ['3qnzTXdN2ns_000003_000013']
+Obtained frames
+Qid :  ['o0kXPjgVWx0_000024_000034']
+Obtained frames
+Qid :  ['PSKvwLB3-WI_000263_000273']
+Obtained frames
+Qid :  ['IUsoDkIoQVA_000000_000010']
+Obtained frames
+Qid :  ['jjVpRAHiDiU_000001_000011']
+Obtained frames
+Qid :  ['EtSgyqY7ki8_000015_000025']
+Obtained frames
+Qid :  ['-htWiNmyVRs_000131_000141']
+Obtained frames
+Qid :  ['y8ZpDqGcJP0_000021_000031']
+Obtained frames
+Qid :  ['Bi7qPU_Kq3I_000068_000078']
+Obtained frames
+Qid :  ['FZ82cdEjdBc_000130_000140']
+Evaluation  [ 480/3000]  eta: 4:06:17    time: 5.6700  data: 0.4081  max mem: 13155
+Obtained frames
+Qid :  ['uZiQiQeM24E_000055_000065']
+Obtained frames
+Qid :  ['QAuw-VpnKYM_000167_000177']
+Obtained frames
+Qid :  ['3-meSGBJELc_000024_000034']
+Obtained frames
+Qid :  ['3Jn0M5KMKNM_000017_000027']
+Obtained frames
+Qid :  ['EaJHnUNrEDw_000113_000123']
+Obtained frames
+Qid :  ['PdFlKzs1J8s_000049_000059']
+Obtained frames
+Qid :  ['u0dzMFz5xK8_000079_000089']
+Obtained frames
+Qid :  ['n9Kl-0EuSU4_000009_000019']
+Obtained frames
+Qid :  ['PkpsnFLG1lQ_000039_000049']
+Obtained frames
+Qid :  ['y_g_fuVfpLY_000021_000031']
+Evaluation  [ 490/3000]  eta: 4:05:18    time: 5.7680  data: 0.3737  max mem: 13155
+Obtained frames
+Qid :  ['Zqnnf0S3b3E_000111_000121']
+Obtained frames
+Qid :  ['Liw4sNiaKow_000006_000016']
+Obtained frames
+Qid :  ['oA1ckbNq3Nk_000131_000141']
+Obtained frames
+Qid :  ['Q5pyeLFfpv4_000052_000062']
+Obtained frames
+Qid :  ['jU3k5D5n5xo_000171_000181']
+Obtained frames
+Qid :  ['erQxiRSuTog_000030_000040']
+Obtained frames
+Qid :  ['vz9xYH1AhUA_000259_000269']
+Obtained frames
+Qid :  ['eE4YCaoid4o_000034_000044']
+Obtained frames
+Qid :  ['nu8GWt1jlvM_000145_000155']
+Obtained frames
+Qid :  ['ziVv0IZAtYw_000000_000010']
+Evaluation  [ 500/3000]  eta: 4:04:22    time: 5.8849  data: 0.3834  max mem: 13155
+Obtained frames
+Qid :  ['O_yeioEoBMA_000045_000055']
+Obtained frames
+Qid :  ['aRm-gZQz7aU_000017_000027']
+Obtained frames
+Qid :  ['g5FA0ggQ6lk_000011_000021']
+Obtained frames
+Qid :  ['otbY0ixpmsI_000041_000051']
+Obtained frames
+Qid :  ['2PFxxUs1bSs_000019_000029']
+Obtained frames
+Qid :  ['jmA9GYSZAPk_000072_000082']
+Obtained frames
+Qid :  ['tSZsAXi2_wI_000039_000049']
+Obtained frames
+Qid :  ['Sf-OUos5Dcg_000000_000010']
+Obtained frames
+Qid :  ['y6xG3GRyuco_002042_002052']
+Obtained frames
+Qid :  ['viJVdQGPNGY_000016_000026']
+Evaluation  [ 510/3000]  eta: 4:03:09    time: 5.7387  data: 0.4421  max mem: 13155
+Obtained frames
+Qid :  ['kHT7-5r-xDQ_000004_000014']
+Obtained frames
+Qid :  ['ciRlMTeJzMY_000060_000070']
+Obtained frames
+Qid :  ['5GOvh4hooEw_000032_000042']
+Obtained frames
+Qid :  ['_URxsQYlhCQ_000016_000026']
+Obtained frames
+Qid :  ['jHhilGWfEVE_000054_000064']
+Obtained frames
+Qid :  ['s0EgQun4CZQ_000016_000026']
+Obtained frames
+Qid :  ['KwB8h0UOzhw_000046_000056']
+Obtained frames
+Qid :  ['ZM2avpts1zA_000061_000071']
+Obtained frames
+Qid :  ['GgB8iZiCT1o_000032_000042']
+Obtained frames
+Qid :  ['InmnZVY9Yw0_000141_000151']
+Evaluation  [ 520/3000]  eta: 4:02:28    time: 5.8998  data: 0.5003  max mem: 13155
+Obtained frames
+Qid :  ['5vcvKFQp2kI_000269_000279']
+Obtained frames
+Qid :  ['_cfr0pzHxI4_000378_000388']
+Obtained frames
+Qid :  ['BWIr_WSnLAo_000013_000023']
+Obtained frames
+Qid :  ['fHVxymaD_yk_000046_000056']
+Obtained frames
+Qid :  ['QpYyWF2nW7k_000003_000013']
+Obtained frames
+Qid :  ['dGCtJbBEvmg_000064_000074']
+Obtained frames
+Qid :  ['T48BkljSUH8_000052_000062']
+Obtained frames
+Qid :  ['Un4n5EexivI_000015_000025']
+Obtained frames
+Qid :  ['gYnzytJLPOw_000000_000010']
+Obtained frames
+Qid :  ['wUbEgkoYG6o_000036_000046']
+Evaluation  [ 530/3000]  eta: 4:01:49    time: 6.2618  data: 0.6644  max mem: 13155
+Obtained frames
+Qid :  ['Dd-RBANGkTc_000001_000011']
+Obtained frames
+Qid :  ['O_iJwRnvvTU_000123_000133']
+Obtained frames
+Qid :  ['ZGxRIvWu1EY_000010_000020']
+Obtained frames
+Qid :  ['KP8W24M3mmU_000013_000023']
+Obtained frames
+Qid :  ['T-imZw9jYZo_000006_000016']
+Obtained frames
+Qid :  ['TdngDM-1axs_000000_000010']
+Obtained frames
+Qid :  ['nU0L9cYU9qk_000205_000215']
+Obtained frames
+Qid :  ['o4MtLENJ0ns_000065_000075']
+Obtained frames
+Qid :  ['gh35y0vumfQ_000019_000029']
+Obtained frames
+Qid :  ['LLIqc1I2drk_000017_000027']
+Evaluation  [ 540/3000]  eta: 4:00:31    time: 5.8689  data: 0.5346  max mem: 13155
+Obtained frames
+Qid :  ['hakIAqzSagk_000073_000083']
+Obtained frames
+Qid :  ['fBl4GShK3OM_000050_000060']
+Obtained frames
+Qid :  ['B5cNbMZkKoo_000000_000010']
+Obtained frames
+Qid :  ['8FtIyhEtD3I_000018_000028']
+Obtained frames
+Qid :  ['8lKpAaHmMkY_000001_000011']
+Obtained frames
+Qid :  ['BNWLJHfNPZI_000002_000012']
+Obtained frames
+Qid :  ['JlNYFeeyJ8Q_000016_000026']
+Obtained frames
+Qid :  ['hgR0eP0--XE_000000_000010']
+Obtained frames
+Qid :  ['uENQ-X7yp2Q_000020_000030']
+Obtained frames
+Qid :  ['Rm1XQ9KfhjE_000128_000138']
+Evaluation  [ 550/3000]  eta: 3:59:36    time: 5.6997  data: 0.3437  max mem: 13155
+Obtained frames
+Qid :  ['TKvq6gV8D6c_000045_000055']
+Obtained frames
+Qid :  ['OSnenofd6rs_000001_000011']
+Obtained frames
+Qid :  ['ld_KYBAX7eg_000055_000065']
+Obtained frames
+Qid :  ['uTRZ-yRfZoM_000098_000108']
+Obtained frames
+Qid :  ['r0OoaXVhDA8_000025_000035']
+Obtained frames
+Qid :  ['NDkACWDxaPI_000039_000049']
+Obtained frames
+Qid :  ['Tzo2PtoGu_w_000030_000040']
+Obtained frames
+Qid :  ['LE7aTXkZGpE_000000_000010']
+Obtained frames
+Qid :  ['s9NbDALApjs_000010_000020']
+Obtained frames
+Qid :  ['Iu0ymsbF9qQ_000004_000014']
+Evaluation  [ 560/3000]  eta: 3:58:41    time: 5.9568  data: 0.4796  max mem: 13155
+Obtained frames
+Qid :  ['L3rqUFUt3o8_000072_000082']
+Obtained frames
+Qid :  ['P3mI4z1ujMQ_000000_000010']
+Obtained frames
+Qid :  ['hWKKg4fvDdc_000017_000027']
+Obtained frames
+Qid :  ['AaYLAWML8LQ_000004_000014']
+Obtained frames
+Qid :  ['NWTZF3icgGY_000000_000010']
+Obtained frames
+Qid :  ['xE1PGyCEgdU_000138_000148']
+Obtained frames
+Qid :  ['Et44MRw4wlc_000280_000290']
+Obtained frames
+Qid :  ['P_AL22lmVFk_000511_000521']
+Obtained frames
+Qid :  ['D3dIBsYzzj4_000099_000109']
+Obtained frames
+Qid :  ['xJ6JjbHBO8I_000132_000142']
+Evaluation  [ 570/3000]  eta: 3:57:51    time: 6.0150  data: 0.5075  max mem: 13155
+Obtained frames
+Qid :  ['jDFnViSc30g_000030_000040']
+Obtained frames
+Qid :  ['S_VYEzMPF1k_000000_000010']
+Obtained frames
+Qid :  ['jtucXHmmRRw_000064_000074']
+Obtained frames
+Qid :  ['mEJ4PjIsZkk_000032_000042']
+Obtained frames
+Qid :  ['DJRfF7zITI4_000007_000017']
+Obtained frames
+Qid :  ['kFKvlwcot6k_000143_000153']
+Obtained frames
+Qid :  ['41eLdy8R9n0_000028_000038']
+Obtained frames
+Qid :  ['2_XdbUYIgQ8_000062_000072']
+Obtained frames
+Qid :  ['1Jo5mNMGRX0_000021_000031']
+Obtained frames
+Qid :  ['7HkjE8WbNEk_000004_000014']
+Evaluation  [ 580/3000]  eta: 3:56:58    time: 6.0395  data: 0.5121  max mem: 13155
+Obtained frames
+Qid :  ['9ij6-6YZ4S0_000000_000010']
+Obtained frames
+Qid :  ['Siy6MfLg5Mg_000131_000141']
+Obtained frames
+Qid :  ['mzsb9SXiGF8_000013_000023']
+Obtained frames
+Qid :  ['W2JHaMeLSJk_000013_000023']
+Obtained frames
+Qid :  ['1qTmm0487Ac_000039_000049']
+Obtained frames
+Qid :  ['ad06ullLrzQ_000000_000010']
+Obtained frames
+Qid :  ['wHVoxfmf9rA_000014_000024']
+Obtained frames
+Qid :  ['qpY9ORr7ug4_000691_000701']
+Obtained frames
+Qid :  ['lNtAaowp1V4_000015_000025']
+Obtained frames
+
+Error while read file idx
+video is: nCFQr2lIWys_000035_000045
+Obtained frames
+Qid :  ['VEdKr4wtqCY_000120_000130']
+Evaluation  [ 590/3000]  eta: 3:56:00    time: 5.9470  data: 0.5503  max mem: 13155
+Obtained frames
+Qid :  ['GJ0JUVsbEJU_000017_000027']
+Obtained frames
+Qid :  ['eKUXnelq0k8_000047_000057']
+Obtained frames
+Qid :  ['AX4Ua7cgzjs_000021_000031']
+Obtained frames
+Qid :  ['PMruBmClO-0_000050_000060']
+Obtained frames
+Qid :  ['gfs55DSkaKw_000031_000041']
+Obtained frames
+Qid :  ['JowyyrTu5rs_000000_000010']
+Obtained frames
+Qid :  ['SJXZOb90hvA_000016_000026']
+Obtained frames
+Qid :  ['uDx8GzfM1GU_000091_000101']
+Obtained frames
+Qid :  ['FdWj9zTGeGk_000205_000215']
+Obtained frames
+Qid :  ['mLRSUt7rO6I_000021_000031']
+Evaluation  [ 600/3000]  eta: 3:54:54    time: 5.7914  data: 0.5355  max mem: 13155
+Obtained frames
+Qid :  ['G1n9a3Wk7p8_000003_000013']
+Obtained frames
+Qid :  ['b4FIQL0xioQ_000347_000357']
+Obtained frames
+Qid :  ['7Q4RvvEMpjg_000047_000057']
+Obtained frames
+Qid :  ['YhFovWFU4ls_000001_000011']
+Obtained frames
+Qid :  ['ddXWB4eaMD8_000006_000016']
+Obtained frames
+Qid :  ['EEtCVYcpb2s_000000_000010']
+Obtained frames
+Qid :  ['merlXJp4m4c_000274_000284']
+Obtained frames
+Qid :  ['edARw2lS7Yg_000008_000018']
+Obtained frames
+Qid :  ['NOC47hjzvRM_000012_000022']
+Obtained frames
+Qid :  ['dkNKUczu3C0_000012_000022']
+Evaluation  [ 610/3000]  eta: 3:54:01    time: 5.8558  data: 0.5462  max mem: 13155
+Obtained frames
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+Obtained frames
+Qid :  ['itYmhFfQxIY_000019_000029']
+Obtained frames
+Qid :  ['jDFnViSc30g_000030_000040']
+Obtained frames
+Qid :  ['R21XWnvG0yE_000123_000133']
+Obtained frames
+Qid :  ['Cz_UOScLFyw_000026_000036']
+Obtained frames
+Qid :  ['dk-DGeF6XB4_000029_000039']
+Obtained frames
+Qid :  ['UB16Jl_WYuo_000026_000036']
+Obtained frames
+Qid :  ['297i2FRAR3E_000027_000037']
+Obtained frames
+Qid :  ['8v3f5nuWE1s_000056_000066']
+Obtained frames
+Qid :  ['_unSwT11fxM_000000_000010']
+Obtained frames
+Qid :  ['LvoRIC3r30E_000033_000043']
+Evaluation  [ 620/3000]  eta: 3:53:09    time: 6.0401  data: 0.5635  max mem: 13155
+Obtained frames
+Qid :  ['FKDf6Au-HDc_000492_000502']
+Obtained frames
+Qid :  ['RTNqvlPAKv4_000002_000012']
+Obtained frames
+Qid :  ['RbfZsBaR3fE_000265_000275']
+Obtained frames
+Qid :  ['tYqjzDImt-s_000009_000019']
+Obtained frames
+Qid :  ['VONPPDNSwFI_000006_000016']
+Obtained frames
+Qid :  ['_Pc9lrWKF8M_000022_000032']
+Obtained frames
+Qid :  ['gjfMKEFrRFE_000101_000111']
+Obtained frames
+Qid :  ['kvWFWvCqdyE_000269_000279']
+Obtained frames
+Qid :  ['ntJHjEPJIFI_000022_000032']
+Obtained frames
+
+Error while read file idx
+video is: 3IwnNgKg9nk_000092_000102
+Obtained frames
+Qid :  ['51XwOHCvDVQ_000014_000024']
+Evaluation  [ 630/3000]  eta: 3:52:19    time: 6.0851  data: 0.5925  max mem: 13155
+Obtained frames
+Qid :  ['x6Mqk9qjmAA_000031_000041']
+Obtained frames
+Qid :  ['aMG43l2Z9CQ_000038_000048']
+Obtained frames
+Qid :  ['H415NbblYig_000000_000010']
+Obtained frames
+Qid :  ['zGhCMcb3LgU_000218_000228']
+Obtained frames
+Qid :  ['IT6_-s3JK4A_000058_000068']
+Obtained frames
+Qid :  ['VqjvFK3SGS8_000033_000043']
+Obtained frames
+Qid :  ['WPp119JTxW4_000007_000017']
+Obtained frames
+Qid :  ['XyOq2Yp_iT0_000014_000024']
+Obtained frames
+Qid :  ['w2IRyXzDOsA_000148_000158']
+Obtained frames
+Qid :  ['QR62pfH_m-k_000056_000066']
+Evaluation  [ 640/3000]  eta: 3:51:12    time: 5.8871  data: 0.5041  max mem: 13155
+Obtained frames
+Qid :  ['5eOLe3H-JFI_000000_000010']
+Obtained frames
+Qid :  ['mzyKLpTOsS0_000021_000031']
+Obtained frames
+Qid :  ['YVGrHcPWIOo_000013_000023']
+Obtained frames
+Qid :  ['67Wo8P6mgy0_000361_000371']
+Obtained frames
+Qid :  ['_Gpt74onMq8_000016_000026']
+Obtained frames
+Qid :  ['wdxBfw1Vj7o_000011_000021']
+Obtained frames
+Qid :  ['6XIQU9NxU_U_000093_000103']
+Obtained frames
+Qid :  ['oN75gAHeygg_000011_000021']
+Obtained frames
+Qid :  ['-XVZPMwgYzQ_000140_000150']
+Obtained frames
+Qid :  ['U6PKtRFtFME_000012_000022']
+Evaluation  [ 650/3000]  eta: 3:50:11    time: 5.7416  data: 0.4443  max mem: 13155
+Obtained frames
+Qid :  ['xUEC56tUI-o_000030_000040']
+Obtained frames
+Qid :  ['yIv5XyQSHG4_000116_000126']
+Obtained frames
+Qid :  ['Kg1XIFejNeU_000023_000033']
+Obtained frames
+Qid :  ['0zKzCuulC4g_000088_000098']
+Obtained frames
+Qid :  ['FVbzMbm0kak_000074_000084']
+Obtained frames
+Qid :  ['oGmlagWJXj0_000098_000108']
+Obtained frames
+Qid :  ['9j56a25X0KI_000016_000026']
+Obtained frames
+Qid :  ['h63pP6OgjwE_000166_000176']
+Obtained frames
+Qid :  ['L8PsRWZOk8w_000000_000010']
+Obtained frames
+Qid :  ['JpLleehwfIY_000384_000394']
+Evaluation  [ 660/3000]  eta: 3:49:11    time: 5.8244  data: 0.4904  max mem: 13155
+Obtained frames
+Qid :  ['Wsk-TzjXqAw_000204_000214']
+Obtained frames
+Qid :  ['QACA6i-cKbo_000020_000030']
+Obtained frames
+Qid :  ['f6rptbVC2yI_000040_000050']
+Obtained frames
+Qid :  ['mNz06nbirTw_000152_000162']
+Obtained frames
+Qid :  ['RIS03JMgH_M_000032_000042']
+Obtained frames
+Qid :  ['33xwt381aMk_000033_000043']
+Obtained frames
+Qid :  ['l1cR-EykO5Y_000099_000109']
+Obtained frames
+Qid :  ['NYNbAmi3FXg_000036_000046']
+Obtained frames
+Qid :  ['OzWygnm2yFQ_000006_000016']
+Obtained frames
+Qid :  ['jzOcGxEABAs_000033_000043']
+Evaluation  [ 670/3000]  eta: 3:48:05    time: 5.7510  data: 0.4235  max mem: 13155
+Obtained frames
+Qid :  ['4h2o5C2PANY_000054_000064']
+Obtained frames
+Qid :  ['ozDfLmwxOPc_000080_000090']
+Obtained frames
+Qid :  ['b2HqdxtRlNY_000000_000010']
+Obtained frames
+Qid :  ['BNMm_tRXmCk_000008_000018']
+Obtained frames
+Qid :  ['VcUPa6OYK2g_000231_000241']
+Obtained frames
+Qid :  ['9jG5Bc06fqc_000350_000360']
+Obtained frames
+Qid :  ['bTiTwuH8KNE_000055_000065']
+Obtained frames
+Qid :  ['WNTXolwRCu0_000041_000051']
+Obtained frames
+Qid :  ['3oASaiFvmGQ_000062_000072']
+Obtained frames
+Qid :  ['MGAgLVCtcvg_000000_000010']
+Evaluation  [ 680/3000]  eta: 3:47:00    time: 5.6724  data: 0.3598  max mem: 13155
+Obtained frames
+Qid :  ['Ub55QO_MvUM_000014_000024']
+Obtained frames
+Qid :  ['6bMpFe2HO5E_000003_000013']
+Obtained frames
+Qid :  ['YlJvP49ZPbY_000000_000010']
+Obtained frames
+Qid :  ['A5FG6Cr9Ve4_000125_000135']
+Obtained frames
+Qid :  ['W-vjclcL7N0_000001_000011']
+Obtained frames
+Qid :  ['94ksYvViB-c_000245_000255']
+Obtained frames
+Qid :  ['SJQjnh0-RW4_000258_000268']
+Obtained frames
+Qid :  ['4ZNyCnPFYA0_000030_000040']
+Obtained frames
+Qid :  ['tj6yCHRNOQo_000063_000073']
+Obtained frames
+Qid :  ['-Kynokg-dX8_000043_000053']
+Evaluation  [ 690/3000]  eta: 3:46:02    time: 5.7869  data: 0.4070  max mem: 13155
+Obtained frames
+Qid :  ['4EIRPH6CZcs_000000_000010']
+Obtained frames
+Qid :  ['q22TFmBwPWw_000184_000194']
+Obtained frames
+Qid :  ['NcL-BPuwSAs_000011_000021']
+Obtained frames
+Qid :  ['0spjPGFgHQE_000007_000017']
+Obtained frames
+Qid :  ['bjnH0Nn3UPw_000244_000254']
+Obtained frames
+Qid :  ['PDEMRgcUpSw_000014_000024']
+Obtained frames
+Qid :  ['yoVVKF9D-1M_000023_000033']
+Obtained frames
+Qid :  ['OcYwEosfbhw_000017_000027']
+Obtained frames
+Qid :  ['BoENXPmdIh0_000000_000010']
+Obtained frames
+Qid :  ['ojnX7Y35M9U_000023_000033']
+Evaluation  [ 700/3000]  eta: 3:45:13    time: 6.0396  data: 0.5909  max mem: 13155
+Obtained frames
+Qid :  ['CFPO_93rzMM_000014_000024']
+Obtained frames
+Qid :  ['6zY24u6-ihc_000025_000035']
+Obtained frames
+Qid :  ['GOwo4z1Rzm0_000124_000134']
+Obtained frames
+Qid :  ['Fad6l-yQVXw_000009_000019']
+Obtained frames
+Qid :  ['ajRP02OmYAk_000032_000042']
+Obtained frames
+Qid :  ['Y5PAezHRrpk_000015_000025']
+Obtained frames
+Qid :  ['wsshx76lBME_000042_000052']
+Obtained frames
+Qid :  ['KftEyc-OS_0_000053_000063']
+Obtained frames
+Qid :  ['TdMfeWk_7Yo_000006_000016']
+Obtained frames
+
+Error while read file idx
+video is: 9WHL7tNio90_000115_000125
+Obtained frames
+Qid :  ['dXwhS9TKzi0_000144_000154']
+Evaluation  [ 710/3000]  eta: 3:44:14    time: 6.0236  data: 0.7086  max mem: 13155
+Obtained frames
+Qid :  ['mgytTdPTy4U_000016_000026']
+Obtained frames
+Qid :  ['xirgehbTzeo_000362_000372']
+Obtained frames
+Qid :  ['99wXNwpG4vY_000007_000017']
+Obtained frames
+Qid :  ['mS9pJd1mUMo_000109_000119']
+Obtained frames
+Qid :  ['YOW8jDYQVlE_000025_000035']
+Obtained frames
+Qid :  ['OYwGRX8yIqY_000004_000014']
+Obtained frames
+Qid :  ['UpKz3cBJbkE_000001_000011']
+Obtained frames
+Qid :  ['ZaSSptQOO0Q_000078_000088']
+Obtained frames
+Qid :  ['XKSpSAMAM-o_000006_000016']
+Obtained frames
+Qid :  ['ZVc-gwum3C4_000005_000015']
+Evaluation  [ 720/3000]  eta: 3:43:26    time: 6.0373  data: 0.6161  max mem: 13155
+Obtained frames
+Qid :  ['YYKG8NFme1k_000003_000013']
+Obtained frames
+Qid :  ['g0k21jYPwyk_000037_000047']
+Obtained frames
+Qid :  ['_do94GhTyA8_000103_000113']
+Obtained frames
+Qid :  ['NzzR-InKWic_000059_000069']
+Obtained frames
+Qid :  ['nZBJ7Cm8h3k_000000_000010']
+Obtained frames
+Qid :  ['3xkRr-O0vss_000121_000131']
+Obtained frames
+Qid :  ['9g6gIQVW4BQ_000030_000040']
+Obtained frames
+Qid :  ['nyO86Yf_MA0_000197_000207']
+Obtained frames
+Qid :  ['kh00WTtMPpI_000001_000011']
+Obtained frames
+Qid :  ['w1rHY15XZoQ_000009_000019']
+Evaluation  [ 730/3000]  eta: 3:42:45    time: 6.3285  data: 0.5908  max mem: 13155
+Obtained frames
+Qid :  ['bWfmOe1CX44_000056_000066']
+Obtained frames
+Qid :  ['pZCI3085XPc_000008_000018']
+Obtained frames
+Qid :  ['s40z1H4bGd4_000036_000046']
+Obtained frames
+Qid :  ['Lg2QwDKpYM4_000149_000159']
+Obtained frames
+Qid :  ['uA4J1cQ8H1w_000017_000027']
+Obtained frames
+Qid :  ['G40PW6hfb2c_000002_000012']
+Obtained frames
+Qid :  ['qv992oirurY_000001_000011']
+Obtained frames
+Qid :  ['y19ytaOcSlw_000001_000011']
+Obtained frames
+Qid :  ['j2mCHo6BmJo_000020_000030']
+Obtained frames
+Qid :  ['9q8zoFUvTiw_000131_000141']
+Evaluation  [ 740/3000]  eta: 3:41:47    time: 6.1873  data: 0.6159  max mem: 13155
+Obtained frames
+Qid :  ['GJqfGRjHm9A_000069_000079']
+Obtained frames
+Qid :  ['W4yXnhzKywU_000032_000042']
+Obtained frames
+Qid :  ['Bcix8MIIOJU_000236_000246']
+Obtained frames
+Qid :  ['Dlp__wLjJLI_000025_000035']
+Obtained frames
+Qid :  ['E8h6q5qG_5E_000034_000044']
+Obtained frames
+Qid :  ['0dbSlZxFu2E_000046_000056']
+Obtained frames
+Qid :  ['6JBJD9JvXNs_000113_000123']
+Obtained frames
+Qid :  ['FGEc6BCBz3c_000002_000012']
+Obtained frames
+Qid :  ['O3Z9yaDOTEo_000016_000026']
+Obtained frames
+Qid :  ['SfjT0IRyJFE_000027_000037']
+Evaluation  [ 750/3000]  eta: 3:40:51    time: 5.9593  data: 0.6311  max mem: 13155
+Obtained frames
+Qid :  ['OJQBZodKU3U_000001_000011']
+Obtained frames
+Qid :  ['LVRGsdk568Y_000080_000090']
+Obtained frames
+Qid :  ['YTpfBYMM6lY_000089_000099']
+Obtained frames
+Qid :  ['UBf2rLCq5ug_000087_000097']
+Obtained frames
+Qid :  ['lxxbMVpt0xc_000083_000093']
+Obtained frames
+Qid :  ['C90D7-GjVlo_000003_000013']
+Obtained frames
+Qid :  ['OtwVKnEZ9rQ_000078_000088']
+Obtained frames
+Qid :  ['F8ueJtYPIgE_000046_000056']
+Obtained frames
+Qid :  ['gimM02vU8x4_000115_000125']
+Obtained frames
+Qid :  ['CgTTdptQXb8_000015_000025']
+Evaluation  [ 760/3000]  eta: 3:39:48    time: 5.8718  data: 0.5717  max mem: 13155
+Obtained frames
+Qid :  ['b_5Q9peVtu4_000010_000020']
+Obtained frames
+Qid :  ['jjIpPR3-3Ts_000004_000014']
+Obtained frames
+Qid :  ['ZydeunRdrxc_000000_000010']
+Obtained frames
+Qid :  ['qkOV-z6uwlc_000000_000010']
+Obtained frames
+Qid :  ['nfRHE7TP0EM_000039_000049']
+Obtained frames
+Qid :  ['F9apQhki3EE_000014_000024']
+Obtained frames
+Qid :  ['5iRtvUfVYMY_000006_000016']
+Obtained frames
+Qid :  ['QDE12ZZZBdE_000012_000022']
+Obtained frames
+Qid :  ['WLPqZ0tCqhg_000086_000096']
+Obtained frames
+Qid :  ['SRtoPkxCL_M_000002_000012']
+Evaluation  [ 770/3000]  eta: 3:38:54    time: 5.9025  data: 0.4960  max mem: 13155
+Obtained frames
+Qid :  ['TV-y2BF0MFk_000054_000064']
+Obtained frames
+Qid :  ['bidX8m8cyc8_000006_000016']
+Obtained frames
+Qid :  ['3zNY4hHrPxk_000014_000024']
+Obtained frames
+Qid :  ['7ME6b0f3iL0_000026_000036']
+Obtained frames
+Qid :  ['QDPwHabZGzY_000000_000010']
+Obtained frames
+Qid :  ['1NFmcmlThdc_000000_000010']
+Obtained frames
+Qid :  ['CNW7jtv6Of0_000171_000181']
+Obtained frames
+Qid :  ['CkURmRul_ps_000012_000022']
+Obtained frames
+Qid :  ['Lcx-VJm6jZ8_000125_000135']
+Obtained frames
+Qid :  ['RjlyiwCwplo_000022_000032']
+Evaluation  [ 780/3000]  eta: 3:37:51    time: 5.8980  data: 0.4869  max mem: 13155
+Obtained frames
+Qid :  ['qoOntNwuUo8_000109_000119']
+Obtained frames
+Qid :  ['-Y9fEet15io_000071_000081']
+Obtained frames
+Qid :  ['pdvD9iQyod8_000039_000049']
+Obtained frames
+Qid :  ['x11dpa7LhAI_000152_000162']
+Obtained frames
+Qid :  ['LW1aZrHiQZU_000013_000023']
+Obtained frames
+Qid :  ['w8OBvhJsdSw_000003_000013']
+Obtained frames
+Qid :  ['ibJYl31YAt0_000015_000025']
+Obtained frames
+Qid :  ['pihEEIfgc0E_000047_000057']
+Obtained frames
+Qid :  ['LasSTe8YZZQ_000003_000013']
+Obtained frames
+Qid :  ['spVJ4LOBTKw_000000_000010']
+Evaluation  [ 790/3000]  eta: 3:37:00    time: 5.9536  data: 0.4656  max mem: 13155
+Obtained frames
+Qid :  ['Zhz-MyWJEs0_000000_000010']
+Obtained frames
+Qid :  ['UkWDxjlvuXY_000030_000040']
+Obtained frames
+Qid :  ['X0ygBDvo13U_000028_000038']
+Obtained frames
+Qid :  ['jqV30Q_j1js_000146_000156']
+Obtained frames
+Qid :  ['Yp4GtW2hGE0_000000_000010']
+Obtained frames
+Qid :  ['UkBJfw6fJ4U_000002_000012']
+Obtained frames
+Qid :  ['iTdkDBjGHZ0_000018_000028']
+Obtained frames
+Qid :  ['WivAkob4i0g_000112_000122']
+Obtained frames
+Qid :  ['ZRrtKXR_pqo_000268_000278']
+Obtained frames
+Qid :  ['oT_2NsBu-6U_000013_000023']
+Evaluation  [ 800/3000]  eta: 3:36:05    time: 6.1080  data: 0.5849  max mem: 13155
+Obtained frames
+Qid :  ['v16Xk7GKfQ4_000081_000091']
+Obtained frames
+Qid :  ['b6Tz-dkKyMQ_000085_000095']
+Obtained frames
+Qid :  ['-1fj0NQmIZs_000007_000017']
+Obtained frames
+Qid :  ['ud96tTKKUGA_000046_000056']
+Obtained frames
+
+Error while read file idx
+video is: nXLaV7AQabY_000026_000036
+Obtained frames
+Qid :  ['ieKCE567DOw_000043_000053']
+Obtained frames
+Qid :  ['TlkqCIdW3eE_000038_000048']
+Obtained frames
+Qid :  ['FutxoMp5OtE_000026_000036']
+Obtained frames
+Qid :  ['lf-eCUb1Ouw_000401_000411']
+Obtained frames
+Qid :  ['GyXbdrtAlHY_000145_000155']
+Obtained frames
+Qid :  ['FSPKtVyji6s_000074_000084']
+Evaluation  [ 810/3000]  eta: 3:35:06    time: 5.9587  data: 0.6143  max mem: 13155
+Obtained frames
+Qid :  ['vZzISXckMw0_000243_000253']
+Obtained frames
+Qid :  ['L9CeTZ9Lsfk_000107_000117']
+Obtained frames
+Qid :  ['W1ZNRUqkJVY_000004_000014']
+Obtained frames
+Qid :  ['hffa89PFOhU_001200_001210']
+Obtained frames
+Qid :  ['Ch2Dk_xNnqY_000003_000013']
+Obtained frames
+Qid :  ['OKJp2nzSqAc_000000_000010']
+Obtained frames
+Qid :  ['nxYSpQ_namU_000038_000048']
+Obtained frames
+Qid :  ['aMCfbarJD6I_000068_000078']
+Obtained frames
+Qid :  ['FfvH1U9rsFI_000098_000108']
+Obtained frames
+Qid :  ['vPNxsn1Lloc_000233_000243']
+Evaluation  [ 820/3000]  eta: 3:34:09    time: 5.9164  data: 0.5401  max mem: 13155
+Obtained frames
+Qid :  ['wLETvNxPQz8_000010_000020']
+Obtained frames
+Qid :  ['g5kHRDK-sxI_000001_000011']
+Obtained frames
+Qid :  ['UIA5-NWZgZU_000024_000034']
+Obtained frames
+Qid :  ['N1dm5bV9se0_000039_000049']
+Obtained frames
+Qid :  ['mypS3TyJz5I_000223_000233']
+Obtained frames
+Qid :  ['Ec48qiXUlnw_000040_000050']
+Obtained frames
+Qid :  ['eAHmDFppq9E_000000_000010']
+Obtained frames
+Qid :  ['g4kiA1VQYRA_000001_000011']
+Obtained frames
+Qid :  ['AjzT7VBM4XQ_000004_000014']
+Obtained frames
+Qid :  ['qc7Nmkvbtjg_000031_000041']
+Evaluation  [ 830/3000]  eta: 3:33:06    time: 5.8596  data: 0.5434  max mem: 13155
+Obtained frames
+Qid :  ['ZTvWzGuN5cY_000006_000016']
+Obtained frames
+Qid :  ['wLd-CTzDPeQ_000041_000051']
+Obtained frames
+Qid :  ['k6alo8B-pGA_000017_000027']
+Obtained frames
+Qid :  ['hxWRpGSoUCE_000004_000014']
+Obtained frames
+Qid :  ['hi4CLG69EDg_000000_000010']
+Obtained frames
+Qid :  ['j5YrujRncsI_000005_000015']
+Obtained frames
+Qid :  ['uwX_xtc2jpU_000011_000021']
+Obtained frames
+Qid :  ['8v3K7jZDrwY_000009_000019']
+Obtained frames
+Qid :  ['QELB7yrcViQ_000086_000096']
+Obtained frames
+Qid :  ['6jpdD8dIYR8_000084_000094']
+Evaluation  [ 840/3000]  eta: 3:32:11    time: 5.9038  data: 0.5526  max mem: 13155
+Obtained frames
+Qid :  ['4-ftT9gYRWM_000199_000209']
+Obtained frames
+Qid :  ['CV9gIMrPOrc_000022_000032']
+Obtained frames
+Qid :  ['pALX-V595zM_000013_000023']
+Obtained frames
+Qid :  ['CQ-a9RaoMbE_000000_000010']
+Obtained frames
+Qid :  ['pHf2s_R_o_s_000014_000024']
+Obtained frames
+Qid :  ['rgCllSwUfeQ_000047_000057']
+Obtained frames
+Qid :  ['vEOUS3tZVr8_000003_000013']
+Obtained frames
+Qid :  ['h9jIdgjU_mM_000012_000022']
+Obtained frames
+Qid :  ['nbMlggtbY0k_000156_000166']
+Obtained frames
+Qid :  ['lIWjTO6VMJI_000033_000043']
+Evaluation  [ 850/3000]  eta: 3:31:11    time: 5.9510  data: 0.4224  max mem: 13155
+Obtained frames
+Qid :  ['cuDoVq89c2M_000016_000026']
+Obtained frames
+Qid :  ['qmRABv1dYPc_000196_000206']
+Obtained frames
+Qid :  ['nO3gaYfI48o_000056_000066']
+Obtained frames
+Qid :  ['aA3C4e0taoo_000233_000243']
+Obtained frames
+Qid :  ['zpABWvjhY20_000209_000219']
+Obtained frames
+Qid :  ['Mb7euj2rJ1k_000004_000014']
+Obtained frames
+Qid :  ['a49Jsv8As88_000004_000014']
+Obtained frames
+Qid :  ['RpHPYlkkY1U_000173_000183']
+Obtained frames
+Qid :  ['Q8ZVmPTU2pM_000013_000023']
+Obtained frames
+Qid :  ['YaufOJRRsAE_000141_000151']
+Evaluation  [ 860/3000]  eta: 3:30:09    time: 5.7978  data: 0.3263  max mem: 13155
+Obtained frames
+Qid :  ['8ipiAa25qEY_000024_000034']
+Obtained frames
+Qid :  ['Q-00WWEfZmI_000020_000030']
+Obtained frames
+Qid :  ['jClBurxoLLw_000004_000014']
+Obtained frames
+Qid :  ['M_l9bEMSOg8_000012_000022']
+Obtained frames
+Qid :  ['kLFYP455uis_000008_000018']
+Obtained frames
+Qid :  ['8wbDi-7PqW8_000042_000052']
+Obtained frames
+Qid :  ['vB1DRCVeaTs_000063_000073']
+Obtained frames
+Qid :  ['izPXy7R3eQ0_000004_000014']
+Obtained frames
+Qid :  ['0OJbejvpWLU_000018_000028']
+Obtained frames
+Qid :  ['NUqYGc7pmfE_000222_000232']
+Evaluation  [ 870/3000]  eta: 3:29:10    time: 5.8352  data: 0.4870  max mem: 13155
+Obtained frames
+Qid :  ['tHe2NDgOIEU_000000_000010']
+Obtained frames
+Qid :  ['UiVnrrooeUc_000092_000102']
+Obtained frames
+Qid :  ['yzOHq31Ism0_000000_000010']
+Obtained frames
+Qid :  ['AwNvbshVnqo_000084_000094']
+Obtained frames
+Qid :  ['-3xWkluOnoU_000000_000010']
+Obtained frames
+Qid :  ['QpB8eHRyRO0_000005_000015']
+Obtained frames
+Qid :  ['A9SlE57MjoU_000001_000011']
+Obtained frames
+Qid :  ['Q1YzZv2BdLE_000025_000035']
+Obtained frames
+Qid :  ['z7-IzeCM2bE_000045_000055']
+Obtained frames
+Qid :  ['j311oodv9U8_000086_000096']
+Evaluation  [ 880/3000]  eta: 3:28:14    time: 5.9502  data: 0.5530  max mem: 13155
+Obtained frames
+Qid :  ['6vt-WadmY6E_000094_000104']
+Obtained frames
+Qid :  ['hd6s7Mhw848_000135_000145']
+Obtained frames
+Qid :  ['uuReRPszeEU_000036_000046']
+Obtained frames
+Qid :  ['_pEy8oQ3az4_000007_000017']
+Obtained frames
+Qid :  ['DiaZUqLtw2o_000003_000013']
+Obtained frames
+Qid :  ['iYixMexx-qk_000069_000079']
+Obtained frames
+Qid :  ['KxhiOlksJzQ_000000_000010']
+Obtained frames
+Qid :  ['m3xFQt08dPQ_000026_000036']
+Obtained frames
+Qid :  ['J9pLQ65cFaM_000135_000145']
+Obtained frames
+Qid :  ['vLSLEfdKdNg_000000_000010']
+Evaluation  [ 890/3000]  eta: 3:27:13    time: 5.8936  data: 0.4933  max mem: 13155
+Obtained frames
+Qid :  ['GkSG54iXY-g_000000_000010']
+Obtained frames
+Qid :  ['OR968yHuOXY_000034_000044']
+Obtained frames
+Qid :  ['tDnodDZGsx0_000196_000206']
+Obtained frames
+Qid :  ['2M_SxI_s3r4_000025_000035']
+Obtained frames
+Qid :  ['qcXZxHB_o-c_000085_000095']
+Obtained frames
+Qid :  ['EJ4JekN2j_g_000140_000150']
+Obtained frames
+Qid :  ['JUk0VFQMhks_000009_000019']
+Obtained frames
+Qid :  ['mH77exACj00_000390_000400']
+Obtained frames
+Qid :  ['GjfvIgRnv58_000061_000071']
+Obtained frames
+Qid :  ['JXJgp0v24yk_000184_000194']
+Evaluation  [ 900/3000]  eta: 3:26:06    time: 5.6786  data: 0.4671  max mem: 13155
+Obtained frames
+Qid :  ['sKJbgEtovNg_000000_000010']
+Obtained frames
+Qid :  ['6sbrEXKBNE4_000001_000011']
+Obtained frames
+Qid :  ['wdf-fdFt5fg_000000_000010']
+Obtained frames
+Qid :  ['d_stXwAWEoY_000014_000024']
+Obtained frames
+Qid :  ['6_jK6ZpguBo_000000_000010']
+Obtained frames
+Qid :  ['jU-4ocLu1mI_000051_000061']
+Obtained frames
+Qid :  ['nT_2ZbU-xxM_000102_000112']
+Obtained frames
+Qid :  ['WeT8-wO-Hys_000002_000012']
+Obtained frames
+Qid :  ['Shgwo6SZatY_000029_000039']
+Obtained frames
+Qid :  ['_42LIk6D0Zg_000092_000102']
+Evaluation  [ 910/3000]  eta: 3:25:10    time: 5.7978  data: 0.5003  max mem: 13155
+Obtained frames
+Qid :  ['w3oyrznsrDw_000074_000084']
+Obtained frames
+Qid :  ['WR8aTFW6-Uw_000098_000108']
+Obtained frames
+Qid :  ['5n6uxCOlpEg_000216_000226']
+Obtained frames
+Qid :  ['GJ0JUVsbEJU_000017_000027']
+Obtained frames
+Qid :  ['Ta5xZpTN7T4_000009_000019']
+Obtained frames
+Qid :  ['y4nqryQbLck_000218_000228']
+Obtained frames
+Qid :  ['yFmn9mlmzas_000023_000033']
+Obtained frames
+Qid :  ['CD_DTW-ge4Y_000004_000014']
+Obtained frames
+Qid :  ['NtiU8-wiFss_000086_000096']
+Obtained frames
+Qid :  ['S00za98eaG4_000136_000146']
+Evaluation  [ 920/3000]  eta: 3:24:15    time: 6.0376  data: 0.5691  max mem: 13155
+Obtained frames
+Qid :  ['K7Pr1aEeWcU_000158_000168']
+Obtained frames
+Qid :  ['G9t5bnS80mg_000143_000153']
+Obtained frames
+Qid :  ['OlnogoX-21U_000085_000095']
+Obtained frames
+Qid :  ['b3_Nc7iUVvs_000191_000201']
+Obtained frames
+
+Error while read file idx
+video is: f43N9bElstg_000000_000010
+Obtained frames
+Qid :  ['VEq-yOMBm7s_000001_000011']
+Obtained frames
+Qid :  ['fpLf6Fz3ZY8_000149_000159']
+Obtained frames
+Qid :  ['P3CaPWZ6vQ4_000003_000013']
+Obtained frames
+Qid :  ['hkGEGfMzbpY_000105_000115']
+Obtained frames
+Qid :  ['MdW5MlP22t8_000081_000091']
+Obtained frames
+Qid :  ['S_T3ZkRvyEI_000089_000099']
+Evaluation  [ 930/3000]  eta: 3:23:25    time: 6.1675  data: 0.5504  max mem: 13155
+Obtained frames
+Qid :  ['pcRehQl805Q_000018_000028']
+Obtained frames
+Qid :  ['HR_s4gO5nB0_000213_000223']
+Obtained frames
+Qid :  ['rPb_CmK8N_A_000031_000041']
+Obtained frames
+Qid :  ['dSeDg2HVKJA_000082_000092']
+Obtained frames
+Qid :  ['-9Y2XKgvdL0_000019_000029']
+Obtained frames
+Qid :  ['w8pP5FRHsfQ_000021_000031']
+Obtained frames
+Qid :  ['yIJj_tV_qQg_000007_000017']
+Obtained frames
+Qid :  ['m7oP9prv3DA_000094_000104']
+Obtained frames
+Qid :  ['UxfuB6pwbnA_000000_000010']
+Obtained frames
+Qid :  ['ddDSuD4pb18_000000_000010']
+Evaluation  [ 940/3000]  eta: 3:22:27    time: 6.1138  data: 0.6280  max mem: 13155
+Obtained frames
+Qid :  ['5aAss6QE-EM_000145_000155']
+Obtained frames
+Qid :  ['Ei3NHfMkdSY_000133_000143']
+Obtained frames
+Qid :  ['dKS0LbKkuHk_000003_000013']
+Obtained frames
+Qid :  ['UQP7HxkH_UE_000140_000150']
+Obtained frames
+Qid :  ['Mpl1NyMRy04_000069_000079']
+Obtained frames
+Qid :  ['1tkjSE989RU_000000_000010']
+Obtained frames
+Qid :  ['xPkqDfBEjwA_000003_000013']
+Obtained frames
+Qid :  ['BU95OwFlZgk_000058_000068']
+Obtained frames
+Qid :  ['M5VOkaX2gWM_000090_000100']
+Obtained frames
+Qid :  ['VU-i0ojArgY_000146_000156']
+Evaluation  [ 950/3000]  eta: 3:21:51    time: 6.4589  data: 1.2257  max mem: 13155
+Obtained frames
+Qid :  ['5s8xlztrKwQ_000203_000213']
+Obtained frames
+Qid :  ['X2LoTIh3qkU_000021_000031']
+Obtained frames
+Qid :  ['5hAePmvQXBc_000000_000010']
+Obtained frames
+Qid :  ['OBsgfAvM3ro_000043_000053']
+Obtained frames
+Qid :  ['k0s244WVLW0_000294_000304']
+Obtained frames
+Qid :  ['7j_19ORqOec_000002_000012']
+Obtained frames
+
+Error while read file idx
+video is: jD4WINqHZCs_000077_000087
+Obtained frames
+Qid :  ['lf9aCLbU0SQ_000312_000322']
+Obtained frames
+Qid :  ['kLOENf5emqE_000003_000013']
+Obtained frames
+Qid :  ['lLr_xt99yvA_000066_000076']
+Obtained frames
+Qid :  ['4x8uTVNf3FY_000082_000092']
+Evaluation  [ 960/3000]  eta: 3:20:56    time: 6.5505  data: 1.1228  max mem: 13155
+Obtained frames
+Qid :  ['eyDnxsEQHg0_000016_000026']
+Obtained frames
+Qid :  ['dQ2Kf3Vsyao_000084_000094']
+Obtained frames
+Qid :  ['Umos1MMuveQ_000003_000013']
+Obtained frames
+Qid :  ['9Y2V8pA2rpE_000021_000031']
+Obtained frames
+Qid :  ['kvsRUQs3a2w_000050_000060']
+Obtained frames
+Qid :  ['n0wrEr5nAcc_000079_000089']
+Obtained frames
+Qid :  ['sya8b_TI0gk_000026_000036']
+Obtained frames
+Qid :  ['LXnDIefnLWE_000021_000031']
+Obtained frames
+Qid :  ['LgAewuDV50o_000112_000122']
+Obtained frames
+Qid :  ['fFLhptGE-T8_000000_000010']
+Evaluation  [ 970/3000]  eta: 3:20:08    time: 6.2570  data: 0.9483  max mem: 13155
+Obtained frames
+Qid :  ['GZn3xIg1VP8_000009_000019']
+Obtained frames
+Qid :  ['eKr3A7US0RA_000001_000011']
+Obtained frames
+Qid :  ['3Hgq5-8WDVA_000059_000069']
+Obtained frames
+Qid :  ['M6nnApk4jgQ_000002_000012']
+Obtained frames
+Qid :  ['u3MVlxnUHv8_000034_000044']
+Obtained frames
+Qid :  ['OYmk5Js4MDc_000359_000369']
+Obtained frames
+Qid :  ['rELmj4qEL9o_000001_000011']
+Obtained frames
+
+Error while read file idx
+video is: nvq7icqQ6L8_000020_000030
+Obtained frames
+Qid :  ['AoQZJen3NmI_000038_000048']
+Obtained frames
+Qid :  ['oZGGLCbhE7I_000139_000149']
+Obtained frames
+Qid :  ['Ng0-FcUQm-w_000033_000043']
+Evaluation  [ 980/3000]  eta: 3:19:51    time: 7.1946  data: 2.0623  max mem: 13155
+Obtained frames
+Qid :  ['M6CFnOGfpRQ_000000_000010']
+Obtained frames
+Qid :  ['BbxxaQpOjHg_000050_000060']
+Obtained frames
+Qid :  ['pjivNMMZ_Pg_000009_000019']
+Obtained frames
+Qid :  ['8MBxW8p8thg_000088_000098']
+Obtained frames
+Qid :  ['E2xPWFhN-Mk_000005_000015']
+Obtained frames
+Qid :  ['DocnDFFROTY_000105_000115']
+Obtained frames
+Qid :  ['vBVdPLj1PVI_000140_000150']
+Obtained frames
+Qid :  ['1ffT7aGFh-g_000032_000042']
+Obtained frames
+Qid :  ['KdQeU3nqOqE_000324_000334']
+Obtained frames
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+Obtained frames
+Qid :  ['PhvtWQSYfW0_000041_000051']
+Evaluation  [ 990/3000]  eta: 3:18:57    time: 7.0820  data: 1.7998  max mem: 13155
+Obtained frames
+Qid :  ['GT0mKzV3UTQ_000011_000021']
+Obtained frames
+Qid :  ['DnDQM-ajURE_000198_000208']
+Obtained frames
+Qid :  ['yF6DZ-N0uKs_000001_000011']
+Obtained frames
+Qid :  ['oNyLXEyMmDA_000021_000031']
+Obtained frames
+Qid :  ['meaBXVZjx6M_000016_000026']
+Obtained frames
+Qid :  ['-wFVzhTYGdY_000058_000068']
+Obtained frames
+Qid :  ['TzYE1Ye8PI8_000000_000010']
+Obtained frames
+Qid :  ['9E2anVW4Tdc_000047_000057']
+Obtained frames
+Qid :  ['8k5LbCk1Yi8_000033_000043']
+Obtained frames
+Qid :  ['RlKFVAxKpAo_000004_000014']
+Evaluation  [1000/3000]  eta: 3:18:08    time: 6.3259  data: 0.9442  max mem: 13155
+Obtained frames
+Qid :  ['p9hYM6KJQyY_000008_000018']
+Obtained frames
+Qid :  ['YBCQYpAIGqc_000000_000010']
+Obtained frames
+Qid :  ['0NIzLI3uk-A_000142_000152']
+Obtained frames
+Qid :  ['faDfuZ53YZA_000123_000133']
+Obtained frames
+Qid :  ['bUwB0IpauUg_000027_000037']
+Obtained frames
+Qid :  ['89vNyl6goCs_000000_000010']
+Obtained frames
+Qid :  ['C2-qYNFFkNo_000089_000099']
+Obtained frames
+Qid :  ['Wx5lIVwpjS0_000159_000169']
+Obtained frames
+Qid :  ['LFYIZWeyuNM_000025_000035']
+Obtained frames
+Qid :  ['JYmzFfVIttc_000010_000020']
+Evaluation  [1010/3000]  eta: 3:17:23    time: 6.5757  data: 1.2838  max mem: 13155
+Obtained frames
+Qid :  ['rsmZs1dWHaQ_000002_000012']
+Obtained frames
+Qid :  ['7vYySQwrW7U_000000_000010']
+Obtained frames
+Qid :  ['XoNvu-jpG1M_000000_000010']
+Obtained frames
+Qid :  ['cx8FMKgpie4_000029_000039']
+Obtained frames
+Qid :  ['ZAIgy_EIpBc_000006_000016']
+Obtained frames
+Qid :  ['p9oZj-hGY-w_000081_000091']
+Obtained frames
+
+Error while read file idx
+video is: Lgk7seRey6Q_000245_000255
+Obtained frames
+Qid :  ['CmsItdTk8Ug_000039_000049']
+Obtained frames
+Qid :  ['5aKxwQCUcQs_000002_000012']
+Obtained frames
+Qid :  ['yzlz8U_9t5c_000214_000224']
+Obtained frames
+Qid :  ['28cpQ_ES69Y_000079_000089']
+Evaluation  [1020/3000]  eta: 3:16:22    time: 6.2858  data: 1.0586  max mem: 13155
+Obtained frames
+Qid :  ['d4Dd8BFamOY_000054_000064']
+Obtained frames
+Qid :  ['mHgvF_Dz9zQ_000011_000021']
+Obtained frames
+Qid :  ['-ngSR_MuFzg_000407_000417']
+Obtained frames
+Qid :  ['OFgJPEUFg0k_000411_000421']
+Obtained frames
+Qid :  ['nPF9lXbxm5Q_000013_000023']
+Obtained frames
+Qid :  ['2JXSyntee7U_000002_000012']
+Obtained frames
+Qid :  ['d8w30y1_oY0_000002_000012']
+Obtained frames
+Qid :  ['LftF9mRhn9M_000096_000106']
+Obtained frames
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+Obtained frames
+Qid :  ['l_ToZN7shdo_000042_000052']
+Obtained frames
+Qid :  ['t6qQ5n1KhPY_000016_000026']
+Evaluation  [1030/3000]  eta: 3:15:22    time: 5.8956  data: 0.6310  max mem: 13155
+Obtained frames
+Qid :  ['8_3-jVmTbL0_000127_000137']
+Obtained frames
+Qid :  ['sUkTNb-sfLU_000002_000012']
+Obtained frames
+Qid :  ['PqEl_YCNl0k_000055_000065']
+Obtained frames
+Qid :  ['rUI9FJBHYlY_000057_000067']
+Obtained frames
+Qid :  ['DsgMW2g3Ztw_000029_000039']
+Obtained frames
+Qid :  ['eFNiqeCI1bk_000048_000058']
+Obtained frames
+Qid :  ['PDCAmc934lU_000011_000021']
+Obtained frames
+Qid :  ['_LO__X_7SpE_000123_000133']
+Obtained frames
+Qid :  ['mPkhWnsvYJA_000003_000013']
+Obtained frames
+Qid :  ['xJbDRGHn0Hc_000002_000012']
+Evaluation  [1040/3000]  eta: 3:14:23    time: 5.9517  data: 0.6566  max mem: 13155
+Obtained frames
+Qid :  ['INJ1tM_aKs8_000047_000057']
+Obtained frames
+Qid :  ['ZyTx58F4fLY_000072_000082']
+Obtained frames
+Qid :  ['2WYyNGCchf8_000000_000010']
+Obtained frames
+Qid :  ['17dCUgh-gnU_000032_000042']
+Obtained frames
+Qid :  ['hb7xfM6KFIw_000002_000012']
+Obtained frames
+Qid :  ['c_Rz8XjoVwc_000017_000027']
+Obtained frames
+Qid :  ['2ZtWcoG8fmQ_000218_000228']
+Obtained frames
+Qid :  ['F2I8C5ldKiM_000264_000274']
+Obtained frames
+Qid :  ['8m9HCzeqMWk_000118_000128']
+Obtained frames
+Qid :  ['VJ7ViA_wxBY_000013_000023']
+Evaluation  [1050/3000]  eta: 3:13:22    time: 5.9155  data: 0.5463  max mem: 13155
+Obtained frames
+Qid :  ['IoAWI76GaRI_000003_000013']
+Obtained frames
+Qid :  ['4kf0Pz1BsiE_000000_000010']
+Obtained frames
+Qid :  ['2TAU__tUsqI_000127_000137']
+Obtained frames
+Qid :  ['QO9JZOJvnwc_000010_000020']
+Obtained frames
+Qid :  ['vyvK2tYgmkU_000060_000070']
+Obtained frames
+Qid :  ['wHvu5OTdBCU_000003_000013']
+Obtained frames
+Qid :  ['xy7u9adkubI_000033_000043']
+Obtained frames
+Qid :  ['O2OevtJ41sY_000071_000081']
+Obtained frames
+Qid :  ['kcHT9KLtfgM_000045_000055']
+Obtained frames
+Qid :  ['qd1hjM2bICc_000001_000011']
+Evaluation  [1060/3000]  eta: 3:12:16    time: 5.7280  data: 0.5381  max mem: 13155
+Obtained frames
+Qid :  ['bhsig0U0rn8_000005_000015']
+Obtained frames
+Qid :  ['je2QLD6csoQ_000000_000010']
+Obtained frames
+Qid :  ['IEtCboPbTXI_000053_000063']
+Obtained frames
+Qid :  ['JeiqqPI_O0U_000558_000568']
+Obtained frames
+Qid :  ['ooYCWmfzq4U_000034_000044']
+Obtained frames
+Qid :  ['33sXL-DZpwM_000032_000042']
+Obtained frames
+Qid :  ['U8CrXWN4qM0_000004_000014']
+Obtained frames
+Qid :  ['1BkRWkHCMjQ_000077_000087']
+Obtained frames
+Qid :  ['hGc-9CMpTco_000219_000229']
+Obtained frames
+Qid :  ['F8s2h2TVD7Y_000000_000010']
+Evaluation  [1070/3000]  eta: 3:11:11    time: 5.6299  data: 0.6088  max mem: 13155
+Obtained frames
+Qid :  ['WeGuCJeUqyM_000045_000055']
+Obtained frames
+Qid :  ['sn-Cv_GJeYs_000000_000010']
+Obtained frames
+Qid :  ['UlgCpQWIxMs_000040_000050']
+Obtained frames
+Qid :  ['PhIXn5dauvk_000050_000060']
+Obtained frames
+Qid :  ['kX5rNlAtu5Q_000059_000069']
+Obtained frames
+Qid :  ['nbojNM3yPTg_001188_001198']
+Obtained frames
+Qid :  ['iNyDLhLuA3Q_000040_000050']
+Obtained frames
+Qid :  ['yWbesfdtZG0_000146_000156']
+Obtained frames
+Qid :  ['F9GU1RptBK4_000058_000068']
+Obtained frames
+Qid :  ['ResvW3ph0m4_000036_000046']
+Evaluation  [1080/3000]  eta: 3:10:17    time: 5.9379  data: 0.6806  max mem: 13155
+Obtained frames
+Qid :  ['8RTeThLNnxQ_000014_000024']
+Obtained frames
+Qid :  ['RCREdugD8c4_000064_000074']
+Obtained frames
+Qid :  ['o3BJ2JmWLTc_000044_000054']
+Obtained frames
+Qid :  ['i1AjI2ueGMI_000054_000064']
+Obtained frames
+Qid :  ['FmIxPnhH87c_000040_000050']
+Obtained frames
+Qid :  ['B-65MpDqEuM_000196_000206']
+Obtained frames
+Qid :  ['1W_KSb8rQm4_000001_000011']
+Obtained frames
+Qid :  ['fPz4_KfaH60_000006_000016']
+Obtained frames
+Qid :  ['ToSPHmXQ8bE_000116_000126']
+Obtained frames
+
+Error while read file idx
+video is: tA-L1DGr_Pk_000012_000022
+Obtained frames
+Qid :  ['2mTbrdgJCKI_000077_000087']
+Evaluation  [1090/3000]  eta: 3:09:15    time: 6.0278  data: 0.6029  max mem: 13155
+Obtained frames
+Qid :  ['qcXZxHB_o-c_000085_000095']
+Obtained frames
+Qid :  ['d1TYueq6OR0_000089_000099']
+Obtained frames
+Qid :  ['6gyir3BnglQ_000049_000059']
+Obtained frames
+Qid :  ['oa6JZrHCasU_000020_000030']
+Obtained frames
+Qid :  ['4jfpJMNzQZw_000001_000011']
+Obtained frames
+Qid :  ['kE-1A9drrws_000051_000061']
+Obtained frames
+Qid :  ['efUBSrCrveA_000078_000088']
+Obtained frames
+Qid :  ['mGQ3RNdNKRE_000005_000015']
+Obtained frames
+Qid :  ['6zCUU_BV1Zc_000003_000013']
+Obtained frames
+Qid :  ['fAYQjpU-j0g_000018_000028']
+Evaluation  [1100/3000]  eta: 3:08:09    time: 5.6749  data: 0.4580  max mem: 13155
+Obtained frames
+Qid :  ['OdQKmMY8uPI_000479_000489']
+Obtained frames
+Qid :  ['YXsMf2OKEIE_000505_000515']
+Obtained frames
+Qid :  ['NGLSHVE_pkM_000072_000082']
+Obtained frames
+Qid :  ['X_Gmxgtl9Oc_000059_000069']
+Obtained frames
+Qid :  ['fEEZomLLUBc_000108_000118']
+Obtained frames
+Qid :  ['N0jrPWhNhwU_000004_000014']
+Obtained frames
+Qid :  ['HLRD4vY2mPA_000156_000166']
+Obtained frames
+Qid :  ['GLes9aesBeQ_001399_001409']
+Obtained frames
+Qid :  ['u2n5eo0iO68_000310_000320']
+Obtained frames
+Qid :  ['GwfM9FZSOIU_000049_000059']
+Evaluation  [1110/3000]  eta: 3:07:05    time: 5.6209  data: 0.4345  max mem: 13155
+Obtained frames
+Qid :  ['LRR1_PBx3-8_000098_000108']
+Obtained frames
+Qid :  ['x28b00W_6g8_000002_000012']
+Obtained frames
+
+Error while read file idx
+video is: MBQZGJbG2sM_000064_000074
+Obtained frames
+Qid :  ['7YzHvHh6aos_000137_000147']
+Obtained frames
+Qid :  ['X2LoTIh3qkU_000021_000031']
+Obtained frames
+Qid :  ['0xVpqjSaO4o_000003_000013']
+Obtained frames
+Qid :  ['uA_s0rDuiCY_000029_000039']
+Obtained frames
+Qid :  ['TmR6vevWQQc_000001_000011']
+Obtained frames
+Qid :  ['__eSLq-bp8Y_000016_000026']
+Obtained frames
+Qid :  ['bByjm_TfLyM_000016_000026']
+Obtained frames
+Qid :  ['9HudBNhKRDo_000102_000112']
+Evaluation  [1120/3000]  eta: 3:06:02    time: 5.7146  data: 0.4021  max mem: 13155
+Obtained frames
+Qid :  ['E60UgUkiXXA_000588_000598']
+Obtained frames
+Qid :  ['0zTjieTsZqU_000072_000082']
+Obtained frames
+Qid :  ['mmRPgq_YjJw_000032_000042']
+Obtained frames
+Qid :  ['i1tgHoxJU7E_000046_000056']
+Obtained frames
+Qid :  ['VloTTm8VHF4_000170_000180']
+Obtained frames
+Qid :  ['45hx1259-uk_000015_000025']
+Obtained frames
+Qid :  ['lT5Fueiwj5E_000040_000050']
+Obtained frames
+Qid :  ['-dylG4hV7UE_000001_000011']
+Obtained frames
+Qid :  ['oAY942mvyDo_000016_000026']
+Obtained frames
+Qid :  ['4QryYylfRN0_000117_000127']
+Evaluation  [1130/3000]  eta: 3:05:01    time: 5.7825  data: 0.3815  max mem: 13155
+Obtained frames
+Qid :  ['IxVgnGg-SzM_000052_000062']
+Obtained frames
+Qid :  ['2-3UupL6k78_000011_000021']
+Obtained frames
+Qid :  ['G39mEi5kN6Q_000000_000010']
+Obtained frames
+Qid :  ['FXn_zO3g-ZI_000052_000062']
+Obtained frames
+Qid :  ['F44A4CFWkTE_000050_000060']
+Obtained frames
+Qid :  ['dKr5iNfERrA_000012_000022']
+Obtained frames
+Qid :  ['KpuW4N_YOhA_000227_000237']
+Obtained frames
+Qid :  ['AlIBpg8YeH0_000004_000014']
+Obtained frames
+Qid :  ['DPsEQNWwAKk_000358_000368']
+Obtained frames
+Qid :  ['pywHytueU1s_000031_000041']
+Evaluation  [1140/3000]  eta: 3:04:04    time: 5.9449  data: 0.3872  max mem: 13155
+Obtained frames
+Qid :  ['FVqFsKHG64M_000256_000266']
+Obtained frames
+Qid :  ['oBgkWE67Zs0_000041_000051']
+Obtained frames
+Qid :  ['g0x-J4Nz-P0_000012_000022']
+Obtained frames
+Qid :  ['lIWeDi819t8_000128_000138']
+Obtained frames
+Qid :  ['zXcxPr9A2XQ_000004_000014']
+Obtained frames
+Qid :  ['S2M5ejr3lfE_000021_000031']
+Obtained frames
+Qid :  ['p4R-q94KBcU_000003_000013']
+Obtained frames
+Qid :  ['SnazyIQCsXs_000007_000017']
+Obtained frames
+Qid :  ['PXE-flKOdDY_000000_000010']
+Obtained frames
+Qid :  ['Vubl75aKwyw_000007_000017']
+Evaluation  [1150/3000]  eta: 3:03:55    time: 7.5707  data: 2.1352  max mem: 13155
+Obtained frames
+Qid :  ['FcDKJKfViqs_000058_000068']
+Obtained frames
+Qid :  ['Rd18n3PeZvk_000000_000010']
+Obtained frames
+Qid :  ['hnMrALsTnYI_000010_000020']
+Obtained frames
+Qid :  ['5u1ew3SXUTQ_000038_000048']
+Obtained frames
+Qid :  ['8_5X8tTQvpw_000031_000041']
+Obtained frames
+Qid :  ['Zxztcizo0NM_000004_000014']
+Obtained frames
+Qid :  ['Dz6QQNNPRnE_000103_000113']
+Obtained frames
+Qid :  ['Ca1qBsLZ6NU_000021_000031']
+Obtained frames
+Qid :  ['1ZwMpYj4UDM_000223_000233']
+Obtained frames
+Qid :  ['88krmc6AxZs_000015_000025']
+Evaluation  [1160/3000]  eta: 3:02:54    time: 7.4841  data: 2.1527  max mem: 13155
+Obtained frames
+Qid :  ['kbg6BltCr-g_000195_000205']
+Obtained frames
+Qid :  ['CpI8AgU5V8k_000249_000259']
+Obtained frames
+Qid :  ['b1UvHtv5Wsc_000008_000018']
+Obtained frames
+Qid :  ['SHfysNBPyc4_000009_000019']
+Obtained frames
+Qid :  ['MAjKfVLJvwg_000129_000139']
+Obtained frames
+Qid :  ['lqsv65kdw8c_000090_000100']
+Obtained frames
+Qid :  ['Njy26_8TzLY_000193_000203']
+Obtained frames
+Qid :  ['yBxpPyDKPOk_000000_000010']
+Obtained frames
+Qid :  ['zQvEBPbiXIM_000076_000086']
+Obtained frames
+Qid :  ['wacvvN2e0Yg_000028_000038']
+Evaluation  [1170/3000]  eta: 3:01:57    time: 6.0066  data: 0.5388  max mem: 13155
+Obtained frames
+Qid :  ['2hOvq9UxaLU_000035_000045']
+Obtained frames
+Qid :  ['85W9IvNkf9E_000006_000016']
+Obtained frames
+Qid :  ['vqtkPaWK-3o_000004_000014']
+Obtained frames
+Qid :  ['P3-m3CXtEXc_000015_000025']
+Obtained frames
+Qid :  ['XLlNWOhoDD8_000002_000012']
+Obtained frames
+Qid :  ['aY049ohv_PQ_000016_000026']
+Obtained frames
+Qid :  ['1w9kb3R2NHc_000003_000013']
+Obtained frames
+Qid :  ['TsmT8oIktf4_000033_000043']
+Obtained frames
+Qid :  ['GW70mMZhCys_000058_000068']
+Obtained frames
+Qid :  ['RI85CsB-LmQ_000010_000020']
+Evaluation  [1180/3000]  eta: 3:00:59    time: 6.1054  data: 0.6526  max mem: 13155
+Obtained frames
+Qid :  ['SabmKbtyqQE_000255_000265']
+Obtained frames
+Qid :  ['dtgFHqPHnCo_000050_000060']
+Obtained frames
+Qid :  ['tBvi8-j66Bo_000128_000138']
+Obtained frames
+Qid :  ['9nmfDU4b0bs_000041_000051']
+Obtained frames
+Qid :  ['ZSfqWu8Ynzc_000135_000145']
+Obtained frames
+Qid :  ['I1hoVLhmfGM_000013_000023']
+Obtained frames
+Qid :  ['KiDR3o84PEI_000002_000012']
+Obtained frames
+Qid :  ['QPNDoacX0pw_000046_000056']
+Obtained frames
+Qid :  ['Yep0XRzKVvg_000384_000394']
+Obtained frames
+Qid :  ['IVNfgnnHpC0_000000_000010']
+Evaluation  [1190/3000]  eta: 2:59:55    time: 5.8690  data: 0.5819  max mem: 13155
+Obtained frames
+Qid :  ['HtBGvM0RzRU_000020_000030']
+Obtained frames
+Qid :  ['gOksMVQ4KuE_000018_000028']
+Obtained frames
+Qid :  ['On5M85wTgRw_000137_000147']
+Obtained frames
+Qid :  ['vq7Y1NlQXeM_000019_000029']
+Obtained frames
+Qid :  ['1dJW9_6zy5w_000002_000012']
+Obtained frames
+Qid :  ['gJrPX97phUA_000062_000072']
+Obtained frames
+Qid :  ['rCf1nF1F0VI_000055_000065']
+Obtained frames
+Qid :  ['8490K6wsYpo_000016_000026']
+Obtained frames
+Qid :  ['jnX4TBtt324_000067_000077']
+Obtained frames
+Qid :  ['YSsPagO1AWo_000155_000165']
+Evaluation  [1200/3000]  eta: 2:58:49    time: 5.5976  data: 0.3949  max mem: 13155
+Obtained frames
+
+Error while read file idx
+video is: SaDbcRTA7Fk_000033_000043
+Obtained frames
+Qid :  ['u0UOAMDUR6g_000264_000274']
+Obtained frames
+Qid :  ['x9WM5xgM8kY_000105_000115']
+Obtained frames
+Qid :  ['0PzwR7827Iw_000082_000092']
+Obtained frames
+Qid :  ['Wgh7381ApRo_000007_000017']
+Obtained frames
+Qid :  ['d3nxAURrQ_4_000003_000013']
+Obtained frames
+Qid :  ['p_JXi4r0Aiw_000000_000010']
+Obtained frames
+Qid :  ['vrUPEq-FbCg_000019_000029']
+Obtained frames
+Qid :  ['d8NGF9AMQ5s_000001_000011']
+Obtained frames
+Qid :  ['7DBxEKWfBMQ_000002_000012']
+Obtained frames
+Qid :  ['4Lp6Euu5lz0_000045_000055']
+Evaluation  [1210/3000]  eta: 2:57:49    time: 5.7404  data: 0.3935  max mem: 13155
+Obtained frames
+Qid :  ['IoaLAuiKqIk_000067_000077']
+Obtained frames
+Qid :  ['b4xhlBgAve0_000155_000165']
+Obtained frames
+Qid :  ['hhQvR4b4fPU_000062_000072']
+Obtained frames
+Qid :  ['WfjIoM82SJ0_000027_000037']
+Obtained frames
+Qid :  ['HsfRQ3o1SaA_000011_000021']
+Obtained frames
+Qid :  ['j6j8OIJftwA_000041_000051']
+Obtained frames
+Qid :  ['nLDI-yMrXdA_000082_000092']
+Obtained frames
+Qid :  ['uldJXzM_Dps_000069_000079']
+Obtained frames
+Qid :  ['nVvFSdiBZME_000000_000010']
+Obtained frames
+Qid :  ['XZ6JuEMVoPc_000025_000035']
+Evaluation  [1220/3000]  eta: 2:56:47    time: 5.8937  data: 0.4452  max mem: 13155
+Obtained frames
+Qid :  ['A4So9adxplA_000026_000036']
+Obtained frames
+Qid :  ['2bfOTRWXv7M_000060_000070']
+Obtained frames
+Qid :  ['rKqUDR3vTU8_000043_000053']
+Obtained frames
+Qid :  ['qp46Jph_oCQ_000009_000019']
+Obtained frames
+Qid :  ['oWDu7oz2Gyk_000043_000053']
+Obtained frames
+Qid :  ['3TuSnebDxU4_000003_000013']
+Obtained frames
+Qid :  ['_FsPjRmRDPU_000015_000025']
+Obtained frames
+Qid :  ['hTSOPl9MCVk_000012_000022']
+Obtained frames
+Qid :  ['hZLnk9KChSE_000057_000067']
+Obtained frames
+Qid :  ['qisITRa-m3Y_000000_000010']
+Evaluation  [1230/3000]  eta: 2:55:54    time: 6.1039  data: 0.5918  max mem: 13155
+Obtained frames
+Qid :  ['qqUoed51TLo_000142_000152']
+Obtained frames
+Qid :  ['724uChOWP7Y_000137_000147']
+Obtained frames
+Qid :  ['maax-WGbEds_000000_000010']
+Obtained frames
+Qid :  ['P_ub3sCGpAs_000004_000014']
+Obtained frames
+Qid :  ['F3d_-ntOOH4_000002_000012']
+Obtained frames
+Qid :  ['3POK0jovdao_000004_000014']
+Obtained frames
+Qid :  ['13rdutqRfHA_000032_000042']
+Obtained frames
+Qid :  ['Md8yligIt0s_000000_000010']
+Obtained frames
+Qid :  ['7FPXtyOEFek_000282_000292']
+Obtained frames
+Qid :  ['YWD4hWsiRQ4_000040_000050']
+Evaluation  [1240/3000]  eta: 2:54:57    time: 6.2627  data: 0.7358  max mem: 13155
+Obtained frames
+Qid :  ['9UOK9SSrEVA_000020_000030']
+Obtained frames
+Qid :  ['-6rd6BQQM_g_000024_000034']
+Obtained frames
+Qid :  ['f8f2mA6tNbg_000002_000012']
+Obtained frames
+Qid :  ['kg2fptiN68s_000049_000059']
+Obtained frames
+Qid :  ['QhKhh2DLCZA_000003_000013']
+Obtained frames
+Qid :  ['VbrylOL6dsA_000148_000158']
+Obtained frames
+Qid :  ['d7OAUHXxrpM_000023_000033']
+Obtained frames
+Qid :  ['MKiNbFvkVSY_000109_000119']
+Obtained frames
+Qid :  ['irwMpUHyJQI_000066_000076']
+Obtained frames
+Qid :  ['Hf5g9j3jcmo_000048_000058']
+Evaluation  [1250/3000]  eta: 2:53:56    time: 6.0325  data: 0.6132  max mem: 13155
+Obtained frames
+Qid :  ['qjliXWLsUb8_000023_000033']
+Obtained frames
+Qid :  ['jkuPHckH0Ik_000047_000057']
+Obtained frames
+Qid :  ['25gW43H8ENY_000002_000012']
+Obtained frames
+Qid :  ['7qahQViiGlk_000136_000146']
+Obtained frames
+Qid :  ['8tDEidI7XaU_000142_000152']
+Obtained frames
+Qid :  ['JcPQ3MejgBY_000063_000073']
+Obtained frames
+Qid :  ['5BLCLngn30c_000012_000022']
+Obtained frames
+Qid :  ['9mbKIVkPgj8_000004_000014']
+Obtained frames
+Qid :  ['dxal8BT5a-Q_000189_000199']
+Obtained frames
+Qid :  ['EZ5v8TMsILY_000028_000038']
+Evaluation  [1260/3000]  eta: 2:52:59    time: 6.0010  data: 0.5343  max mem: 13155
+Obtained frames
+Qid :  ['Wz7p2QU32JQ_000368_000378']
+Obtained frames
+Qid :  ['F6Y-6HcCZBw_000044_000054']
+Obtained frames
+Qid :  ['-gGIcOnve58_000006_000016']
+Obtained frames
+Qid :  ['808CRYmofPc_000007_000017']
+Obtained frames
+Qid :  ['XdAwn9po_Ro_000004_000014']
+Obtained frames
+Qid :  ['rsG8jmx0KBE_000004_000014']
+Obtained frames
+Qid :  ['636Nxb_jm2k_000169_000179']
+Obtained frames
+Qid :  ['IOS9dELCiFI_000019_000029']
+Obtained frames
+Qid :  ['toHqG0Qy9Qk_000183_000193']
+Obtained frames
+Qid :  ['UlYUJj-tDlY_000018_000028']
+Evaluation  [1270/3000]  eta: 2:51:58    time: 5.9844  data: 0.5255  max mem: 13155
+Obtained frames
+Qid :  ['DO8tiQIezQo_000141_000151']
+Obtained frames
+Qid :  ['FA4yAEBX74w_000008_000018']
+Obtained frames
+Qid :  ['pfKPxYxtHBk_000000_000010']
+Obtained frames
+Qid :  ['p7pvAXlGTos_000019_000029']
+Obtained frames
+Qid :  ['Hk8t19lU4Js_000699_000709']
+Obtained frames
+Qid :  ['XT30qGhZWdM_000010_000020']
+Obtained frames
+Qid :  ['shst_RQnmRw_000020_000030']
+Obtained frames
+Qid :  ['nDy1c4tRZ-M_000000_000010']
+Obtained frames
+Qid :  ['fJYAAzKJWlA_000002_000012']
+Obtained frames
+Qid :  ['7QHB0qFRpvs_000000_000010']
+Evaluation  [1280/3000]  eta: 2:50:54    time: 5.7736  data: 0.4093  max mem: 13155
+Obtained frames
+Qid :  ['OEBVhuUwgQo_000002_000012']
+Obtained frames
+Qid :  ['KALp8tZL0PY_000024_000034']
+Obtained frames
+Qid :  ['jqSUzszi7Mo_000498_000508']
+Obtained frames
+Qid :  ['jtXAPtsHXDU_000005_000015']
+Obtained frames
+Qid :  ['KmLwDzQje20_000361_000371']
+Obtained frames
+Qid :  ['Jo0WnxZMiAk_000425_000435']
+Obtained frames
+Qid :  ['QD-qbKUMR3Q_000016_000026']
+Obtained frames
+Qid :  ['p6OrkDisEq8_000008_000018']
+Obtained frames
+Qid :  ['OUo_tiHl-zo_000120_000130']
+Obtained frames
+Qid :  ['NWU9EpqDisM_000002_000012']
+Evaluation  [1290/3000]  eta: 2:49:56    time: 5.8907  data: 0.4651  max mem: 13155
+Obtained frames
+Qid :  ['yK1cHzApCKo_000093_000103']
+Obtained frames
+Qid :  ['emvCsSxU1Sk_000002_000012']
+Obtained frames
+Qid :  ['7U0zR7pk5To_000001_000011']
+Obtained frames
+Qid :  ['ik4BW3-SCts_000001_000011']
+Obtained frames
+Qid :  ['z-riIJqwa1E_000007_000017']
+Obtained frames
+Qid :  ['j2Zy5pxIAsI_000976_000986']
+Obtained frames
+Qid :  ['dsPI3gukJLU_000006_000016']
+Obtained frames
+
+Error while read file idx
+video is: ZnJ4FZEgFLg_000119_000129
+Obtained frames
+Qid :  ['W9gfcb2zFng_000007_000017']
+Obtained frames
+
+Error while read file idx
+video is: aKND4GMSmRE_000041_000051
+Obtained frames
+Qid :  ['nibnNIwKfWg_000020_000030']
+Obtained frames
+Qid :  ['3FEClXSfuGA_000021_000031']
+Evaluation  [1300/3000]  eta: 2:48:56    time: 6.0132  data: 0.6279  max mem: 13155
+Obtained frames
+Qid :  ['K6NvED-BcqY_000000_000010']
+Obtained frames
+Qid :  ['2KtWxziboE4_000019_000029']
+Obtained frames
+Qid :  ['hljfjFYNXM0_000000_000010']
+Obtained frames
+Qid :  ['mqK3dY0pZ68_000147_000157']
+Obtained frames
+Qid :  ['KSBCwzVHrl8_000000_000010']
+Obtained frames
+Qid :  ['gEthT64rbRQ_000049_000059']
+Obtained frames
+Qid :  ['M1Cg-CqOGUw_000208_000218']
+Obtained frames
+Qid :  ['WnR-Y0WAMzs_000001_000011']
+Obtained frames
+Qid :  ['soh2mZ2IM2k_000278_000288']
+Obtained frames
+Qid :  ['Bo5f3gNgTLQ_000011_000021']
+Evaluation  [1310/3000]  eta: 2:47:54    time: 5.8217  data: 0.5384  max mem: 13155
+Obtained frames
+Qid :  ['jmR8StkoC-s_000078_000088']
+Obtained frames
+Qid :  ['lv34MVS1LOs_000011_000021']
+Obtained frames
+Qid :  ['i4qFc-2RU18_000055_000065']
+Obtained frames
+Qid :  ['mojBySW7vZg_000029_000039']
+Obtained frames
+Qid :  ['rC7d3L8nSB4_000093_000103']
+Obtained frames
+Qid :  ['s2tW0Z6R8V8_000140_000150']
+Obtained frames
+Qid :  ['wgjriwvgedc_000192_000202']
+Obtained frames
+Qid :  ['e9qAv243J_Y_000040_000050']
+Obtained frames
+Qid :  ['eeo00C1sSjo_000012_000022']
+Obtained frames
+Qid :  ['qGxpGmjYgWc_000118_000128']
+Evaluation  [1320/3000]  eta: 2:46:59    time: 6.0275  data: 0.7453  max mem: 13155
+Obtained frames
+Qid :  ['GGkISpDoINs_000054_000064']
+Obtained frames
+Qid :  ['fJ-bB9HDZ-U_000004_000014']
+Obtained frames
+Qid :  ['-euQl2VN8tE_000087_000097']
+Obtained frames
+Qid :  ['-MLjvAhdJIU_000071_000081']
+Obtained frames
+Qid :  ['6Pfk6GH0E0s_000006_000016']
+Obtained frames
+Qid :  ['R2JEmaClF2U_000003_000013']
+Obtained frames
+Qid :  ['PGQl0hnMppQ_000086_000096']
+Obtained frames
+Qid :  ['WcrzDpjwI8k_000080_000090']
+Obtained frames
+Qid :  ['jc5wnUwTDAQ_000154_000164']
+Obtained frames
+Qid :  ['InRDUhinb78_000012_000022']
+Evaluation  [1330/3000]  eta: 2:57:09    time: 32.8364  data: 27.3923  max mem: 13155
+Obtained frames
+Qid :  ['0ghNZluZEg8_000480_000490']
+Obtained frames
+Qid :  ['xceAGxszIu8_000001_000011']
+Obtained frames
+Qid :  ['sJpkR-NsFfw_000004_000014']
+Obtained frames
+Qid :  ['W9ND3Q8Au9E_000080_000090']
+Obtained frames
+Qid :  ['t-vLqAg6Y-g_000171_000181']
+Obtained frames
+Qid :  ['JLI10rJlGf0_000078_000088']
+Obtained frames
+Qid :  ['D_6gpSu02wc_000018_000028']
+Obtained frames
+Qid :  ['PszdRm8Cgbc_000073_000083']
+Obtained frames
+Qid :  ['SAnpnkZj724_000000_000010']
+Obtained frames
+Qid :  ['-v_iMUMMX6g_000050_000060']
+Evaluation  [1340/3000]  eta: 2:55:58    time: 32.5793  data: 27.0986  max mem: 13155
+Obtained frames
+Qid :  ['uwoyL2M6o3k_000020_000030']
+Obtained frames
+Qid :  ['FrI_L_OKKIk_000000_000010']
+Obtained frames
+Qid :  ['aK1dcWQCUsw_000008_000018']
+Obtained frames
+Qid :  ['7XqoLyIV2NU_000010_000020']
+Obtained frames
+Qid :  ['odNs7HaL7SM_000000_000010']
+Obtained frames
+Qid :  ['-i8TEhpR3_I_000191_000201']
+Obtained frames
+Qid :  ['FzPJADO2m5c_000276_000286']
+Obtained frames
+Qid :  ['hYZ0prG2XsE_000011_000021']
+Obtained frames
+Qid :  ['xx9MGVmhnrg_000349_000359']
+Obtained frames
+Qid :  ['LNOhvwIXAn8_000000_000010']
+Evaluation  [1350/3000]  eta: 2:54:46    time: 5.7392  data: 0.4419  max mem: 13155
+Obtained frames
+Qid :  ['N4oN_8nyxyI_000006_000016']
+Obtained frames
+Qid :  ['T81VuutuRTc_000067_000077']
+Obtained frames
+Qid :  ['nwU5tk0P6ok_000003_000013']
+Obtained frames
+Qid :  ['bKUJvyPccHA_000003_000013']
+Obtained frames
+Qid :  ['MBkdWktFwpQ_000505_000515']
+Obtained frames
+Qid :  ['oXWaJa14iyg_000216_000226']
+Obtained frames
+Qid :  ['Wj3jSuoWiLo_000001_000011']
+Obtained frames
+Qid :  ['Fz16t9SrF3U_000080_000090']
+Obtained frames
+Qid :  ['V5gxc_f_krU_000041_000051']
+Obtained frames
+Qid :  ['63GbomJ2sbY_000000_000010']
+Evaluation  [1360/3000]  eta: 2:53:40    time: 5.9171  data: 0.5589  max mem: 13155
+Obtained frames
+Qid :  ['WyYCnBQuK_4_000058_000068']
+Obtained frames
+Qid :  ['ZJTlRXUYh_k_000052_000062']
+Obtained frames
+Qid :  ['ykmWVrYLXTk_000104_000114']
+Obtained frames
+Qid :  ['gKHyD7aBo5M_000084_000094']
+Obtained frames
+Qid :  ['YW4j7HXV1eI_000000_000010']
+Obtained frames
+Qid :  ['-O0mBf-MsxE_000023_000033']
+Obtained frames
+Qid :  ['2WfDoKSp6EU_000009_000019']
+Obtained frames
+Qid :  ['ABlPx20zCu4_000000_000010']
+Obtained frames
+Qid :  ['k-Tgj3VPs4c_000079_000089']
+Obtained frames
+Qid :  ['NNMzkUTw0fE_000029_000039']
+Evaluation  [1370/3000]  eta: 2:52:31    time: 6.0163  data: 0.5740  max mem: 13155
+Obtained frames
+Qid :  ['LJwb-X2KC7U_000003_000013']
+Obtained frames
+Qid :  ['3zQTi-2dsZE_000047_000057']
+Obtained frames
+Qid :  ['LFmJxkzJTPc_000059_000069']
+Obtained frames
+Qid :  ['qK8D9jAQ8CA_000047_000057']
+Obtained frames
+Qid :  ['Ka5VqYYzoEs_000001_000011']
+Obtained frames
+Qid :  ['vvWrudD1dsw_000031_000041']
+Obtained frames
+Qid :  ['wOjGEpeTJII_000000_000010']
+Obtained frames
+Qid :  ['KTDIYbPJ2-0_000043_000053']
+Obtained frames
+Qid :  ['o2etvQjD7_s_000035_000045']
+Obtained frames
+Qid :  ['d2uykSMNBeI_000048_000058']
+Evaluation  [1380/3000]  eta: 2:51:16    time: 5.6224  data: 0.4240  max mem: 13155
+Obtained frames
+Qid :  ['Uj9R-fL_Hps_000004_000014']
+Obtained frames
+Qid :  ['lydCPjfe-ic_000080_000090']
+Obtained frames
+Qid :  ['5IXQH1i7hr0_000007_000017']
+Obtained frames
+Qid :  ['tujHgj4ET1s_000004_000014']
+Obtained frames
+Qid :  ['kNWfWz8DyKk_000007_000017']
+Obtained frames
+Qid :  ['luh-UYA4vJE_000051_000061']
+Obtained frames
+Qid :  ['F-nfbaOWm5o_000004_000014']
+Obtained frames
+Qid :  ['uXxkrCoMc6w_000006_000016']
+Obtained frames
+Qid :  ['4J-JjLC9IO4_000100_000110']
+Obtained frames
+Qid :  ['emOPWJrMyfo_000017_000027']
+Evaluation  [1390/3000]  eta: 2:50:04    time: 5.5029  data: 0.3772  max mem: 13155
+Obtained frames
+Qid :  ['sNUz_hu28Ro_000002_000012']
+Obtained frames
+Qid :  ['ojLUuKw94Z8_000027_000037']
+Obtained frames
+Qid :  ['fgDCr9StRX4_000024_000034']
+Obtained frames
+Qid :  ['0dzaR4ioCks_000158_000168']
+Obtained frames
+Qid :  ['--PyMoD3_eg_000020_000030']
+Obtained frames
+Qid :  ['3Hm9omGo_LE_000019_000029']
+Obtained frames
+Qid :  ['fbjh4hcOWTw_000014_000024']
+Obtained frames
+Qid :  ['NDDktCiAjxk_000001_000011']
+Obtained frames
+Qid :  ['jhkID0q22UI_000002_000012']
+Obtained frames
+Qid :  ['lBoDdyqH7_Y_000004_000014']
+Evaluation  [1400/3000]  eta: 2:48:55    time: 5.7335  data: 0.4854  max mem: 13155
+Obtained frames
+Qid :  ['NoEO3_9CjhU_000053_000063']
+Obtained frames
+Qid :  ['e5k7uWmqqcs_000006_000016']
+Obtained frames
+Qid :  ['SFUjWI3IrJU_000238_000248']
+Obtained frames
+Qid :  ['gwVsdVwOkd0_000068_000078']
+Obtained frames
+Qid :  ['y2jAfG8P_HM_000026_000036']
+Obtained frames
+Qid :  ['buVKHNZU8K4_000020_000030']
+Obtained frames
+Qid :  ['Ejx84hfJJlA_000140_000150']
+Obtained frames
+Qid :  ['UiN3YCFQigE_000023_000033']
+Obtained frames
+Qid :  ['bTPKxS1tgdc_000090_000100']
+Obtained frames
+Qid :  ['yvWjKUcszgg_000054_000064']
+Evaluation  [1410/3000]  eta: 2:47:45    time: 5.7993  data: 0.6640  max mem: 13155
+Obtained frames
+Qid :  ['AfLVO99etpE_000047_000057']
+Obtained frames
+Qid :  ['dQkeW8sRiBU_000147_000157']
+Obtained frames
+Qid :  ['Ed-7WyZAvJg_000322_000332']
+Obtained frames
+Qid :  ['Ae78ZjcIhZk_000004_000014']
+Obtained frames
+Qid :  ['sOaEBmfysNs_000033_000043']
+Obtained frames
+Qid :  ['XwufsTiDrQU_000015_000025']
+Obtained frames
+Qid :  ['Q-jOVafrcE0_000351_000361']
+Obtained frames
+Qid :  ['WbrUDEKEbO0_000005_000015']
+Obtained frames
+Qid :  ['5qqJ19htITQ_000171_000181']
+Obtained frames
+Qid :  ['g0UG9H8j5sw_000014_000024']
+Evaluation  [1420/3000]  eta: 2:46:40    time: 5.9277  data: 0.6464  max mem: 13155
+Obtained frames
+Qid :  ['JaFg3ai4P5E_000062_000072']
+Obtained frames
+Qid :  ['w5Q5hU38kNQ_000021_000031']
+Obtained frames
+Qid :  ['NgM1s8r0wJQ_000081_000091']
+Obtained frames
+Qid :  ['h3DMnGqt-pk_000005_000015']
+Obtained frames
+Qid :  ['xFHfnHhif0w_000013_000023']
+Obtained frames
+Qid :  ['j4g3ZTth1oI_000014_000024']
+Obtained frames
+Qid :  ['gLvfaI8FEr8_000001_000011']
+Obtained frames
+Qid :  ['JEBQiSHnmqs_000000_000010']
+Obtained frames
+Qid :  ['Wkk_xwly1-w_000000_000010']
+Obtained frames
+Qid :  ['MF_c__fpciY_000057_000067']
+Evaluation  [1430/3000]  eta: 2:45:30    time: 5.9405  data: 0.5457  max mem: 13155
+Obtained frames
+Qid :  ['HQJUZqpjHBM_000053_000063']
+Obtained frames
+Qid :  ['5AHQZP9oECc_000022_000032']
+Obtained frames
+Qid :  ['5kvBdoC-qiU_000020_000030']
+Obtained frames
+Qid :  ['uIiMgKEsvgM_000002_000012']
+Obtained frames
+Qid :  ['CileV_8Dhr0_000024_000034']
+Obtained frames
+Qid :  ['u0bpMomRgtA_000010_000020']
+Obtained frames
+Qid :  ['HnovELFgOzk_000043_000053']
+Obtained frames
+Qid :  ['VOhzerF20sA_000027_000037']
+Obtained frames
+Qid :  ['GpksHGuKky8_000027_000037']
+Obtained frames
+Qid :  ['T2vdUqfvJEU_000013_000023']
+Evaluation  [1440/3000]  eta: 2:44:20    time: 5.7247  data: 0.5183  max mem: 13155
+Obtained frames
+Qid :  ['_HfaDD0LQfU_000035_000045']
+Obtained frames
+Qid :  ['GuJthR1xU6c_000019_000029']
+Obtained frames
+Qid :  ['3-FD_jZppiA_000074_000084']
+Obtained frames
+Qid :  ['HB6Jfmxqt3I_000072_000082']
+Obtained frames
+Qid :  ['MR1xsqg42eA_000019_000029']
+Obtained frames
+Qid :  ['wrtxqDKgPH8_000020_000030']
+Obtained frames
+Qid :  ['caNzD952-b8_000265_000275']
+Obtained frames
+Qid :  ['oWkmGQSLMUI_000022_000032']
+Obtained frames
+Qid :  ['BWXPxmB3bbg_000104_000114']
+Obtained frames
+Qid :  ['R6Xwl9fpt9M_000055_000065']
+Evaluation  [1450/3000]  eta: 2:43:08    time: 5.6052  data: 0.4412  max mem: 13155
+Obtained frames
+Qid :  ['t6cfm1qagfs_000136_000146']
+Obtained frames
+Qid :  ['lYv0ygrrSXQ_000098_000108']
+Obtained frames
+Qid :  ['7oxpRauvGBM_000002_000012']
+Obtained frames
+Qid :  ['JIfWmhyk7HE_000135_000145']
+Obtained frames
+Qid :  ['WUAEAlfOT_M_000009_000019']
+Obtained frames
+Qid :  ['NR8iH2VnKuE_000014_000024']
+Obtained frames
+Qid :  ['2rb3AGWlLhA_000177_000187']
+Obtained frames
+Qid :  ['mQ67_XY-C3c_000059_000069']
+Obtained frames
+Qid :  ['5L-gHkyUcuw_001006_001016']
+Obtained frames
+Qid :  ['_w-Yg2GU5qE_000401_000411']
+Evaluation  [1460/3000]  eta: 2:42:00    time: 5.6720  data: 0.4777  max mem: 13155
+Obtained frames
+Qid :  ['QA4QYXc-gcg_000175_000185']
+Obtained frames
+Qid :  ['5Or4f3SgPyM_000179_000189']
+Obtained frames
+Qid :  ['z_9-AlY4MpQ_000047_000057']
+Obtained frames
+Qid :  ['f6mj7VuvSwo_000021_000031']
+Obtained frames
+Qid :  ['i7h8aT06yMA_000180_000190']
+Obtained frames
+Qid :  ['9x7-GYIxMjI_000180_000190']
+Obtained frames
+Qid :  ['lAxzGoXCn4E_000027_000037']
+Obtained frames
+Qid :  ['eF9TK_bZzSo_000036_000046']
+Obtained frames
+
+Error while read file idx
+video is: ee8OpEViheY_000024_000034
+Obtained frames
+Qid :  ['pl0CKTLJkSw_000017_000027']
+Obtained frames
+Qid :  ['nDNfMo5z3m0_000121_000131']
+Evaluation  [1470/3000]  eta: 2:40:53    time: 5.8669  data: 0.5987  max mem: 13155
+Obtained frames
+Qid :  ['g04KKH1uUT8_000045_000055']
+Obtained frames
+Qid :  ['O7FvIj0Mm7Y_000000_000010']
+Obtained frames
+Qid :  ['rk2-v0OT0vk_000003_000013']
+Obtained frames
+Qid :  ['lT61DyPgSRg_000003_000013']
+Obtained frames
+Qid :  ['qp0yAzB5VNY_000072_000082']
+Obtained frames
+Qid :  ['H7hldaA5SLk_000367_000377']
+Obtained frames
+Qid :  ['BZZdaC337PI_000002_000012']
+Obtained frames
+Qid :  ['LYL_9mHK10I_000201_000211']
+Obtained frames
+Qid :  ['tavKJGEwbSE_000242_000252']
+Obtained frames
+Qid :  ['hHFF7SlYg_4_000007_000017']
+Evaluation  [1480/3000]  eta: 2:39:47    time: 6.0005  data: 0.5627  max mem: 13155
+Obtained frames
+Qid :  ['8AuTOW5UEvo_000405_000415']
+Obtained frames
+Qid :  ['xx4npVGdGB4_000123_000133']
+Obtained frames
+Qid :  ['6AMERQyeg0U_000015_000025']
+Obtained frames
+Qid :  ['lnndLPKlfis_000000_000010']
+Obtained frames
+Qid :  ['l-pxf0lqtVQ_000001_000011']
+Obtained frames
+Qid :  ['S6VTIJc5ZIk_000000_000010']
+Obtained frames
+Qid :  ['xlGI54OtW0Q_000015_000025']
+Obtained frames
+Qid :  ['gbUs1Kol6tw_000383_000393']
+Obtained frames
+Qid :  ['27kNKEjHvXQ_000281_000291']
+Obtained frames
+Qid :  ['mhfvd10UsV0_000013_000023']
+Evaluation  [1490/3000]  eta: 2:38:41    time: 6.0304  data: 0.4755  max mem: 13155
+Obtained frames
+Qid :  ['53GsCAcoV_Q_000204_000214']
+Obtained frames
+Qid :  ['FLCSeTdXKDA_000017_000027']
+Obtained frames
+Qid :  ['N0uYlrAKdWU_000009_000019']
+Obtained frames
+Qid :  ['lTfwH6UwvNs_000009_000019']
+Obtained frames
+Qid :  ['AK7aOBnsY7s_000048_000058']
+Obtained frames
+Qid :  ['Z5BkKxbGuXc_000000_000010']
+Obtained frames
+Qid :  ['7Q4hz9eQ5hM_000002_000012']
+Obtained frames
+Qid :  ['U2Ay2tUnrOI_000035_000045']
+Obtained frames
+Qid :  ['HAKxnozuYVE_000063_000073']
+Obtained frames
+Qid :  ['R5M5ALfmvjQ_000027_000037']
+Evaluation  [1500/3000]  eta: 2:37:33    time: 5.9240  data: 0.4154  max mem: 13155
+Obtained frames
+Qid :  ['BkHdPadXDDU_000002_000012']
+Obtained frames
+Qid :  ['M75Qvi2TUhU_000101_000111']
+Obtained frames
+Qid :  ['yg4lgd-VPRE_000011_000021']
+Obtained frames
+Qid :  ['18cqmqkY3uQ_000053_000063']
+Obtained frames
+Qid :  ['Dj1-5SbcOe4_000387_000397']
+Obtained frames
+Qid :  ['logoPyDVxZo_000016_000026']
+Obtained frames
+Qid :  ['_iuoP-WCrro_000038_000048']
+Obtained frames
+Qid :  ['LqlRZtrD_vo_000030_000040']
+Obtained frames
+Qid :  ['v174SjBDXlE_000201_000211']
+Obtained frames
+Qid :  ['3L1MlPnOo_c_000000_000010']
+Evaluation  [1510/3000]  eta: 2:36:24    time: 5.7486  data: 0.4151  max mem: 13155
+Obtained frames
+Qid :  ['Kd4drwKdeg8_000209_000219']
+Obtained frames
+Qid :  ['X9tEMTYVdeg_000122_000132']
+Obtained frames
+Qid :  ['bkSQfnrI5_c_000058_000068']
+Obtained frames
+Qid :  ['e-RvXQJlVi4_000003_000013']
+Obtained frames
+Qid :  ['Au2zIAh5L0M_000067_000077']
+Obtained frames
+Qid :  ['AG7rHLw-ckU_000512_000522']
+Obtained frames
+Qid :  ['5Z4MbDcObJ0_000000_000010']
+Obtained frames
+Qid :  ['a3UcaEh3EmI_000033_000043']
+Obtained frames
+Qid :  ['ejhfgYw-acA_000028_000038']
+Obtained frames
+Qid :  ['dN6_olIu9Tk_000045_000055']
+Evaluation  [1520/3000]  eta: 2:35:17    time: 5.7839  data: 0.4656  max mem: 13155
+Obtained frames
+Qid :  ['uon30mDtIiI_000000_000010']
+Obtained frames
+Qid :  ['FY_RiCi-9xU_000024_000034']
+Obtained frames
+Qid :  ['k8TLmg4khLA_000249_000259']
+Obtained frames
+Qid :  ['U9INelx5-Sk_000001_000011']
+Obtained frames
+Qid :  ['VOkTa2DfzBo_000000_000010']
+Obtained frames
+Qid :  ['67olAg3caTs_000048_000058']
+Obtained frames
+Qid :  ['iJEwxZGp7jk_000395_000405']
+Obtained frames
+Qid :  ['69qYnb4uhgY_000069_000079']
+Obtained frames
+Qid :  ['lPmcbD3sewM_000015_000025']
+Obtained frames
+Qid :  ['16tc1UkldVg_000006_000016']
+Evaluation  [1530/3000]  eta: 2:34:13    time: 6.0638  data: 0.5502  max mem: 13155
+Obtained frames
+Qid :  ['u6trTQX2vnI_000003_000013']
+Obtained frames
+Qid :  ['9t_37F60-Y4_000007_000017']
+Obtained frames
+Qid :  ['yS5nI7fAFvA_000052_000062']
+Obtained frames
+Qid :  ['7b1v8lZ56IE_000050_000060']
+Obtained frames
+Qid :  ['AlRElE5tCZs_000000_000010']
+Obtained frames
+Qid :  ['UnI7qUqhC20_000077_000087']
+Obtained frames
+Qid :  ['o_FSatIfnC4_000000_000010']
+Obtained frames
+Qid :  ['zJIvZX-EsEY_000106_000116']
+Obtained frames
+Qid :  ['W2hntK1JdAg_000010_000020']
+Obtained frames
+Qid :  ['LjJzMqMXY-M_000015_000025']
+Evaluation  [1540/3000]  eta: 2:33:06    time: 6.0079  data: 0.5947  max mem: 13155
+Obtained frames
+Qid :  ['g405IYhNTt4_000000_000010']
+Obtained frames
+Qid :  ['mZEzwvd-das_000000_000010']
+Obtained frames
+Qid :  ['nBAdai87qps_000031_000041']
+Obtained frames
+Qid :  ['TvRBalnDK6A_000000_000010']
+Obtained frames
+
+Error while read file idx
+video is: l5G1D3ArPr8_000054_000064
+Obtained frames
+Qid :  ['DQoEYhaFenA_000195_000205']
+Obtained frames
+Qid :  ['hffa89PFOhU_001200_001210']
+Obtained frames
+
+Error while read file idx
+video is: _1Z4rUlMjro_000007_000017
+Obtained frames
+Qid :  ['3_5Z-eH6OKk_000006_000016']
+Obtained frames
+Qid :  ['F1cZMqLPj08_000000_000010']
+Obtained frames
+Qid :  ['ali_XiTOp7I_000001_000011']
+Obtained frames
+Qid :  ['7nFQplwVRwA_000048_000058']
+Evaluation  [1550/3000]  eta: 2:32:00    time: 5.9163  data: 0.5282  max mem: 13155
+Obtained frames
+Qid :  ['Yv1JZKz8_Rg_000013_000023']
+Obtained frames
+Qid :  ['qADAHZDo1aw_000013_000023']
+Obtained frames
+Qid :  ['F2qrouN_QFI_000043_000053']
+Obtained frames
+Qid :  ['DAr_btHa78k_000022_000032']
+Obtained frames
+Qid :  ['gW4QQmFj4_k_000084_000094']
+Obtained frames
+Qid :  ['EeoGyWjuR1I_000186_000196']
+Obtained frames
+Qid :  ['PSldRyhH7Q4_000898_000908']
+Obtained frames
+Qid :  ['2HcmuER9nmQ_000001_000011']
+Obtained frames
+Qid :  ['4JBHSRsKhd8_000018_000028']
+Obtained frames
+Qid :  ['LymNYpb5deU_000159_000169']
+Evaluation  [1560/3000]  eta: 2:30:54    time: 5.9721  data: 0.4419  max mem: 13155
+Obtained frames
+Qid :  ['2agWm6N2260_000000_000010']
+Obtained frames
+Qid :  ['z-NKGF1CTDM_000107_000117']
+Obtained frames
+Qid :  ['8WW-Emk5OwM_000012_000022']
+Obtained frames
+Qid :  ['Qg_2WfD-18Y_000017_000027']
+Obtained frames
+Qid :  ['svXpIhRj6q0_000000_000010']
+Obtained frames
+Qid :  ['0_-j-oQgeNk_000247_000257']
+Obtained frames
+Qid :  ['jw1kPjGu1YE_000002_000012']
+Obtained frames
+Qid :  ['yznEJHwSNLM_000094_000104']
+Obtained frames
+Qid :  ['W-19OlTQ3LU_000310_000320']
+Obtained frames
+Qid :  ['GbH5LHJK3gc_000018_000028']
+Evaluation  [1570/3000]  eta: 2:29:47    time: 5.9041  data: 0.4338  max mem: 13155
+Obtained frames
+Qid :  ['sy0vNrbrvxE_000017_000027']
+Obtained frames
+Qid :  ['mYyrDYVI-_U_000033_000043']
+Obtained frames
+Qid :  ['5alRg_q-cBA_000005_000015']
+Obtained frames
+Qid :  ['Vo6kMC37F8g_000010_000020']
+Obtained frames
+Qid :  ['ztioAsJ7brE_000056_000066']
+Obtained frames
+Qid :  ['KfhufofonZo_000124_000134']
+Obtained frames
+Qid :  ['Ijqtyr0vRYQ_000002_000012']
+Obtained frames
+Qid :  ['p5WXs7_NeG4_000068_000078']
+Obtained frames
+Qid :  ['iQuTmRkOuIo_000162_000172']
+Obtained frames
+Qid :  ['vMLJXTkY3bU_000167_000177']
+Evaluation  [1580/3000]  eta: 2:28:42    time: 5.9449  data: 0.4600  max mem: 13155
+Obtained frames
+Qid :  ['0hszNYBXAls_000005_000015']
+Obtained frames
+Qid :  ['oGVq_-bfJeY_000009_000019']
+Obtained frames
+Qid :  ['879IIIgD_es_000092_000102']
+Obtained frames
+Qid :  ['yF34Pg30MiI_000337_000347']
+Obtained frames
+Qid :  ['E-nFTfTzIK4_000078_000088']
+Obtained frames
+Qid :  ['h4Nnw2uhtgU_000072_000082']
+Obtained frames
+Qid :  ['DSt9XG0OGO0_000039_000049']
+Obtained frames
+Qid :  ['5EFeKXfbGTY_000000_000010']
+Obtained frames
+Qid :  ['GIT_9Bx2RxY_000019_000029']
+Obtained frames
+Qid :  ['taV51b_o7Ew_000002_000012']
+Evaluation  [1590/3000]  eta: 2:27:33    time: 5.7796  data: 0.4329  max mem: 13155
+Obtained frames
+Qid :  ['P4RX5uf5iBc_000209_000219']
+Obtained frames
+Qid :  ['ph4kyewKTTA_000006_000016']
+Obtained frames
+Qid :  ['woJ0HAYSFVs_000024_000034']
+Obtained frames
+Qid :  ['e8er9_O8wlk_000056_000066']
+Obtained frames
+Qid :  ['4g-hm1cdR6I_000205_000215']
+Obtained frames
+Qid :  ['U3Ed4pBIbbk_000040_000050']
+Obtained frames
+Qid :  ['0-8TZaZIEP0_000045_000055']
+Obtained frames
+Qid :  ['iavSaXZU_Cg_000038_000048']
+Obtained frames
+Qid :  ['7kRQlI7AQ6w_000058_000068']
+Obtained frames
+Qid :  ['px_nqNBl_g0_000028_000038']
+Evaluation  [1600/3000]  eta: 2:26:24    time: 5.5700  data: 0.3747  max mem: 13155
+Obtained frames
+Qid :  ['70-JbuvjMBA_000023_000033']
+Obtained frames
+Qid :  ['nx_N0Zwsarw_000000_000010']
+Obtained frames
+Qid :  ['OvD1JEjfUhM_000000_000010']
+Obtained frames
+Qid :  ['qyRwuOFT3DE_000029_000039']
+Obtained frames
+Qid :  ['_CthN2rThFQ_000008_000018']
+Obtained frames
+Qid :  ['BriJSjtaA0Y_000000_000010']
+Obtained frames
+Qid :  ['D41qMFM-m_8_000017_000027']
+Obtained frames
+Qid :  ['lOd08aI0sXI_000000_000010']
+Obtained frames
+Qid :  ['o2MPmPenozw_000000_000010']
+Obtained frames
+Qid :  ['57Tfc2Ng9yo_000036_000046']
+Evaluation  [1610/3000]  eta: 2:25:15    time: 5.5618  data: 0.3705  max mem: 13155
+Obtained frames
