@@ -119,7 +119,7 @@ class MCVideoQADataset(MultimodalClassificationDataset, __DisplMixin):
                     vpath = os.path.join(self.vis_root, str(ann['video']) + '.mp4')   
                     
                 frms, indices, fps = self.vis_processor(vpath, clip_proposal=clip)
-                print("Obtained frames")
+                # print("Obtained frames")
                 frms = frms.permute(1, 0, 2, 3)
                 assert len(frms) == self.vis_processor.n_frms
                 
