@@ -429,7 +429,7 @@ class VideoQA(BaseTask):
 
         answer = outputs["answer"]
         qid = outputs["qid"]
-        print("Qid : ", qid)
+        qn_type = [qn_id.split('_')[-1] for qn_id in qid]
         output_text = outputs['output_text']
         if 'frame_idx' in outputs:
             frame_idx = outputs['frame_idx']
@@ -440,11 +440,12 @@ class VideoQA(BaseTask):
         assert len(qid)==len(output_text)
         assert len(qid)==len(answer) 
         
-        for a, q, o, f in zip(answer, qid, output_text, frame_idx):
+        for a, q, t, o, f in zip(answer, qid, qn_type, output_text, frame_idx):
             # l =  l[self.ANS_MAPPING[a[-1]]]
             results.append(
                 {
                     "qid": q,
+                    "qn_type": t,
                     "prediction": o,
                     "target": self.ANS_MAPPING[a[-1]],
                     "frame_idx": f
@@ -476,28 +477,29 @@ class VideoQA(BaseTask):
         predictions = []
         for r in results:    
             prediction = {'qid': r['qid'],
+                          'qn_type': r['qn_type'],
                           'prediction': r['prediction'],
                           'target': r['target']
                           }
             predictions.append(prediction)
-            # print(r['qid'])
-            # qtype = r['qid'].split('_')[0]
-            # if qtype not in qtype_total_dict:
-            #     qtype_total_dict[qtype] = 1
-            # else:
-            #     qtype_total_dict[qtype] += 1 
+
+            qtype = r['qn_type']
+            if qtype not in qtype_total_dict:
+                qtype_total_dict[qtype] = 1
+            else:
+                qtype_total_dict[qtype] += 1 
 
             if r['prediction'] == r['target']:
                 acc += 1
-                # if qtype not in qtype_correct_dict:
-                #     qtype_correct_dict[qtype] = 1
-                # else:
-                #     qtype_correct_dict[qtype] += 1 
+                if qtype not in qtype_correct_dict:
+                    qtype_correct_dict[qtype] = 1
+                else:
+                    qtype_correct_dict[qtype] += 1 
         
         metrics = {"agg_metrics": acc/total_num , 'total':total_num}
         
-        # for qtype in qtype_total_dict:
-        #     metrics[qtype] = qtype_correct_dict[qtype] / qtype_total_dict[qtype] * 100
+        for qtype in qtype_total_dict:
+            metrics[qtype] = qtype_correct_dict[qtype] / qtype_total_dict[qtype]
             
         # for STAR
         if ('Interaction' in metrics) and ('Sequence' in metrics) and ('Prediction' in metrics) and ('Feasibility' in metrics):

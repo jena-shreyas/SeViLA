@@ -1,0 +1,772 @@
+type 1
+1
+2
+1
+type 1
+0
+2
+0
+| distributed init (rank 1, world 2): env://
+| distributed init (rank 0, world 2): env://
+cdr2537:43161:43161 [0] NCCL INFO Bootstrap : Using ib0:172.19.145.230<0>
+cdr2537:43161:43161 [0] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2537:43161:43161 [0] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.145.230<0>
+cdr2537:43161:43161 [0] NCCL INFO Using network IB
+NCCL version 2.12.12+cuda11.7
+cdr2537:43162:43162 [1] NCCL INFO Bootstrap : Using ib0:172.19.145.230<0>
+cdr2537:43162:43162 [1] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2537:43162:43162 [1] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.145.230<0>
+cdr2537:43162:43162 [1] NCCL INFO Using network IB
+cdr2537:43162:43389 [1] NCCL INFO Setting affinity for GPU 1 to 01
+cdr2537:43161:43386 [0] NCCL INFO Setting affinity for GPU 0 to 01
+cdr2537:43161:43386 [0] NCCL INFO Channel 00/04 :    0   1
+cdr2537:43161:43386 [0] NCCL INFO Channel 01/04 :    0   1
+cdr2537:43162:43389 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0 [2] -1/-1/-1->1->0 [3] -1/-1/-1->1->0
+cdr2537:43161:43386 [0] NCCL INFO Channel 02/04 :    0   1
+cdr2537:43161:43386 [0] NCCL INFO Channel 03/04 :    0   1
+cdr2537:43161:43386 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1
+cdr2537:43162:43389 [1] NCCL INFO Channel 00 : 1[3b000] -> 0[18000] via P2P/IPC
+cdr2537:43161:43386 [0] NCCL INFO Channel 00 : 0[18000] -> 1[3b000] via P2P/IPC
+cdr2537:43161:43386 [0] NCCL INFO Channel 01 : 0[18000] -> 1[3b000] via P2P/IPC
+cdr2537:43162:43389 [1] NCCL INFO Channel 01 : 1[3b000] -> 0[18000] via P2P/IPC
+cdr2537:43161:43386 [0] NCCL INFO Channel 02 : 0[18000] -> 1[3b000] via P2P/IPC
+cdr2537:43162:43389 [1] NCCL INFO Channel 02 : 1[3b000] -> 0[18000] via P2P/IPC
+cdr2537:43162:43389 [1] NCCL INFO Channel 03 : 1[3b000] -> 0[18000] via P2P/IPC
+cdr2537:43161:43386 [0] NCCL INFO Channel 03 : 0[18000] -> 1[3b000] via P2P/IPC
+cdr2537:43161:43386 [0] NCCL INFO Connected all rings
+cdr2537:43161:43386 [0] NCCL INFO Connected all trees
+cdr2537:43161:43386 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/512
+cdr2537:43161:43386 [0] NCCL INFO 4 coll channels, 4 p2p channels, 4 p2p channels per peer
+cdr2537:43162:43389 [1] NCCL INFO Connected all rings
+cdr2537:43162:43389 [1] NCCL INFO Connected all trees
+cdr2537:43162:43389 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/512
+cdr2537:43162:43389 [1] NCCL INFO 4 coll channels, 4 p2p channels, 4 p2p channels per peer
+cdr2537:43162:43389 [1] NCCL INFO comm 0x2b11500090d0 rank 1 nranks 2 cudaDev 1 busId 3b000 - Init COMPLETE
+cdr2537:43161:43386 [0] NCCL INFO comm 0x2ac2d80090d0 rank 0 nranks 2 cudaDev 0 busId 18000 - Init COMPLETE
+cdr2537:43161:43161 [0] NCCL INFO Launch mode Parallel
+Dataset config :  {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/train.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/train.json'}, 'val': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/val.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/val.json'}, 'test': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/test.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/test.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/SeViLA/data/videos'}}, 'vis_processor': {'train': {'name': 'blip2_video_train', 'n_frms': 32, 'image_size': 224}, 'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question', 'max_words': 50}, 'eval': {'name': 'blip_question', 'max_words': 50}}}
+Config keys :  dict_keys(['data_type', 'build_info', 'vis_processor', 'text_processor'])
+Config : 
+
+ {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/train.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/train.json'}, 'val': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/val.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/val.json'}, 'test': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/test.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/test.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/SeViLA/data/videos'}}, 'vis_processor': {'train': {'name': 'blip2_video_train', 'n_frms': 32, 'image_size': 224}, 'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question', 'max_words': 50}, 'eval': {'name': 'blip_question', 'max_words': 50}}}
+Building datasets in base task ...
+Inside build processors ...
+Config name :  blip2_video_train
+Config name :  blip_video_eval
+Config name :  blip_question
+Config name :  blip_question
+in build() fn, Processors built
+Run config :  {'task': 'videoqa', 'lr_sched': 'linear_warmup_cosine_lr', 'init_lr': 3e-05, 'min_lr': 0, 'warmup_lr': 1e-08, 'warmup_steps': 1000, 'weight_decay': 0.05, 'max_epoch': 10, 'batch_size_train': 1, 'batch_size_eval': 2, 'num_workers': 1, 'accum_grad_iters': 8, 'max_len': 30, 'min_len': 8, 'num_beams': 5, 'seed': 42, 'output_dir': 'expts/causalvidqa_ft/18_12_2023_Dec_50_44', 'amp': True, 'resume_ckpt_path': None, 'evaluate': False, 'train_splits': ['train'], 'valid_splits': ['val'], 'test_splits': ['test'], 'device': 'cuda', 'world_size': 2, 'dist_url': 'env://', 'distributed': True, 'find_unused_parameters': True, 'rank': 0, 'gpu': 0, 'dist_backend': 'nccl'}
+Train: data epoch: [0]  [   0/3511]  eta: 15:26:30  lr: 0.000000  loss: 2.8537  time: 15.8334  data: 0.0000  max mem: 21484
+
+Error while read file idx
+video is: 0gAzecLeDnU_000003_000013
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+Train: data epoch: [0]  [  50/3511]  eta: 3:59:17  lr: 0.000002  loss: 0.6896  time: 4.0989  data: 0.0000  max mem: 25548
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+Train: data epoch: [0]  [ 100/3511]  eta: 3:56:45  lr: 0.000003  loss: 2.4359  time: 4.6141  data: 0.0000  max mem: 27442
+Train: data epoch: [0]  [ 150/3511]  eta: 3:44:35  lr: 0.000005  loss: 4.2046  time: 3.9682  data: 0.0000  max mem: 27442
+Train: data epoch: [0]  [ 200/3511]  eta: 3:40:11  lr: 0.000006  loss: 2.2157  time: 3.4696  data: 0.0000  max mem: 27442
+
+Error while read file idx
+video is: fSrLsC-OICY_000000_000010
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+
+Error while read file idx
+video is: jtMNl4D4nMQ_000029_000039
+Train: data epoch: [0]  [ 250/3511]  eta: 3:34:51  lr: 0.000008  loss: 0.6390  time: 4.0316  data: 0.0000  max mem: 27442
+
+Error while read file idx
+video is: PCTQN-MYMs0_000002_000012
+Train: data epoch: [0]  [ 300/3511]  eta: 3:27:25  lr: 0.000009  loss: 2.6342  time: 3.4504  data: 0.0000  max mem: 27442
+
+Error while read file idx
+video is: nCFQr2lIWys_000035_000045
+Train: data epoch: [0]  [ 350/3511]  eta: 3:24:18  lr: 0.000011  loss: 0.3693  time: 4.0046  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+
+Error while read file idx
+video is: SaDbcRTA7Fk_000033_000043
+Train: data epoch: [0]  [ 400/3511]  eta: 3:22:53  lr: 0.000012  loss: 0.2469  time: 3.6660  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: _1Z4rUlMjro_000007_000017
+
+Error while read file idx
+video is: PCTQN-MYMs0_000002_000012
+Train: data epoch: [0]  [ 450/3511]  eta: 3:18:43  lr: 0.000014  loss: 0.7605  time: 3.8080  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+Train: data epoch: [0]  [ 500/3511]  eta: 3:15:44  lr: 0.000015  loss: 0.5858  time: 4.3113  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: jD4WINqHZCs_000077_000087
+
+Error while read file idx
+video is: ee8OpEViheY_000024_000034
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+
+Error while read file idx
+video is: fSrLsC-OICY_000000_000010
+Train: data epoch: [0]  [ 550/3511]  eta: 3:12:16  lr: 0.000017  loss: 1.1258  time: 3.6115  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+
+Error while read file idx
+video is: CxYyR_fePVE_000044_000054
+Train: data epoch: [0]  [ 600/3511]  eta: 3:09:37  lr: 0.000018  loss: 0.1439  time: 3.7203  data: 0.0000  max mem: 27459
+Train: data epoch: [0]  [ 650/3511]  eta: 3:06:15  lr: 0.000020  loss: 0.8170  time: 3.8388  data: 0.0000  max mem: 27459
+Train: data epoch: [0]  [ 700/3511]  eta: 3:01:46  lr: 0.000021  loss: 0.2580  time: 3.0510  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: 6LSkFIsSp4M_000000_000010
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+
+Error while read file idx
+video is: 6LSkFIsSp4M_000000_000010
+
+Error while read file idx
+video is: nXLaV7AQabY_000026_000036
+Train: data epoch: [0]  [ 750/3511]  eta: 2:58:11  lr: 0.000023  loss: 0.8632  time: 3.9178  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: vK4QIXWoBVc_000055_000065
+Train: data epoch: [0]  [ 800/3511]  eta: 2:55:05  lr: 0.000024  loss: 0.0965  time: 4.2329  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+
+Error while read file idx
+video is: ee8OpEViheY_000024_000034
+
+Error while read file idx
+video is: 9WHL7tNio90_000115_000125
+Train: data epoch: [0]  [ 850/3511]  eta: 2:50:55  lr: 0.000026  loss: 0.3813  time: 3.5047  data: 0.0000  max mem: 27459
+Train: data epoch: [0]  [ 900/3511]  eta: 2:47:38  lr: 0.000027  loss: 0.3445  time: 4.2783  data: 0.0000  max mem: 27459
+Train: data epoch: [0]  [ 950/3511]  eta: 2:45:09  lr: 0.000029  loss: 0.4224  time: 3.8244  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: jtMNl4D4nMQ_000029_000039
+
+Error while read file idx
+video is: vK4QIXWoBVc_000055_000065
+Train: data epoch: [0]  [1000/3511]  eta: 2:41:27  lr: 0.000030  loss: 0.2101  time: 3.5982  data: 0.0000  max mem: 27459
+Train: data epoch: [0]  [1050/3511]  eta: 2:38:31  lr: 0.000030  loss: 0.7138  time: 4.2146  data: 0.0000  max mem: 27459
+
+Error while read file idx
+video is: nCFQr2lIWys_000035_000045
+Train: data epoch: [0]  [1100/3511]  eta: 2:35:03  lr: 0.000030  loss: 2.2746  time: 4.0063  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: 98nhWj6FBsc_000022_000032
+
+Error while read file idx
+video is: 3IwnNgKg9nk_000092_000102
+Train: data epoch: [0]  [1150/3511]  eta: 2:31:57  lr: 0.000030  loss: 0.5214  time: 3.9836  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [1200/3511]  eta: 2:28:32  lr: 0.000030  loss: 0.0748  time: 4.0466  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [1250/3511]  eta: 2:25:58  lr: 0.000030  loss: 1.2235  time: 3.9181  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: 0gAzecLeDnU_000003_000013
+Train: data epoch: [0]  [1300/3511]  eta: 2:22:24  lr: 0.000030  loss: 0.0206  time: 3.4501  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [1350/3511]  eta: 2:19:23  lr: 0.000030  loss: 0.0043  time: 3.6843  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [1400/3511]  eta: 2:16:06  lr: 0.000030  loss: 0.0676  time: 3.5023  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: XZrTLb2ANoM_000003_000013
+Train: data epoch: [0]  [1450/3511]  eta: 2:13:18  lr: 0.000030  loss: 0.1463  time: 3.6949  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: nXLaV7AQabY_000026_000036
+Train: data epoch: [0]  [1500/3511]  eta: 2:10:11  lr: 0.000030  loss: 0.0895  time: 3.3819  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [1550/3511]  eta: 2:07:13  lr: 0.000030  loss: 0.0337  time: 3.8549  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [1600/3511]  eta: 2:04:08  lr: 0.000030  loss: 1.2899  time: 4.1813  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: c-u1HcNyYrM_000007_000017
+Train: data epoch: [0]  [1650/3511]  eta: 2:00:57  lr: 0.000030  loss: 0.3261  time: 3.7979  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: NxJWeh90F3Q_000021_000031
+Train: data epoch: [0]  [1700/3511]  eta: 1:57:13  lr: 0.000030  loss: 0.6365  time: 3.5763  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: CxYyR_fePVE_000044_000054
+
+Error while read file idx
+video is: G6C2lc7H52c_000001_000011
+Train: data epoch: [0]  [1750/3511]  eta: 1:54:05  lr: 0.000030  loss: 0.0161  time: 3.8549  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: NxJWeh90F3Q_000021_000031
+Train: data epoch: [0]  [1800/3511]  eta: 1:50:43  lr: 0.000030  loss: 0.5561  time: 3.7465  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: f43N9bElstg_000000_000010
+
+Error while read file idx
+video is: _1Z4rUlMjro_000007_000017
+Train: data epoch: [0]  [1850/3511]  eta: 1:47:41  lr: 0.000030  loss: 0.0776  time: 4.0132  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: nCFQr2lIWys_000035_000045
+Train: data epoch: [0]  [1900/3511]  eta: 1:44:34  lr: 0.000030  loss: 0.4326  time: 3.7781  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [1950/3511]  eta: 1:41:22  lr: 0.000030  loss: 0.8838  time: 4.0928  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: fSrLsC-OICY_000000_000010
+Train: data epoch: [0]  [2000/3511]  eta: 1:37:54  lr: 0.000030  loss: 0.7428  time: 4.0871  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: G6C2lc7H52c_000001_000011
+Train: data epoch: [0]  [2050/3511]  eta: 1:34:30  lr: 0.000030  loss: 0.7992  time: 3.8961  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [0]  [2100/3511]  eta: 1:31:23  lr: 0.000030  loss: 0.1460  time: 4.0864  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2150/3511]  eta: 1:28:07  lr: 0.000030  loss: 0.2918  time: 3.7257  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: 98nhWj6FBsc_000022_000032
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+Train: data epoch: [0]  [2200/3511]  eta: 1:24:40  lr: 0.000030  loss: 1.9463  time: 3.2843  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2250/3511]  eta: 1:21:25  lr: 0.000030  loss: 0.1217  time: 4.1197  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+
+Error while read file idx
+video is: 0gAzecLeDnU_000003_000013
+Train: data epoch: [0]  [2300/3511]  eta: 1:18:18  lr: 0.000030  loss: 1.5258  time: 4.0250  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: nvq7icqQ6L8_000020_000030
+Train: data epoch: [0]  [2350/3511]  eta: 1:15:06  lr: 0.000030  loss: 0.2561  time: 4.0787  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2400/3511]  eta: 1:11:46  lr: 0.000030  loss: 0.7253  time: 3.5816  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2450/3511]  eta: 1:08:28  lr: 0.000030  loss: 0.1102  time: 3.7058  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: tA-L1DGr_Pk_000012_000022
+Train: data epoch: [0]  [2500/3511]  eta: 1:05:11  lr: 0.000030  loss: 0.3005  time: 3.5112  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: l5G1D3ArPr8_000054_000064
+Train: data epoch: [0]  [2550/3511]  eta: 1:01:54  lr: 0.000030  loss: 0.0625  time: 3.9226  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2600/3511]  eta: 0:58:38  lr: 0.000030  loss: 0.4205  time: 3.4935  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2650/3511]  eta: 0:55:18  lr: 0.000030  loss: 0.0208  time: 3.0704  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: f43N9bElstg_000000_000010
+Train: data epoch: [0]  [2700/3511]  eta: 0:52:01  lr: 0.000030  loss: 0.0388  time: 3.5481  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2750/3511]  eta: 0:48:47  lr: 0.000030  loss: 0.0863  time: 3.5648  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: _1Z4rUlMjro_000007_000017
+Train: data epoch: [0]  [2800/3511]  eta: 0:45:35  lr: 0.000030  loss: 0.0190  time: 4.1467  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2850/3511]  eta: 0:42:22  lr: 0.000030  loss: 0.2426  time: 3.8067  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2900/3511]  eta: 0:39:22  lr: 0.000030  loss: 0.1590  time: 6.8916  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [2950/3511]  eta: 0:36:27  lr: 0.000030  loss: 0.3372  time: 3.3940  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3000/3511]  eta: 0:33:10  lr: 0.000030  loss: 0.1140  time: 3.5607  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3050/3511]  eta: 0:29:55  lr: 0.000030  loss: 0.1436  time: 3.8537  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: XZrTLb2ANoM_000003_000013
+Train: data epoch: [0]  [3100/3511]  eta: 0:26:41  lr: 0.000030  loss: 0.3096  time: 4.6327  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3150/3511]  eta: 0:23:28  lr: 0.000030  loss: 0.0398  time: 4.1529  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: ZnJ4FZEgFLg_000119_000129
+
+Error while read file idx
+video is: l5G1D3ArPr8_000054_000064
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [0]  [3200/3511]  eta: 0:20:12  lr: 0.000030  loss: 0.0389  time: 4.1047  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+Train: data epoch: [0]  [3250/3511]  eta: 0:16:57  lr: 0.000030  loss: 0.2233  time: 3.6756  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3300/3511]  eta: 0:13:42  lr: 0.000030  loss: 0.0912  time: 3.5146  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3350/3511]  eta: 0:10:26  lr: 0.000030  loss: 0.5123  time: 3.3125  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3400/3511]  eta: 0:07:12  lr: 0.000030  loss: 0.1178  time: 4.2058  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3450/3511]  eta: 0:03:57  lr: 0.000030  loss: 0.7239  time: 3.7825  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: fSrLsC-OICY_000000_000010
+Train: data epoch: [0]  [3500/3511]  eta: 0:00:42  lr: 0.000030  loss: 0.8641  time: 3.7345  data: 0.0000  max mem: 27466
+Train: data epoch: [0]  [3510/3511]  eta: 0:00:03  lr: 0.000030  loss: 0.4391  time: 3.4075  data: 0.0000  max mem: 27466
+Train: data epoch: [0] Total time: 3:48:10 (3.8993 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/251]  eta: 0:41:46    time: 9.9871  data: 4.5206  max mem: 27466
+Evaluation  [ 10/251]  eta: 0:16:06    time: 4.0097  data: 0.4168  max mem: 27466
+Evaluation  [ 20/251]  eta: 0:14:12    time: 3.3765  data: 0.0076  max mem: 27466
+Evaluation  [ 30/251]  eta: 0:13:16    time: 3.3798  data: 0.0091  max mem: 27466
+Evaluation  [ 40/251]  eta: 0:12:38    time: 3.4941  data: 0.0084  max mem: 27466
+Evaluation  [ 50/251]  eta: 0:12:10    time: 3.6768  data: 0.0086  max mem: 27466
+Evaluation  [ 60/251]  eta: 0:11:26    time: 3.5971  data: 0.0107  max mem: 27466
+Evaluation  [ 70/251]  eta: 0:10:59    time: 3.6730  data: 0.0126  max mem: 27466
+Evaluation  [ 80/251]  eta: 0:10:22    time: 3.7738  data: 0.0223  max mem: 27466
+Evaluation  [ 90/251]  eta: 0:09:47    time: 3.6665  data: 0.0226  max mem: 27466
+Evaluation  [100/251]  eta: 0:09:09    time: 3.6338  data: 0.0127  max mem: 27466
+Evaluation  [110/251]  eta: 0:08:35    time: 3.6881  data: 0.0097  max mem: 27466
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Evaluation  [120/251]  eta: 0:08:07    time: 4.1246  data: 0.0083  max mem: 27466
+Evaluation  [130/251]  eta: 0:07:28    time: 3.9745  data: 0.0116  max mem: 27466
+Evaluation  [140/251]  eta: 0:06:55    time: 3.9091  data: 0.0124  max mem: 27466
+Evaluation  [150/251]  eta: 0:06:21    time: 4.2731  data: 0.0090  max mem: 27466
+Evaluation  [160/251]  eta: 0:05:42    time: 3.8646  data: 0.0086  max mem: 27466
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+
+Error while read file idx
+video is: M_hGGjxqB5M_000003_000013
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+
+Error while read file idx
+video is: M_hGGjxqB5M_000003_000013
+Evaluation  [170/251]  eta: 0:05:04    time: 3.6531  data: 0.0160  max mem: 27466
+Evaluation  [180/251]  eta: 0:04:29    time: 4.0509  data: 0.0187  max mem: 27466
+Evaluation  [190/251]  eta: 0:03:51    time: 3.9776  data: 0.0143  max mem: 27466
+Evaluation  [200/251]  eta: 0:03:12    time: 3.6195  data: 0.0138  max mem: 27466
+Evaluation  [210/251]  eta: 0:02:33    time: 3.4028  data: 0.0101  max mem: 27466
+Evaluation  [220/251]  eta: 0:01:56    time: 3.5898  data: 0.0073  max mem: 27466
+
+Error while read file idx
+video is: gjlL-ckcDHE_000015_000025
+
+Error while read file idx
+video is: gjlL-ckcDHE_000015_000025
+Evaluation  [230/251]  eta: 0:01:18    time: 3.7433  data: 0.0081  max mem: 27466
+Evaluation  [240/251]  eta: 0:00:41    time: 3.4987  data: 0.0100  max mem: 27466
+Evaluation  [250/251]  eta: 0:00:03    time: 3.6586  data: 0.0346  max mem: 27466
+Evaluation Total time: 0:15:39 (3.7430 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_50_44/result/val_epoch0.json
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Train: data epoch: [1]  [   0/3511]  eta: 7:55:49  lr: 0.000029  loss: 0.2355  time: 8.1314  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: 0gAzecLeDnU_000003_000013
+Train: data epoch: [1]  [  50/3511]  eta: 3:53:29  lr: 0.000029  loss: 0.0250  time: 3.4344  data: 0.0000  max mem: 27466
+Train: data epoch: [1]  [ 100/3511]  eta: 3:44:02  lr: 0.000029  loss: 1.0309  time: 4.0909  data: 0.0000  max mem: 27466
+Train: data epoch: [1]  [ 150/3511]  eta: 3:42:22  lr: 0.000029  loss: 0.8052  time: 4.2916  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+
+Error while read file idx
+video is: 98nhWj6FBsc_000022_000032
+Train: data epoch: [1]  [ 200/3511]  eta: 3:35:19  lr: 0.000029  loss: 0.4229  time: 3.5139  data: 0.0000  max mem: 27466
+Train: data epoch: [1]  [ 250/3511]  eta: 3:28:56  lr: 0.000029  loss: 1.3168  time: 3.6596  data: 0.0000  max mem: 27466
+Train: data epoch: [1]  [ 300/3511]  eta: 3:25:49  lr: 0.000029  loss: 0.1318  time: 3.6323  data: 0.0000  max mem: 27466
+
+Error while read file idx
+video is: jtMNl4D4nMQ_000029_000039
+Train: data epoch: [1]  [ 350/3511]  eta: 3:23:59  lr: 0.000029  loss: 0.1091  time: 3.5675  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [ 400/3511]  eta: 3:22:23  lr: 0.000029  loss: 0.2908  time: 4.0074  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [ 450/3511]  eta: 3:20:12  lr: 0.000029  loss: 0.5352  time: 4.4246  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [ 500/3511]  eta: 3:17:41  lr: 0.000029  loss: 0.2297  time: 4.2871  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: _1Z4rUlMjro_000007_000017
+Train: data epoch: [1]  [ 550/3511]  eta: 3:13:50  lr: 0.000029  loss: 0.0359  time: 4.1566  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [ 600/3511]  eta: 3:08:41  lr: 0.000029  loss: 0.2010  time: 3.6283  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+
+Error while read file idx
+video is: nXLaV7AQabY_000026_000036
+Train: data epoch: [1]  [ 650/3511]  eta: 3:05:26  lr: 0.000029  loss: 0.0532  time: 3.4658  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: fSrLsC-OICY_000000_000010
+Train: data epoch: [1]  [ 700/3511]  eta: 3:02:22  lr: 0.000029  loss: 0.0231  time: 3.9270  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [ 750/3511]  eta: 2:58:02  lr: 0.000029  loss: 0.0580  time: 3.2656  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+Train: data epoch: [1]  [ 800/3511]  eta: 2:54:10  lr: 0.000029  loss: 0.0374  time: 3.5095  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: jtMNl4D4nMQ_000029_000039
+Train: data epoch: [1]  [ 850/3511]  eta: 2:51:00  lr: 0.000029  loss: 0.9813  time: 3.8890  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [ 900/3511]  eta: 2:48:01  lr: 0.000029  loss: 0.4664  time: 3.9630  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: G6C2lc7H52c_000001_000011
+Train: data epoch: [1]  [ 950/3511]  eta: 2:45:16  lr: 0.000029  loss: 0.2344  time: 4.0628  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [1000/3511]  eta: 2:42:24  lr: 0.000029  loss: 0.0487  time: 4.2096  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+Train: data epoch: [1]  [1050/3511]  eta: 2:38:26  lr: 0.000029  loss: 1.0631  time: 3.4316  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: fSrLsC-OICY_000000_000010
+Train: data epoch: [1]  [1100/3511]  eta: 2:35:14  lr: 0.000029  loss: 1.3542  time: 3.1056  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [1150/3511]  eta: 2:32:41  lr: 0.000029  loss: 0.4624  time: 4.3159  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: ee8OpEViheY_000024_000034
+Train: data epoch: [1]  [1200/3511]  eta: 2:29:04  lr: 0.000029  loss: 0.1598  time: 3.2848  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [1250/3511]  eta: 2:25:38  lr: 0.000029  loss: 0.0609  time: 3.5097  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: NxJWeh90F3Q_000021_000031
+Train: data epoch: [1]  [1300/3511]  eta: 2:23:26  lr: 0.000029  loss: 0.0796  time: 5.3912  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: G6C2lc7H52c_000001_000011
+
+Error while read file idx
+video is: f43N9bElstg_000000_000010
+Train: data epoch: [1]  [1350/3511]  eta: 2:19:54  lr: 0.000029  loss: 0.6541  time: 3.6254  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+
+Error while read file idx
+video is: MBQZGJbG2sM_000064_000074
+Train: data epoch: [1]  [1400/3511]  eta: 2:15:43  lr: 0.000029  loss: 0.6803  time: 3.2758  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [1450/3511]  eta: 2:12:22  lr: 0.000029  loss: 0.1609  time: 3.9652  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [1500/3511]  eta: 2:09:24  lr: 0.000029  loss: 0.6844  time: 3.5887  data: 0.0000  max mem: 27467
+Train: data epoch: [1]  [1550/3511]  eta: 2:06:05  lr: 0.000029  loss: 0.0871  time: 4.1697  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: 3IwnNgKg9nk_000092_000102
+Train: data epoch: [1]  [1600/3511]  eta: 2:03:10  lr: 0.000029  loss: 0.0138  time: 3.5036  data: 0.0000  max mem: 27467
+
+Error while read file idx
+video is: SaDbcRTA7Fk_000033_000043
+
+Error while read file idx
+video is: NxJWeh90F3Q_000021_000031
+
+Error while read file idx
+video is: l5G1D3ArPr8_000054_000064
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+Train: data epoch: [1]  [1650/3511]  eta: 2:00:05  lr: 0.000029  loss: 0.6872  time: 4.1118  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [1700/3511]  eta: 1:57:00  lr: 0.000029  loss: 0.6974  time: 4.6833  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: SaDbcRTA7Fk_000033_000043
+
+Error while read file idx
+video is: tA-L1DGr_Pk_000012_000022
+
+Error while read file idx
+video is: tA-L1DGr_Pk_000012_000022
+Train: data epoch: [1]  [1750/3511]  eta: 1:53:29  lr: 0.000029  loss: 0.0632  time: 3.5245  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: 6LSkFIsSp4M_000000_000010
+
+Error while read file idx
+video is: PCTQN-MYMs0_000002_000012
+Train: data epoch: [1]  [1800/3511]  eta: 1:50:20  lr: 0.000029  loss: 0.2479  time: 3.9884  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+
+Error while read file idx
+video is: c-u1HcNyYrM_000007_000017
+Train: data epoch: [1]  [1850/3511]  eta: 1:46:59  lr: 0.000029  loss: 0.1070  time: 4.1754  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: f43N9bElstg_000000_000010
+
+Error while read file idx
+video is: CxYyR_fePVE_000044_000054
+
+Error while read file idx
+video is: nvq7icqQ6L8_000020_000030
+
+Error while read file idx
+video is: 9WHL7tNio90_000115_000125
+Train: data epoch: [1]  [1900/3511]  eta: 1:43:29  lr: 0.000029  loss: 0.5151  time: 3.3951  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [1950/3511]  eta: 1:40:27  lr: 0.000029  loss: 0.3008  time: 4.5966  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [2000/3511]  eta: 1:37:18  lr: 0.000029  loss: 0.1317  time: 4.0439  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [1]  [2050/3511]  eta: 1:34:19  lr: 0.000029  loss: 0.5470  time: 4.3045  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: 0gAzecLeDnU_000003_000013
+
+Error while read file idx
+video is: 98nhWj6FBsc_000022_000032
+Train: data epoch: [1]  [2100/3511]  eta: 1:30:47  lr: 0.000029  loss: 0.1275  time: 3.4704  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+
+Error while read file idx
+video is: 9WHL7tNio90_000115_000125
+Train: data epoch: [1]  [2150/3511]  eta: 1:27:22  lr: 0.000029  loss: 0.0373  time: 3.2478  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [2200/3511]  eta: 1:24:13  lr: 0.000029  loss: 0.8836  time: 3.8335  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+Train: data epoch: [1]  [2250/3511]  eta: 1:20:54  lr: 0.000029  loss: 0.8206  time: 4.2569  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: XZrTLb2ANoM_000003_000013
+Train: data epoch: [1]  [2300/3511]  eta: 1:18:00  lr: 0.000029  loss: 1.1828  time: 4.8625  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [2350/3511]  eta: 1:14:50  lr: 0.000029  loss: 0.3156  time: 4.0383  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: 6LSkFIsSp4M_000000_000010
+
+Error while read file idx
+video is: jD4WINqHZCs_000077_000087
+Train: data epoch: [1]  [2400/3511]  eta: 1:13:33  lr: 0.000029  loss: 0.0454  time: 16.7245  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: CxYyR_fePVE_000044_000054
+Train: data epoch: [1]  [2450/3511]  eta: 1:10:17  lr: 0.000029  loss: 0.1472  time: 3.9915  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [2500/3511]  eta: 1:06:59  lr: 0.000029  loss: 0.2834  time: 3.4138  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+Train: data epoch: [1]  [2550/3511]  eta: 1:04:10  lr: 0.000029  loss: 0.1560  time: 8.5777  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [2600/3511]  eta: 1:00:45  lr: 0.000029  loss: 0.3935  time: 4.1348  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+Train: data epoch: [1]  [2650/3511]  eta: 0:57:26  lr: 0.000029  loss: 0.4052  time: 3.7819  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: vK4QIXWoBVc_000055_000065
+Train: data epoch: [1]  [2700/3511]  eta: 0:54:01  lr: 0.000029  loss: 0.4605  time: 3.6379  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: fSrLsC-OICY_000000_000010
+
+Error while read file idx
+video is: jD4WINqHZCs_000077_000087
+Train: data epoch: [1]  [2750/3511]  eta: 0:50:36  lr: 0.000029  loss: 0.4100  time: 3.8608  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: ZnJ4FZEgFLg_000119_000129
+Train: data epoch: [1]  [2800/3511]  eta: 0:47:22  lr: 0.000029  loss: 0.1135  time: 3.8516  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [2850/3511]  eta: 0:44:04  lr: 0.000029  loss: 0.0359  time: 3.9041  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: G6C2lc7H52c_000001_000011
+Train: data epoch: [1]  [2900/3511]  eta: 0:40:38  lr: 0.000029  loss: 0.0350  time: 2.8585  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: nXLaV7AQabY_000026_000036
+Train: data epoch: [1]  [2950/3511]  eta: 0:37:20  lr: 0.000029  loss: 0.3754  time: 4.1438  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [3000/3511]  eta: 0:33:59  lr: 0.000029  loss: 0.0919  time: 4.0405  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+Train: data epoch: [1]  [3050/3511]  eta: 0:30:37  lr: 0.000029  loss: 0.8290  time: 3.8702  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [3100/3511]  eta: 0:27:18  lr: 0.000029  loss: 0.3349  time: 3.9807  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: MBQZGJbG2sM_000064_000074
+
+Error while read file idx
+video is: f43N9bElstg_000000_000010
+Train: data epoch: [1]  [3150/3511]  eta: 0:23:58  lr: 0.000029  loss: 0.4307  time: 4.0970  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: XZrTLb2ANoM_000003_000013
+Train: data epoch: [1]  [3200/3511]  eta: 0:20:37  lr: 0.000029  loss: 0.3739  time: 3.6450  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [3250/3511]  eta: 0:17:32  lr: 0.000029  loss: 0.5599  time: 3.8093  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: ZnJ4FZEgFLg_000119_000129
+Train: data epoch: [1]  [3300/3511]  eta: 0:14:10  lr: 0.000029  loss: 0.0295  time: 3.8324  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [3350/3511]  eta: 0:10:48  lr: 0.000029  loss: 0.4077  time: 3.7759  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: _muKn2ZeLK0_000018_000028
+
+Error while read file idx
+video is: CxYyR_fePVE_000044_000054
+Train: data epoch: [1]  [3400/3511]  eta: 0:07:26  lr: 0.000029  loss: 0.0070  time: 3.7574  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: tA-L1DGr_Pk_000012_000022
+Train: data epoch: [1]  [3450/3511]  eta: 0:04:05  lr: 0.000029  loss: 0.5259  time: 4.1880  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: c-u1HcNyYrM_000007_000017
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+Train: data epoch: [1]  [3500/3511]  eta: 0:00:44  lr: 0.000029  loss: 0.4489  time: 11.6479  data: 0.0000  max mem: 27469
+Train: data epoch: [1]  [3510/3511]  eta: 0:00:04  lr: 0.000029  loss: 0.0507  time: 6.5566  data: 0.0000  max mem: 27469
+Train: data epoch: [1] Total time: 3:58:20 (4.0732 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/251]  eta: 0:31:54    time: 7.6258  data: 3.9077  max mem: 27469
+Evaluation  [ 10/251]  eta: 0:15:53    time: 3.9570  data: 0.3701  max mem: 27469
+Evaluation  [ 20/251]  eta: 0:14:26    time: 3.5567  data: 0.0151  max mem: 27469
+Evaluation  [ 30/251]  eta: 0:13:31    time: 3.5125  data: 0.0125  max mem: 27469
+Evaluation  [ 40/251]  eta: 0:12:44    time: 3.4894  data: 0.0110  max mem: 27469
+Evaluation  [ 50/251]  eta: 0:12:18    time: 3.6804  data: 0.0123  max mem: 27469
+Evaluation  [ 60/251]  eta: 0:11:36    time: 3.7004  data: 0.0118  max mem: 27469
+Evaluation  [ 70/251]  eta: 0:11:06    time: 3.7100  data: 0.0106  max mem: 27469
+Evaluation  [ 80/251]  eta: 0:10:28    time: 3.7540  data: 0.0143  max mem: 27469
+Evaluation  [ 90/251]  eta: 0:09:49    time: 3.5930  data: 0.0171  max mem: 27469
+Evaluation  [100/251]  eta: 0:09:08    time: 3.4458  data: 0.0144  max mem: 27469
+Evaluation  [110/251]  eta: 0:08:33    time: 3.5508  data: 0.0134  max mem: 27469
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Evaluation  [120/251]  eta: 0:08:07    time: 4.1752  data: 0.0140  max mem: 27469
+Evaluation  [130/251]  eta: 0:07:30    time: 4.1452  data: 0.0134  max mem: 27469
+Evaluation  [140/251]  eta: 0:06:56    time: 3.9702  data: 0.0149  max mem: 27469
+Evaluation  [150/251]  eta: 0:06:21    time: 4.1153  data: 0.0148  max mem: 27469
+Evaluation  [160/251]  eta: 0:05:41    time: 3.7201  data: 0.0134  max mem: 27469
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+
+Error while read file idx
+video is: M_hGGjxqB5M_000003_000013
+
+Error while read file idx
+video is: M_hGGjxqB5M_000003_000013
+Evaluation  [170/251]  eta: 0:05:04    time: 3.6166  data: 0.0125  max mem: 27469
+Evaluation  [180/251]  eta: 0:04:28    time: 4.0218  data: 0.0125  max mem: 27469
+Evaluation  [190/251]  eta: 0:03:49    time: 3.8462  data: 0.0121  max mem: 27469
+Evaluation  [200/251]  eta: 0:03:10    time: 3.3751  data: 0.0136  max mem: 27469
+Evaluation  [210/251]  eta: 0:02:32    time: 3.2382  data: 0.0137  max mem: 27469
+Evaluation  [220/251]  eta: 0:02:00    time: 5.4371  data: 1.8449  max mem: 27469
+
+Error while read file idx
+video is: gjlL-ckcDHE_000015_000025
+
+Error while read file idx
+video is: gjlL-ckcDHE_000015_000025
+Evaluation  [230/251]  eta: 0:01:21    time: 5.5395  data: 1.8443  max mem: 27469
+Evaluation  [240/251]  eta: 0:00:42    time: 3.4214  data: 0.0106  max mem: 27469
+Evaluation  [250/251]  eta: 0:00:03    time: 3.6541  data: 0.0326  max mem: 27469
+Evaluation Total time: 0:16:07 (3.8559 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_50_44/result/val_epoch1.json
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Train: data epoch: [2]  [   0/3511]  eta: 8:12:56  lr: 0.000027  loss: 0.4304  time: 8.4240  data: 0.0000  max mem: 27469
+Train: data epoch: [2]  [  50/3511]  eta: 3:23:01  lr: 0.000027  loss: 0.4262  time: 3.5691  data: 0.0000  max mem: 27469
+Train: data epoch: [2]  [ 100/3511]  eta: 3:27:17  lr: 0.000027  loss: 0.7152  time: 3.2782  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: jD4WINqHZCs_000077_000087
+Train: data epoch: [2]  [ 150/3511]  eta: 3:23:08  lr: 0.000027  loss: 0.6006  time: 4.2604  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: 3IwnNgKg9nk_000092_000102
+
+Error while read file idx
+video is: c-u1HcNyYrM_000007_000017
+Train: data epoch: [2]  [ 200/3511]  eta: 3:24:27  lr: 0.000027  loss: 0.7150  time: 3.3423  data: 0.0000  max mem: 27469
+Train: data epoch: [2]  [ 250/3511]  eta: 3:26:19  lr: 0.000027  loss: 0.0977  time: 3.9847  data: 0.0000  max mem: 27469
+Train: data epoch: [2]  [ 300/3511]  eta: 3:55:19  lr: 0.000027  loss: 0.2967  time: 12.8582  data: 0.0000  max mem: 27469
+Train: data epoch: [2]  [ 350/3511]  eta: 3:44:17  lr: 0.000027  loss: 0.7111  time: 3.0099  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: SaDbcRTA7Fk_000033_000043
+
+Error while read file idx
+video is: _1Z4rUlMjro_000007_000017
+Train: data epoch: [2]  [ 400/3511]  eta: 3:39:29  lr: 0.000027  loss: 0.2256  time: 4.3558  data: 0.0000  max mem: 27469
+Train: data epoch: [2]  [ 450/3511]  eta: 3:35:27  lr: 0.000027  loss: 0.0130  time: 4.5195  data: 0.0000  max mem: 27469
+Train: data epoch: [2]  [ 500/3511]  eta: 3:29:21  lr: 0.000027  loss: 0.7942  time: 3.2595  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: k3X-xOtmb5g_000027_000037
+
+Error while read file idx
+video is: 7vlsrfiN0_Y_000028_000038
+Train: data epoch: [2]  [ 550/3511]  eta: 3:46:43  lr: 0.000027  loss: 0.0061  time: 3.7101  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: MBQZGJbG2sM_000064_000074
+
+Error while read file idx
+video is: CxYyR_fePVE_000044_000054
+
+Error while read file idx
+video is: nvq7icqQ6L8_000020_000030
+Train: data epoch: [2]  [ 600/3511]  eta: 3:39:40  lr: 0.000027  loss: 0.5011  time: 3.7083  data: 0.0000  max mem: 27469
+
+Error while read file idx
+video is: tA-L1DGr_Pk_000012_000022
+
+Error while read file idx
+video is: l5G1D3ArPr8_000054_000064
+Train: data epoch: [2]  [ 650/3511]  eta: 3:51:27  lr: 0.000027  loss: 0.1709  time: 15.8971  data: 0.0000  max mem: 27469

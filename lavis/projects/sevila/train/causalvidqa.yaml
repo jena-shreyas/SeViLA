@@ -8,7 +8,7 @@ model:
   model_type: pretrain_flant5xl
   load_finetuned: True
   finetuned: 'https://huggingface.co/Shoubin/SeViLA/resolve/main/sevila_pretrained.pth'
-  use_grad_checkpoint: False
+  use_grad_checkpoint: True
   freeze_vit: True
   frame_num: 8
   answer_num: 5

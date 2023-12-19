@@ -1,0 +1,78 @@
+type 1
+1
+2
+1
+type 1
+0
+2
+0
+| distributed init (rank 1, world 2): env://
+| distributed init (rank 0, world 2): env://
+cdr2548:238923:238923 [0] NCCL INFO Bootstrap : Using ib0:172.19.145.241<0>
+cdr2548:238923:238923 [0] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2548:238923:238923 [0] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.145.241<0>
+cdr2548:238923:238923 [0] NCCL INFO Using network IB
+NCCL version 2.12.12+cuda11.7
+cdr2548:238924:238924 [1] NCCL INFO Bootstrap : Using ib0:172.19.145.241<0>
+cdr2548:238924:238924 [1] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2548:238924:238924 [1] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.145.241<0>
+cdr2548:238924:238924 [1] NCCL INFO Using network IB
+cdr2548:238923:239740 [0] NCCL INFO Setting affinity for GPU 0 to 10
+cdr2548:238923:239740 [0] NCCL INFO Channel 00/04 :    0   1
+cdr2548:238923:239740 [0] NCCL INFO Channel 01/04 :    0   1
+cdr2548:238923:239740 [0] NCCL INFO Channel 02/04 :    0   1
+cdr2548:238923:239740 [0] NCCL INFO Channel 03/04 :    0   1
+cdr2548:238923:239740 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1
+cdr2548:238924:239743 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0 [2] -1/-1/-1->1->0 [3] -1/-1/-1->1->0
+cdr2548:238924:239743 [1] NCCL INFO Channel 00 : 1[86000] -> 0[3b000] via P2P/IPC
+cdr2548:238923:239740 [0] NCCL INFO Channel 00 : 0[3b000] -> 1[86000] via P2P/IPC
+cdr2548:238924:239743 [1] NCCL INFO Channel 01 : 1[86000] -> 0[3b000] via P2P/IPC
+cdr2548:238923:239740 [0] NCCL INFO Channel 01 : 0[3b000] -> 1[86000] via P2P/IPC
+cdr2548:238924:239743 [1] NCCL INFO Channel 02 : 1[86000] -> 0[3b000] via P2P/IPC
+cdr2548:238923:239740 [0] NCCL INFO Channel 02 : 0[3b000] -> 1[86000] via P2P/IPC
+cdr2548:238923:239740 [0] NCCL INFO Channel 03 : 0[3b000] -> 1[86000] via P2P/IPC
+cdr2548:238924:239743 [1] NCCL INFO Channel 03 : 1[86000] -> 0[3b000] via P2P/IPC
+cdr2548:238923:239740 [0] NCCL INFO Connected all rings
+cdr2548:238923:239740 [0] NCCL INFO Connected all trees
+cdr2548:238923:239740 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/512
+cdr2548:238923:239740 [0] NCCL INFO 4 coll channels, 4 p2p channels, 4 p2p channels per peer
+cdr2548:238924:239743 [1] NCCL INFO Connected all rings
+cdr2548:238924:239743 [1] NCCL INFO Connected all trees
+cdr2548:238924:239743 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/512
+cdr2548:238924:239743 [1] NCCL INFO 4 coll channels, 4 p2p channels, 4 p2p channels per peer
+cdr2548:238924:239743 [1] NCCL INFO comm 0x2ae6980090d0 rank 1 nranks 2 cudaDev 1 busId 86000 - Init COMPLETE
+cdr2548:238923:239740 [0] NCCL INFO comm 0x2b0ef40090d0 rank 0 nranks 2 cudaDev 0 busId 3b000 - Init COMPLETE
+cdr2548:238923:238923 [0] NCCL INFO Launch mode Parallel
+Dataset config :  {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json'}, 'val': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json'}, 'test': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/SeViLA/data/videos'}}, 'vis_processor': {'train': {'name': 'blip2_video_train', 'n_frms': 32, 'image_size': 224}, 'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question', 'max_words': 50}, 'eval': {'name': 'blip_question', 'max_words': 50}}}
+Config keys :  dict_keys(['data_type', 'build_info', 'vis_processor', 'text_processor'])
+Config : 
+
+ {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json'}, 'val': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json'}, 'test': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/SeViLA/data/videos'}}, 'vis_processor': {'train': {'name': 'blip2_video_train', 'n_frms': 32, 'image_size': 224}, 'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question', 'max_words': 50}, 'eval': {'name': 'blip_question', 'max_words': 50}}}
+Building datasets in base task ...
+Inside build processors ...
+Config name :  blip2_video_train
+Config name :  blip_video_eval
+Config name :  blip_question
+Config name :  blip_question
+in build() fn, Processors built
+Run config :  {'task': 'videoqa', 'lr_sched': 'linear_warmup_cosine_lr', 'init_lr': 3e-05, 'min_lr': 0, 'warmup_lr': 1e-08, 'warmup_steps': 1000, 'weight_decay': 0.05, 'max_epoch': 10, 'batch_size_train': 1, 'batch_size_eval': 2, 'num_workers': 1, 'accum_grad_iters': 8, 'max_len': 30, 'min_len': 8, 'num_beams': 5, 'seed': 42, 'output_dir': 'expts/causalvidqa_ft/18_12_2023_Dec_42_13', 'amp': True, 'resume_ckpt_path': None, 'evaluate': False, 'train_splits': ['train'], 'valid_splits': ['val'], 'test_splits': ['test'], 'device': 'cuda', 'world_size': 2, 'dist_url': 'env://', 'distributed': True, 'find_unused_parameters': True, 'rank': 0, 'gpu': 0, 'dist_backend': 'nccl'}
+Train: data epoch: [0]  [  0/250]  eta: 1:00:14  lr: 0.000000  loss: 2.2255  time: 14.4573  data: 0.0000  max mem: 21492
+Train: data epoch: [0]  [ 50/250]  eta: 0:12:54  lr: 0.000002  loss: 4.6150  time: 3.7616  data: 0.0000  max mem: 26020
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [0]  [100/250]  eta: 0:10:07  lr: 0.000003  loss: 0.0067  time: 4.2090  data: 0.0000  max mem: 27451
+Train: data epoch: [0]  [150/250]  eta: 0:06:24  lr: 0.000005  loss: 0.0220  time: 3.0346  data: 0.0000  max mem: 27451
+Train: data epoch: [0]  [200/250]  eta: 0:03:19  lr: 0.000006  loss: 1.5409  time: 4.2352  data: 0.0000  max mem: 27451
+Train: data epoch: [0]  [249/250]  eta: 0:00:03  lr: 0.000007  loss: 2.2348  time: 3.5359  data: 0.0000  max mem: 27451
+Train: data epoch: [0] Total time: 0:16:24 (3.9366 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+cdr2548:238924:238924 [1] NCCL INFO comm 0x2ae6980090d0 rank 1 nranks 2 cudaDev 1 busId 86000 - Abort COMPLETE
+cdr2548:238923:238923 [0] NCCL INFO comm 0x2b0ef40090d0 rank 0 nranks 2 cudaDev 0 busId 3b000 - Abort COMPLETE

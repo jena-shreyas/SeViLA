@@ -93,8 +93,8 @@ def main():
     datasets = task.build_datasets(cfg)
     model = task.build_model(cfg)
     
-    for name, module in model.named_parameters():
-        print(name)
+    # for name, module in model.named_parameters():
+    #     print(name)
     
     runner = get_runner_class(cfg)(
         cfg=cfg, job_id=job_id, task=task, model=model, datasets=datasets

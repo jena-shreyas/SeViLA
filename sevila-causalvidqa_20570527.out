@@ -1,0 +1,341 @@
+type 1
+1
+2
+1
+type 1
+0
+2
+0
+| distributed init (rank 1, world 2): env://
+| distributed init (rank 0, world 2): env://
+cdr2576:75531:75531 [0] NCCL INFO Bootstrap : Using ib0:172.19.146.13<0>
+cdr2576:75531:75531 [0] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2576:75531:75531 [0] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.146.13<0>
+cdr2576:75531:75531 [0] NCCL INFO Using network IB
+NCCL version 2.12.12+cuda11.7
+cdr2576:75532:75532 [1] NCCL INFO Bootstrap : Using ib0:172.19.146.13<0>
+cdr2576:75532:75532 [1] NCCL INFO NET/Plugin : No plugin found (libnccl-net.so), using internal implementation
+cdr2576:75532:75532 [1] NCCL INFO NET/IB : Using [0]hfi1_0:1/IB ; OOB ib0:172.19.146.13<0>
+cdr2576:75532:75532 [1] NCCL INFO Using network IB
+cdr2576:75531:75640 [0] NCCL INFO Setting affinity for GPU 0 to 01
+cdr2576:75531:75640 [0] NCCL INFO Channel 00/04 :    0   1
+cdr2576:75531:75640 [0] NCCL INFO Channel 01/04 :    0   1
+cdr2576:75531:75640 [0] NCCL INFO Channel 02/04 :    0   1
+cdr2576:75531:75640 [0] NCCL INFO Channel 03/04 :    0   1
+cdr2576:75531:75640 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1
+cdr2576:75532:75643 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0 [2] -1/-1/-1->1->0 [3] -1/-1/-1->1->0
+cdr2576:75531:75640 [0] NCCL INFO Channel 00 : 0[18000] -> 1[86000] via P2P/IPC
+cdr2576:75532:75643 [1] NCCL INFO Channel 00 : 1[86000] -> 0[18000] via P2P/IPC
+cdr2576:75531:75640 [0] NCCL INFO Channel 01 : 0[18000] -> 1[86000] via P2P/IPC
+cdr2576:75532:75643 [1] NCCL INFO Channel 01 : 1[86000] -> 0[18000] via P2P/IPC
+cdr2576:75531:75640 [0] NCCL INFO Channel 02 : 0[18000] -> 1[86000] via P2P/IPC
+cdr2576:75531:75640 [0] NCCL INFO Channel 03 : 0[18000] -> 1[86000] via P2P/IPC
+cdr2576:75532:75643 [1] NCCL INFO Channel 02 : 1[86000] -> 0[18000] via P2P/IPC
+cdr2576:75532:75643 [1] NCCL INFO Channel 03 : 1[86000] -> 0[18000] via P2P/IPC
+cdr2576:75532:75643 [1] NCCL INFO Connected all rings
+cdr2576:75532:75643 [1] NCCL INFO Connected all trees
+cdr2576:75532:75643 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/512
+cdr2576:75532:75643 [1] NCCL INFO 4 coll channels, 4 p2p channels, 4 p2p channels per peer
+cdr2576:75531:75640 [0] NCCL INFO Connected all rings
+cdr2576:75531:75640 [0] NCCL INFO Connected all trees
+cdr2576:75531:75640 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 8/8/512
+cdr2576:75531:75640 [0] NCCL INFO 4 coll channels, 4 p2p channels, 4 p2p channels per peer
+cdr2576:75532:75643 [1] NCCL INFO comm 0x2b892c0090d0 rank 1 nranks 2 cudaDev 1 busId 86000 - Init COMPLETE
+cdr2576:75531:75640 [0] NCCL INFO comm 0x2b37900090d0 rank 0 nranks 2 cudaDev 0 busId 18000 - Init COMPLETE
+cdr2576:75531:75531 [0] NCCL INFO Launch mode Parallel
+Dataset config :  {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json'}, 'val': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json'}, 'test': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/SeViLA/data/videos'}}, 'vis_processor': {'train': {'name': 'blip2_video_train', 'n_frms': 32, 'image_size': 224}, 'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question', 'max_words': 50}, 'eval': {'name': 'blip_question', 'max_words': 50}}}
+Config keys :  dict_keys(['data_type', 'build_info', 'vis_processor', 'text_processor'])
+Config : 
+
+ {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/train_small.json'}, 'val': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/val_small.json'}, 'test': {'url': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json', 'storage': '/scratch/jenas/BTP/SeViLA/data/annotations/test_small.json'}}, 'videos': {'storage': '/scratch/jenas/BTP/SeViLA/data/videos'}}, 'vis_processor': {'train': {'name': 'blip2_video_train', 'n_frms': 32, 'image_size': 224}, 'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question', 'max_words': 50}, 'eval': {'name': 'blip_question', 'max_words': 50}}}
+Building datasets in base task ...
+Inside build processors ...
+Config name :  blip2_video_train
+Config name :  blip_video_eval
+Config name :  blip_question
+Config name :  blip_question
+in build() fn, Processors built
+Run config :  {'task': 'videoqa', 'lr_sched': 'linear_warmup_cosine_lr', 'init_lr': 3e-05, 'min_lr': 0, 'warmup_lr': 1e-08, 'warmup_steps': 1000, 'weight_decay': 0.05, 'max_epoch': 5, 'batch_size_train': 1, 'batch_size_eval': 2, 'num_workers': 1, 'accum_grad_iters': 8, 'max_len': 30, 'min_len': 8, 'num_beams': 5, 'seed': 42, 'output_dir': 'expts/causalvidqa_ft/18_12_2023_Dec_48_17', 'amp': True, 'resume_ckpt_path': None, 'evaluate': False, 'train_splits': ['train'], 'valid_splits': ['val'], 'test_splits': ['test'], 'device': 'cuda', 'world_size': 2, 'dist_url': 'env://', 'distributed': True, 'find_unused_parameters': True, 'rank': 0, 'gpu': 0, 'dist_backend': 'nccl'}
+Train: data epoch: [0]  [  0/250]  eta: 0:58:10  lr: 0.000000  loss: 2.2255  time: 13.9640  data: 0.0000  max mem: 21489
+Train: data epoch: [0]  [ 50/250]  eta: 0:12:46  lr: 0.000002  loss: 4.6150  time: 3.7022  data: 0.0000  max mem: 26026
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [0]  [100/250]  eta: 0:09:59  lr: 0.000003  loss: 0.0067  time: 4.1066  data: 0.0000  max mem: 27450
+Train: data epoch: [0]  [150/250]  eta: 0:06:19  lr: 0.000005  loss: 0.0220  time: 3.1313  data: 0.0000  max mem: 27450
+Train: data epoch: [0]  [200/250]  eta: 0:03:16  lr: 0.000006  loss: 1.5409  time: 4.1255  data: 0.0000  max mem: 27450
+Train: data epoch: [0]  [249/250]  eta: 0:00:03  lr: 0.000007  loss: 2.2348  time: 3.4501  data: 0.0000  max mem: 27450
+Train: data epoch: [0] Total time: 0:16:09 (3.8775 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/125]  eta: 0:21:11    time: 10.1740  data: 4.8676  max mem: 27450
+Evaluation  [ 10/125]  eta: 0:07:53    time: 4.1140  data: 0.4504  max mem: 27450
+Evaluation  [ 20/125]  eta: 0:06:36    time: 3.4555  data: 0.0083  max mem: 27450
+Evaluation  [ 30/125]  eta: 0:05:52    time: 3.4873  data: 0.0102  max mem: 27450
+Evaluation  [ 40/125]  eta: 0:05:15    time: 3.6535  data: 0.0104  max mem: 27450
+Evaluation  [ 50/125]  eta: 0:04:40    time: 3.7808  data: 0.0076  max mem: 27450
+Evaluation  [ 60/125]  eta: 0:03:58    time: 3.5905  data: 0.0070  max mem: 27450
+Evaluation  [ 70/125]  eta: 0:03:21    time: 3.5000  data: 0.0083  max mem: 27450
+Evaluation  [ 80/125]  eta: 0:02:45    time: 3.7186  data: 0.0094  max mem: 27450
+Evaluation  [ 90/125]  eta: 0:02:09    time: 3.7665  data: 0.0107  max mem: 27450
+Evaluation  [100/125]  eta: 0:01:32    time: 3.7423  data: 0.0103  max mem: 27450
+Evaluation  [110/125]  eta: 0:00:56    time: 3.9610  data: 0.0095  max mem: 27450
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Evaluation  [120/125]  eta: 0:00:18    time: 4.2063  data: 0.0100  max mem: 27450
+Evaluation  [124/125]  eta: 0:00:03    time: 3.8424  data: 0.0394  max mem: 27450
+Evaluation Total time: 0:07:51 (3.7750 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_48_17/result/val_epoch0.json
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Train: data epoch: [1]  [  0/250]  eta: 0:34:48  lr: 0.000027  loss: 0.1646  time: 8.3543  data: 0.0001  max mem: 27450
+Train: data epoch: [1]  [ 50/250]  eta: 0:14:12  lr: 0.000027  loss: 0.2548  time: 4.1121  data: 0.0000  max mem: 27450
+Train: data epoch: [1]  [100/250]  eta: 0:10:33  lr: 0.000027  loss: 0.1409  time: 4.3773  data: 0.0000  max mem: 27450
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [1]  [150/250]  eta: 0:07:07  lr: 0.000027  loss: 0.6900  time: 4.5275  data: 0.0000  max mem: 27450
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [1]  [200/250]  eta: 0:03:30  lr: 0.000027  loss: 1.7376  time: 3.9622  data: 0.0000  max mem: 27450
+Train: data epoch: [1]  [249/250]  eta: 0:00:04  lr: 0.000027  loss: 2.0070  time: 3.6373  data: 0.0000  max mem: 27450
+Train: data epoch: [1] Total time: 0:17:14 (4.1400 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/125]  eta: 0:21:43    time: 10.4317  data: 4.9838  max mem: 27450
+Evaluation  [ 10/125]  eta: 0:07:47    time: 4.0617  data: 0.4666  max mem: 27450
+Evaluation  [ 20/125]  eta: 0:06:35    time: 3.4328  data: 0.0137  max mem: 27450
+Evaluation  [ 30/125]  eta: 0:05:51    time: 3.5028  data: 0.0119  max mem: 27450
+Evaluation  [ 40/125]  eta: 0:05:13    time: 3.5982  data: 0.0123  max mem: 27450
+Evaluation  [ 50/125]  eta: 0:04:38    time: 3.7436  data: 0.0126  max mem: 27450
+Evaluation  [ 60/125]  eta: 0:03:58    time: 3.6499  data: 0.0118  max mem: 27450
+Evaluation  [ 70/125]  eta: 0:03:24    time: 3.7275  data: 0.0116  max mem: 27450
+Evaluation  [ 80/125]  eta: 0:02:46    time: 3.8227  data: 0.0146  max mem: 27450
+Evaluation  [ 90/125]  eta: 0:02:10    time: 3.7125  data: 0.0166  max mem: 27450
+Evaluation  [100/125]  eta: 0:01:32    time: 3.6863  data: 0.0143  max mem: 27450
+Evaluation  [110/125]  eta: 0:00:55    time: 3.7180  data: 0.0124  max mem: 27450
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Evaluation  [120/125]  eta: 0:00:18    time: 4.1223  data: 0.0157  max mem: 27450
+Evaluation  [124/125]  eta: 0:00:03    time: 3.9500  data: 0.0372  max mem: 27450
+Evaluation Total time: 0:07:50 (3.7639 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_48_17/result/val_epoch1.json
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Train: data epoch: [2]  [  0/250]  eta: 0:32:53  lr: 0.000020  loss: 0.7032  time: 7.8946  data: 0.0001  max mem: 27450
+Train: data epoch: [2]  [ 50/250]  eta: 0:13:53  lr: 0.000020  loss: 2.2100  time: 4.5054  data: 0.0000  max mem: 27450
+Train: data epoch: [2]  [100/250]  eta: 0:10:17  lr: 0.000020  loss: 0.5842  time: 3.4018  data: 0.0000  max mem: 27450
+Train: data epoch: [2]  [150/250]  eta: 0:06:50  lr: 0.000020  loss: 0.4359  time: 3.9895  data: 0.0000  max mem: 27450
+Train: data epoch: [2]  [200/250]  eta: 0:03:20  lr: 0.000020  loss: 0.5071  time: 3.9927  data: 0.0000  max mem: 27450
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [2]  [249/250]  eta: 0:00:04  lr: 0.000020  loss: 0.1026  time: 3.9573  data: 0.0000  max mem: 27450
+Train: data epoch: [2] Total time: 0:16:52 (4.0495 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/125]  eta: 0:20:39    time: 9.9164  data: 4.7170  max mem: 27450
+Evaluation  [ 10/125]  eta: 0:07:38    time: 3.9905  data: 0.4370  max mem: 27450
+Evaluation  [ 20/125]  eta: 0:06:31    time: 3.4148  data: 0.0096  max mem: 27450
+Evaluation  [ 30/125]  eta: 0:05:48    time: 3.4861  data: 0.0095  max mem: 27450
+Evaluation  [ 40/125]  eta: 0:05:10    time: 3.5870  data: 0.0104  max mem: 27450
+Evaluation  [ 50/125]  eta: 0:04:37    time: 3.7460  data: 0.0116  max mem: 27450
+Evaluation  [ 60/125]  eta: 0:03:57    time: 3.6591  data: 0.0107  max mem: 27450
+Evaluation  [ 70/125]  eta: 0:03:23    time: 3.7398  data: 0.0110  max mem: 27450
+Evaluation  [ 80/125]  eta: 0:02:46    time: 3.8229  data: 0.0216  max mem: 27450
+Evaluation  [ 90/125]  eta: 0:02:09    time: 3.7053  data: 0.0218  max mem: 27450
+Evaluation  [100/125]  eta: 0:01:32    time: 3.6615  data: 0.0106  max mem: 27450
+Evaluation  [110/125]  eta: 0:00:55    time: 3.7168  data: 0.0090  max mem: 27450
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Evaluation  [120/125]  eta: 0:00:18    time: 4.1380  data: 0.0110  max mem: 27450
+Evaluation  [124/125]  eta: 0:00:03    time: 3.9521  data: 0.0335  max mem: 27450
+Evaluation Total time: 0:07:49 (3.7546 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_48_17/result/val_epoch2.json
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Train: data epoch: [3]  [  0/250]  eta: 0:42:13  lr: 0.000010  loss: 0.2303  time: 10.1332  data: 0.0000  max mem: 27450
+Train: data epoch: [3]  [ 50/250]  eta: 0:13:03  lr: 0.000010  loss: 0.6694  time: 3.7544  data: 0.0000  max mem: 27450
+Train: data epoch: [3]  [100/250]  eta: 0:09:46  lr: 0.000010  loss: 0.1609  time: 4.1044  data: 0.0000  max mem: 27450
+Train: data epoch: [3]  [150/250]  eta: 0:06:43  lr: 0.000010  loss: 0.0422  time: 4.3142  data: 0.0000  max mem: 27450
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [3]  [200/250]  eta: 0:03:23  lr: 0.000010  loss: 0.1209  time: 4.4420  data: 0.0000  max mem: 27450
+
+Error while read file idx
+video is: Y8sWSmgmyJs_000040_000050
+Train: data epoch: [3]  [249/250]  eta: 0:00:04  lr: 0.000010  loss: 0.6581  time: 4.3480  data: 0.0000  max mem: 27450
+Train: data epoch: [3] Total time: 0:17:15 (4.1428 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/125]  eta: 0:21:15    time: 10.2032  data: 5.0659  max mem: 27450
+Evaluation  [ 10/125]  eta: 0:07:49    time: 4.0842  data: 0.4675  max mem: 27450
+Evaluation  [ 20/125]  eta: 0:06:38    time: 3.4722  data: 0.0114  max mem: 27450
+Evaluation  [ 30/125]  eta: 0:05:56    time: 3.5655  data: 0.0140  max mem: 27450
+Evaluation  [ 40/125]  eta: 0:05:19    time: 3.7131  data: 0.0111  max mem: 27450
+Evaluation  [ 50/125]  eta: 0:04:43    time: 3.8271  data: 0.0107  max mem: 27450
+Evaluation  [ 60/125]  eta: 0:04:03    time: 3.7089  data: 0.0098  max mem: 27450
+Evaluation  [ 70/125]  eta: 0:03:28    time: 3.8041  data: 0.0094  max mem: 27450
+Evaluation  [ 80/125]  eta: 0:02:49    time: 3.8257  data: 0.0121  max mem: 27450
+Evaluation  [ 90/125]  eta: 0:02:12    time: 3.7353  data: 0.0143  max mem: 27450
+Evaluation  [100/125]  eta: 0:01:34    time: 3.7692  data: 0.0138  max mem: 27450
+Evaluation  [110/125]  eta: 0:00:56    time: 3.7771  data: 0.0103  max mem: 27450
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Evaluation  [120/125]  eta: 0:00:19    time: 4.1686  data: 0.0087  max mem: 27450
+Evaluation  [124/125]  eta: 0:00:03    time: 3.9951  data: 0.0341  max mem: 27450
+Evaluation Total time: 0:07:57 (3.8211 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_48_17/result/val_epoch3.json
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Train: data epoch: [4]  [  0/250]  eta: 0:38:52  lr: 0.000003  loss: 2.0402  time: 9.3293  data: 0.0000  max mem: 27450
+Train: data epoch: [4]  [ 50/250]  eta: 0:14:06  lr: 0.000003  loss: 3.2036  time: 3.9813  data: 0.0000  max mem: 27450
+Train: data epoch: [4]  [100/250]  eta: 0:09:57  lr: 0.000003  loss: 0.3787  time: 3.6032  data: 0.0000  max mem: 27450
+Train: data epoch: [4]  [150/250]  eta: 0:06:44  lr: 0.000003  loss: 0.7110  time: 4.0045  data: 0.0000  max mem: 27450
+Train: data epoch: [4]  [200/250]  eta: 0:03:24  lr: 0.000003  loss: 0.0147  time: 4.3982  data: 0.0000  max mem: 27450
+Train: data epoch: [4]  [249/250]  eta: 0:00:04  lr: 0.000003  loss: 0.1559  time: 4.5498  data: 0.0000  max mem: 27450
+Train: data epoch: [4] Total time: 0:17:15 (4.1407 s / it)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/125]  eta: 0:21:00    time: 10.0851  data: 4.9160  max mem: 27450
+Evaluation  [ 10/125]  eta: 0:07:46    time: 4.0602  data: 0.4625  max mem: 27450
+Evaluation  [ 20/125]  eta: 0:06:35    time: 3.4544  data: 0.0150  max mem: 27450
+Evaluation  [ 30/125]  eta: 0:05:51    time: 3.5013  data: 0.0128  max mem: 27450
+Evaluation  [ 40/125]  eta: 0:05:12    time: 3.5877  data: 0.0111  max mem: 27450
+Evaluation  [ 50/125]  eta: 0:04:37    time: 3.7176  data: 0.0116  max mem: 27450
+Evaluation  [ 60/125]  eta: 0:03:58    time: 3.6368  data: 0.0116  max mem: 27450
+Evaluation  [ 70/125]  eta: 0:03:24    time: 3.7528  data: 0.0096  max mem: 27450
+Evaluation  [ 80/125]  eta: 0:02:46    time: 3.7691  data: 0.0110  max mem: 27450
+Evaluation  [ 90/125]  eta: 0:02:09    time: 3.6147  data: 0.0132  max mem: 27450
+Evaluation  [100/125]  eta: 0:01:31    time: 3.6296  data: 0.0131  max mem: 27450
+Evaluation  [110/125]  eta: 0:00:55    time: 3.6876  data: 0.0118  max mem: 27450
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+
+Error while read file idx
+video is: jiz7q4uA738_000069_000079
+Evaluation  [120/125]  eta: 0:00:18    time: 4.0424  data: 0.0107  max mem: 27450
+Evaluation  [124/125]  eta: 0:00:03    time: 3.8368  data: 0.0311  max mem: 27450
+Evaluation Total time: 0:07:45 (3.7263 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_48_17/result/val_epoch4.json
+evaluate(); Test splits :  ['test']
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Evaluation  [  0/125]  eta: 0:14:34    time: 6.9958  data: 2.3831  max mem: 27450
+Evaluation  [ 10/125]  eta: 0:08:15    time: 4.3075  data: 0.2292  max mem: 27450
+Evaluation  [ 20/125]  eta: 0:07:25    time: 4.1067  data: 0.0154  max mem: 27450
+Evaluation  [ 30/125]  eta: 0:06:51    time: 4.3378  data: 0.0173  max mem: 27450
+Evaluation  [ 40/125]  eta: 0:05:56    time: 4.1312  data: 0.0139  max mem: 27450
+
+Error while read file idx
+video is: OTNdgakSIJE_000213_000223
+
+Error while read file idx
+video is: OTNdgakSIJE_000213_000223
+Evaluation  [ 50/125]  eta: 0:05:12    time: 3.9308  data: 0.0143  max mem: 27450
+Evaluation  [ 60/125]  eta: 0:04:25    time: 3.8604  data: 0.0162  max mem: 27450
+
+Error while read file idx
+video is: y6L1E9qChxU_000369_000379
+
+Error while read file idx
+video is: y6L1E9qChxU_000369_000379
+Evaluation  [ 70/125]  eta: 0:03:42    time: 3.7333  data: 0.0122  max mem: 27450
+Evaluation  [ 80/125]  eta: 0:03:01    time: 3.8938  data: 0.0104  max mem: 27450
+Evaluation  [ 90/125]  eta: 0:02:27    time: 4.8474  data: 0.0113  max mem: 27450
+
+Error while read file idx
+video is: fUNxGGTiVCM_000018_000028
+
+Error while read file idx
+video is: fUNxGGTiVCM_000018_000028
+Evaluation  [100/125]  eta: 0:01:46    time: 5.1314  data: 0.0107  max mem: 27450
+Evaluation  [110/125]  eta: 0:01:02    time: 4.0329  data: 0.0100  max mem: 27450
+Evaluation  [120/125]  eta: 0:00:20    time: 3.4256  data: 0.0122  max mem: 27450
+Evaluation  [124/125]  eta: 0:00:04    time: 3.3682  data: 0.0341  max mem: 27450
+Evaluation Total time: 0:08:31 (4.0901 s / it)
+result file saved to /scratch/jenas/BTP/SeViLA/lavis/expts/causalvidqa_ft/18_12_2023_Dec_48_17/result/test_epochbest.json
+cdr2576:75532:75532 [1] NCCL INFO comm 0x2b892c0090d0 rank 1 nranks 2 cudaDev 1 busId 86000 - Abort COMPLETE
+cdr2576:75531:75531 [0] NCCL INFO comm 0x2b37900090d0 rank 0 nranks 2 cudaDev 0 busId 18000 - Abort COMPLETE
