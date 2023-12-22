@@ -1,18 +1,14 @@
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --mem=32G
-#SBATCH --gres=gpu:v100l:4
-#SBATCH --time=8:00:0
+#SBATCH --gres=gpu:v100l:2
+#SBATCH --time=8:0:0
 #SBATCH --account=def-egranger
 #SBATCH --job-name=sevila-causalvidqa
 #SBATCH --output=sevila-causalvidqa_%j.out
 #SBATCH --error=sevila-causalvidqa_%j.err
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=shreyas.jena.1@etsmtl.net
-
-result_dir="expts"
-exp_name='causalvidqa_infer'
-ckpt='expts/causalvidqa_ft/checkpoint_best.pth'
 
 module purge
 module load python/3.9
@@ -26,13 +22,18 @@ source $HOME/envs/sevila/bin/activate
 cd $SCRATCH/BTP/SeViLA
 export TORCH_CPP_LOG_LEVEL=INFO NCCL_DEBUG=INFO # debug
 
-CUDA_LAUNCH_BLOCKING=1 CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.run --nproc_per_node=1 evaluate.py \
+result_dir="expts"
+exp_name='causalvidqa_infer'
+date=$(date +"%d_%m_%Y_%h_%M_%S")
+ckpt='sevila_checkpoints/sevila_pretrained.pth'
+
+CUDA_LAUNCH_BLOCKING=1 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.run --nproc_per_node=2 evaluate.py \
 --cfg-path lavis/projects/sevila/eval/causalvidqa_eval.yaml \
---options run.output_dir=${result_dir}/${exp_name} \
+--options run.output_dir=${result_dir}/${exp_name}/${date} \
 model.frame_num=4 \
 datasets.causalvidqa.vis_processor.eval.n_frms=32 \
 run.batch_size_eval=1 \
-model.task='qvh_freeze_loc_freeze_qa_vid' \
+model.task='qvh_freeze_loc_freeze_qa_vid_rand_init' \
 model.finetuned=${ckpt} \
 run.task='videoqa' \
 run.num_workers=0

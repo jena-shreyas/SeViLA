@@ -11,6 +11,7 @@ import torch
 import torch.nn as nn
 from torch.cuda.amp import autocast as autocast
 from transformers import T5TokenizerFast, BertTokenizer
+import random ####
 
 from lavis.common.registry import registry
 from lavis.models.blip2_models.blip2 import Blip2Base, disabled_train
@@ -148,7 +149,7 @@ class SeViLA(Blip2Base):
                 image_embeds_ = self.ln_vision(image_embeds_)
                 
                 query_tokens_qa = self.query_tokens.expand(image_embeds_.shape[0], -1, -1)
-                query_output_qa = self.Qformer.bert(
+                query_output_qa = self.Qformer.bert(                                            # visual query features
                     query_embeds=query_tokens_qa, encoder_hidden_states=image_embeds_,
                     encoder_attention_mask=image_atts_, return_dict=True)
                 inputs_t5_qa = self.t5_proj(query_output_qa.last_hidden_state)
@@ -184,7 +185,11 @@ class SeViLA(Blip2Base):
                     # input for QA
                     frame_predix_embed = self.t5_model.encoder.embed_tokens(frame_prefix_id)
                     inputs_embeds_qa = self.t5_model.encoder.embed_tokens(input_ids_qa)
+
+                    #########
+                    # Here, the frame embeddings are concatenated with the QA prompt embeddings
                     inputs_embeds_qa = torch.cat([frame_predix_embed, inputs_t5_qa, inputs_embeds_qa], dim=1)
+                    #########
                     encoder_atts_qa = torch.cat([frame_prefix_mask, atts_t5_qa, input_attention_mask_qa], dim=1)
 
                     outputs_embed_qa = self.t5_model(
@@ -293,7 +298,7 @@ class SeViLA(Blip2Base):
                     
             text_input_qa = samples['qa_input']
             answer = samples['qa_output'] # Option A ...
-            select_frames_idx = torch.topk(loc_yes, self.frame_num, dim=-1).indices.tolist()
+            select_frames_idx = torch.topk(loc_yes, self.frame_num, dim=-1).indices.tolist()    # Select top-k frames based on flan-t5 scores
             sorted_frames_idx = []
             image_embeds = self.ln_vision(image_embeds)
             image_embeds = image_embeds.reshape(b, t, n, -1)
@@ -489,7 +494,7 @@ class SeViLA(Blip2Base):
                         max_length=self.max_txt_len, return_tensors="pt").to(image.device)
                     input_ids_qa = torch.repeat_interleave(input_tokens_qa.input_ids, t, 0)
                     input_attention_mask_qa = torch.repeat_interleave(input_tokens_qa.attention_mask, t, 0)
-                                        
+                                         
                     # input for QA
                     frame_predix_embed = self.t5_model.encoder.embed_tokens(frame_prefix_id)
                     inputs_embeds_qa = self.t5_model.encoder.embed_tokens(input_ids_qa)
@@ -536,7 +541,7 @@ class SeViLA(Blip2Base):
         
         # inference with localizer             
         else:
-            
+            print("Inference with localizer ...")
             b, t, c, w, h = image.shape        
             image = image.reshape(-1, c, w, h)
             with torch.cuda.amp.autocast(enabled=(self.device != torch.device("cpu"))):
@@ -586,7 +591,7 @@ class SeViLA(Blip2Base):
                         
                 pred_logits_loc = outputs_loc.scores[0]
                 loc_yes = pred_logits_loc[:, self.yes_id]
-                loc_yes = loc_yes.reshape(b, -1)
+                loc_yes = loc_yes.reshape(b, -1)   # b, 32
                 if 'qa_vid' in self.task:
                     select_frames_idx = torch.topk(loc_yes, self.frame_num, dim=-1).indices.tolist()
                     sorted_frames_idx = []
@@ -594,6 +599,15 @@ class SeViLA(Blip2Base):
                     image_embeds = image_embeds.reshape(b, t, n, -1)
                     for frames in select_frames_idx:
                         sorted_frames_idx.append(sorted(frames))
+
+                    if 'any' in self.task:
+                        print('any')
+                        rows = len(sorted_frames_idx)
+                        cols = len(sorted_frames_idx[0])
+                        sorted_frames_idx = [[random.randint(1, 32) for _ in range(cols)] for _ in range(rows)]
+                        print(len(sorted_frames_idx[0]))
+                        print(sorted_frames_idx)
+
                     out['frame_idx'] = sorted_frames_idx
                     select_frames = []
                     for i, fs in enumerate(sorted_frames_idx): 
@@ -605,6 +619,18 @@ class SeViLA(Blip2Base):
                     
                     select_frames = torch.stack(select_frames, dim=0) # b 4, n , -1
                     select_frames = select_frames.reshape(-1, select_frames.shape[-2], select_frames.shape[-1])
+
+                    # replace top k selected frame embeddings with randomly initialized frame embeddings of same shape
+                    if "rand_init" in self.task:
+                        print("rand_init")
+                        sel_frames_max, sel_frames_min = torch.max(select_frames).item(), torch.min(select_frames).item()
+                        print(sel_frames_min, sel_frames_max)
+                        select_frames = (sel_frames_max - sel_frames_min) * torch.rand(select_frames.shape) + sel_frames_min
+                        select_frames = select_frames.to(device='cuda')
+                        print(select_frames.shape)
+                        print(torch.min(select_frames), torch.max(select_frames))
+                        print(select_frames.device)
+
                     image_atts = torch.ones(select_frames.size()[:-1], dtype=torch.long).to(image.device) # bt n c
                     query_tokens_qa = self.query_tokens.expand(select_frames.shape[0], -1, -1)
                     query_output_qa = self.Qformer.bert(
