@@ -2,7 +2,6 @@
     Convert CausalVidQA data split files from csv to json format for SeViLA.
 '''
 
-
 import os
 import sys
 import pandas as pd

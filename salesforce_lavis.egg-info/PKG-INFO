@@ -16,7 +16,6 @@ Requires-Dist: ftfy
 Requires-Dist: iopath
 Requires-Dist: ipython
 Requires-Dist: omegaconf
-Requires-Dist: opencv-python-headless==4.5.5.64
 Requires-Dist: opendatasets
 Requires-Dist: packaging
 Requires-Dist: pandas

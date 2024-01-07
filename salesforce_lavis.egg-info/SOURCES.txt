@@ -31,6 +31,7 @@ lavis/common/vqa_tools/vqa_eval.py
 lavis/configs/default.yaml
 lavis/configs/datasets/aokvqa/defaults.yaml
 lavis/configs/datasets/avsd/defaults_dial.yaml
+lavis/configs/datasets/causalvidqa/defaults_qa.yaml
 lavis/configs/datasets/coco/defaults_cap.yaml
 lavis/configs/datasets/coco/defaults_ret.yaml
 lavis/configs/datasets/coco/defaults_vqa.yaml
@@ -291,7 +292,6 @@ lavis/projects/blip/train/pretrain_14m.yaml
 lavis/projects/blip/train/retrieval_coco_ft.yaml
 lavis/projects/blip/train/retrieval_flickr_ft.yaml
 lavis/projects/blip/train/vqav2_ft.yaml
-lavis/projects/blip2/eval/caption_coco_flant5xl_eval.yaml
 lavis/projects/blip2/eval/caption_coco_opt2.7b_eval.yaml
 lavis/projects/blip2/eval/caption_coco_opt6.7b_eval.yaml
 lavis/projects/blip2/eval/gqa_zeroshot_flant5xl_eval.yaml
@@ -319,12 +319,14 @@ lavis/projects/pnp-vqa/eval/vqav2_eval_large.yaml
 lavis/projects/pnp-vqa/eval/vqav2_test_eval.yaml
 lavis/projects/pnp-vqa/eval/vqav2_test_eval_3b.yaml
 lavis/projects/pnp-vqa/eval/vqav2_test_eval_large.yaml
+lavis/projects/sevila/eval/causalvidqa_eval.yaml
 lavis/projects/sevila/eval/how2qa_eval.yaml
 lavis/projects/sevila/eval/nextqa_eval.yaml
 lavis/projects/sevila/eval/qvh_eval.yaml
 lavis/projects/sevila/eval/star_eval.yaml
 lavis/projects/sevila/eval/tvqa_eval.yaml
 lavis/projects/sevila/eval/vlep_eval.yaml
+lavis/projects/sevila/train/causalvidqa.yaml
 lavis/projects/sevila/train/how2qa.yaml
 lavis/projects/sevila/train/nextqa.yaml
 lavis/projects/sevila/train/qvh.yaml

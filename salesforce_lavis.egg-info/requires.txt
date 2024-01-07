@@ -6,7 +6,6 @@ ftfy
 iopath
 ipython
 omegaconf
-opencv-python-headless==4.5.5.64
 opendatasets
 packaging
 pandas
