@@ -7,6 +7,7 @@ from lavis.datasets.data_utils import load_video_demo
 from lavis.processors.blip_processors import ToUint8, ToTHWC
 from lavis.models.sevila_models.sevila import SeViLA
 from typing import Optional
+import gradio as gr
 import warnings
 
 
@@ -154,76 +155,76 @@ while True:
     print("Answer : ", answer)
 
 
-# with gr.Blocks(title="SeViLA demo") as demo:
-#     description = """<p style="text-align: center; font-weight: bold;">
-#         <span style="font-size: 28px">Self-Chained Image-Language Model for Video Localization and Question Answering</span>
-#         <br>
-#         <span style="font-size: 18px" id="author-info">
-#             <a href="https://yui010206.github.io/" target="_blank">Shoubin Yu</a>, 
-#             <a href="https://j-min.io/" target="_blank">Jaemin Cho</a>, 
-#             <a href="https://prateek-yadav.github.io/" target="_blank">Prateek Yadav</a>, 
-#             <a href="https://www.cs.unc.edu/~mbansal/" target="_blank">Mohit Bansal</a>
-#         </span> 
-#         <br>
-#         <span style="font-size: 18px" id="paper-info">
-#             [<a href="https://github.com/Yui010206/SeViLA" target="_blank">GitHub</a>]
-#             [<a href="https://arxiv.org/abs/2305.06988" target="_blank">Paper</a>]
-#         </span>
-#     </p>
-#     <p>
-#         To locate keyframes in a video and answer question, please:
-#         <br>
-#         (1) upolad your video; (2) write your question/options and set # video frame/# keyframe; (3) click Locate and Answer!
-#         <br>
-#         Just a heads up - loading the SeViLA model can take a few minutes (typically 2-3), and running examples requires about 12GB of memory.
-#         <br>
-#         We've got you covered! We've provided some example videos and questions below to help you get started. Feel free to try out SeViLA with these!
-#     </p>
-#     """
-#     gr.HTML(description)
-#     with gr.Row():
-#         with gr.Column(scale=1, min_width=600):
-#             video = gr.Video(label='Video') 
-#             question = gr.Textbox(placeholder="Why did the two ladies put their hands above their eyes while staring out?", label='Question')
-#             with gr.Row():
-#                 option1 = gr.Textbox(placeholder="practicing cheer", label='Option 1')
-#                 option2 = gr.Textbox(placeholder="posing for photo", label='Option 2')
-#                 option3 = gr.Textbox(placeholder="to see better", label='Option 3')
-#             with gr.Row():
-#                 video_frame_num = gr.Textbox(placeholder=32, label='# Video Frame')
-#                 keyframe_num = gr.Textbox(placeholder=4, label='# Keyframe') 
-#             # device = gr.Textbox(placeholder=0, label='Device') 
-#             gen_btn = gr.Button(value='Locate and Answer!')
-#         with gr.Column(scale=1, min_width=600): 
-#             keyframes = gr.Gallery(
-#                 label="Keyframes", show_label=False, elem_id="gallery",
-#                 ).style(columns=[4], rows=[1], object_fit="contain", max_width=100, max_height=100)
-#             #keyframes = gr.Gallery(label='Keyframes')
-#             timestamps = gr.outputs.Textbox(label="Keyframe Timestamps")
-#             answer = gr.outputs.Textbox(label="Output Answer")
+with gr.Blocks(title="SeViLA demo") as demo:
+    description = """<p style="text-align: center; font-weight: bold;">
+        <span style="font-size: 28px">Self-Chained Image-Language Model for Video Localization and Question Answering</span>
+        <br>
+        <span style="font-size: 18px" id="author-info">
+            <a href="https://yui010206.github.io/" target="_blank">Shoubin Yu</a>, 
+            <a href="https://j-min.io/" target="_blank">Jaemin Cho</a>, 
+            <a href="https://prateek-yadav.github.io/" target="_blank">Prateek Yadav</a>, 
+            <a href="https://www.cs.unc.edu/~mbansal/" target="_blank">Mohit Bansal</a>
+        </span> 
+        <br>
+        <span style="font-size: 18px" id="paper-info">
+            [<a href="https://github.com/Yui010206/SeViLA" target="_blank">GitHub</a>]
+            [<a href="https://arxiv.org/abs/2305.06988" target="_blank">Paper</a>]
+        </span>
+    </p>
+    <p>
+        To locate keyframes in a video and answer question, please:
+        <br>
+        (1) upolad your video; (2) write your question/options and set # video frame/# keyframe; (3) click Locate and Answer!
+        <br>
+        Just a heads up - loading the SeViLA model can take a few minutes (typically 2-3), and running examples requires about 12GB of memory.
+        <br>
+        We've got you covered! We've provided some example videos and questions below to help you get started. Feel free to try out SeViLA with these!
+    </p>
+    """
+    gr.HTML(description)
+    with gr.Row():
+        with gr.Column(scale=1, min_width=600):
+            video = gr.Video(label='Video') 
+            question = gr.Textbox(placeholder="Why did the two ladies put their hands above their eyes while staring out?", label='Question')
+            with gr.Row():
+                option1 = gr.Textbox(placeholder="practicing cheer", label='Option 1')
+                option2 = gr.Textbox(placeholder="posing for photo", label='Option 2')
+                option3 = gr.Textbox(placeholder="to see better", label='Option 3')
+            with gr.Row():
+                video_frame_num = gr.Textbox(placeholder=32, label='# Video Frame')
+                keyframe_num = gr.Textbox(placeholder=4, label='# Keyframe') 
+            # device = gr.Textbox(placeholder=0, label='Device') 
+            gen_btn = gr.Button(value='Locate and Answer!')
+        with gr.Column(scale=1, min_width=600): 
+            keyframes = gr.Gallery(
+                label="Keyframes", show_label=False, elem_id="gallery",
+                ).style(columns=[4], rows=[1], object_fit="contain", max_width=100, max_height=100)
+            #keyframes = gr.Gallery(label='Keyframes')
+            timestamps = gr.Textbox(label="Keyframe Timestamps")
+            answer = gr.Textbox(label="Output Answer")
         
-#         gen_btn.click(
-#             sevila_demo,
-#             inputs=[video, question, option1, option2, option3, video_frame_num, keyframe_num],
-#             outputs=[keyframes, timestamps, answer],
-#             queue=True
-#         )
-#         #demo = gr.Interface(sevila_demo,
-#         #     inputs=[gr.Video(), question, option1, option2, option3, video_frame_num, keyframe_num, device],
-#         #     outputs=['gallery', timestamps, answer],
-#         #     examples=[['videos/demo1.mp4', 'Why did the two ladies put their hands above their eyes while staring out?', 'practicing cheer.', 'play ball.', 'to see better.', 32, 4, 0],
-#         #               ['videos/demo2.mp4', 'What did both of them do after completing skiing?', 'jump and pose.' , 'bend down.','raised their hands.', 32, 4, 0],
-#         #               ['videos/demo3.mp4', 'What room was Wilson breaking into when House found him?', 'the kitchen.' , 'the dining room.','the bathroom.', 32, 4, 0]]
-#         #     )
-#     with gr.Column():
-#         gr.Examples(
-#             inputs=[video, question, option1, option2, option3, video_frame_num, keyframe_num],
-#             outputs=[keyframes, timestamps, answer],
-#             fn=sevila_demo,
-#             examples=[['videos/demo1.mp4', 'Why did the two ladies put their hands above their eyes while staring out?', 'practicing cheer', 'to place wreaths', 'to see better', 32, 4],
-#                       ['videos/demo2.mp4', 'What did both of them do after completing skiing?', 'jump and pose' , 'bend down','raised their hands', 32, 4],
-#                       ['videos/demo3.mp4', 'What room was Wilson breaking into when House found him?', 'the bedroom' , 'the bathroom','the kitchen', 32, 4]],
-#             cache_examples=False,
-#         )
-# demo.queue(concurrency_count=1, api_open=False)          
-# demo.launch(share=False) 
+        gen_btn.click(
+            sevila_demo,
+            inputs=[video, question, option1, option2, option3, video_frame_num, keyframe_num],
+            outputs=[keyframes, timestamps, answer],
+            queue=True
+        )
+        #demo = gr.Interface(sevila_demo,
+        #     inputs=[gr.Video(), question, option1, option2, option3, video_frame_num, keyframe_num, device],
+        #     outputs=['gallery', timestamps, answer],
+        #     examples=[['videos/demo1.mp4', 'Why did the two ladies put their hands above their eyes while staring out?', 'practicing cheer.', 'play ball.', 'to see better.', 32, 4, 0],
+        #               ['videos/demo2.mp4', 'What did both of them do after completing skiing?', 'jump and pose.' , 'bend down.','raised their hands.', 32, 4, 0],
+        #               ['videos/demo3.mp4', 'What room was Wilson breaking into when House found him?', 'the kitchen.' , 'the dining room.','the bathroom.', 32, 4, 0]]
+        #     )
+    with gr.Column():
+        gr.Examples(
+            inputs=[video, question, option1, option2, option3, video_frame_num, keyframe_num],
+            outputs=[keyframes, timestamps, answer],
+            fn=sevila_demo,
+            examples=[['videos/demo1.mp4', 'Why did the two ladies put their hands above their eyes while staring out?', 'practicing cheer', 'to place wreaths', 'to see better', 32, 4],
+                      ['videos/demo2.mp4', 'What did both of them do after completing skiing?', 'jump and pose' , 'bend down','raised their hands', 32, 4],
+                      ['videos/demo3.mp4', 'What room was Wilson breaking into when House found him?', 'the bedroom' , 'the bathroom','the kitchen', 32, 4]],
+            cache_examples=False,
+        )
+demo.queue(concurrency_count=1, api_open=False)          
+demo.launch(share=False) 

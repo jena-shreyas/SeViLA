@@ -462,6 +462,7 @@ class SeViLA(Blip2Base):
             captions (list): A list of strings of length batch_size * num_captions.
         """
         out = {}
+        # print("Samples qn id : ", samples['question_id'])
         image, qid = samples["video"], samples['question_id']
         text_input_qa, answer = samples['qa_input'], samples['qa_output']
         
@@ -601,12 +602,12 @@ class SeViLA(Blip2Base):
                         sorted_frames_idx.append(sorted(frames))
 
                     if 'any' in self.task:
-                        print('any')
+                        # print('any')
                         rows = len(sorted_frames_idx)
                         cols = len(sorted_frames_idx[0])
                         sorted_frames_idx = [[random.randint(1, 32) for _ in range(cols)] for _ in range(rows)]
-                        print(len(sorted_frames_idx[0]))
-                        print(sorted_frames_idx)
+                        # print(len(sorted_frames_idx[0]))
+                        # print(sorted_frames_idx)
 
                     out['frame_idx'] = sorted_frames_idx
                     select_frames = []
@@ -622,7 +623,7 @@ class SeViLA(Blip2Base):
 
                     # replace top k selected frame embeddings with randomly initialized frame embeddings of same shape
                     if "rand_init" in self.task:
-                        print("rand_init")
+                        # print("rand_init")
                         sel_frames_max, sel_frames_min = torch.max(select_frames).item(), torch.min(select_frames).item()
                         print(sel_frames_min, sel_frames_max)
                         select_frames = (sel_frames_max - sel_frames_min) * torch.rand(select_frames.shape) + sel_frames_min
@@ -703,7 +704,7 @@ class SeViLA(Blip2Base):
                 pred_logits_qa = outputs_qa.scores[1]
                 pred_logits_qa = pred_logits_qa[:, self.answer_id] # b, 5
                 pred_ans = torch.argmax(pred_logits_qa, dim=-1).cpu().tolist()
-        
+
         out['output_text'] = pred_ans
         if 'qa_vid' not in self.task: 
             out['temp_idx'] = [j for i in range(b) for j in range(t)]

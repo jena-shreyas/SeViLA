@@ -9,7 +9,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.run --nproc_per_node=4 
 model.frame_num=4 \
 datasets.nextqa.vis_processor.train.n_frms=32 \
 datasets.nextqa.vis_processor.eval.n_frms=32 \
-run.batch_size_train=8 \
+run.batch_size_train=8 \/home/shreyasjena/BTP/SeViLA/run_scripts/sevila/finetune
 run.batch_size_eval=8 \
 run.init_lr=3e-5 \
 run.max_epoch=10 \

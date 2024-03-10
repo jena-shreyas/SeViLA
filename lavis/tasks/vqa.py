@@ -429,7 +429,9 @@ class VideoQA(BaseTask):
 
         answer = outputs["answer"]
         qid = outputs["qid"]
+        print("QID : ", qid)
         qn_type = [qn_id.split('_')[-1] for qn_id in qid]
+        print("Qn type : ", qn_type, qn_type[0])
         output_text = outputs['output_text']
         if 'frame_idx' in outputs:
             frame_idx = outputs['frame_idx']

@@ -86,7 +86,8 @@ class BaseTask:
 
         for samples in metric_logger.log_every(data_loader, print_freq, header):
             samples = prepare_sample(samples, cuda_enabled=cuda_enabled)
-
+            # print("samples : ", samples)
+            # print("qnid", samples['question_id'])
             eval_output = self.valid_step(model=model, samples=samples)
             results.extend(eval_output)
             #break

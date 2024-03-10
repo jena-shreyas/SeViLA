@@ -1,0 +1,2032 @@
+nohup: ignoring input
+[I socket.cpp:576] [c10d] The server socket has started to listen on [::]:25778.
+[I socket.cpp:849] [c10d] The client socket has connected to [localhost]:25778 on [localhost]:50040.
+type 1
+0
+1
+0
+| distributed init (rank 0, world 1): env://
+[I socket.cpp:849] [c10d] The client socket has connected to [localhost]:25778 on [localhost]:50046.
+[I ProcessGroupNCCL.cpp:687] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 31536000000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: INFO, ID=133048608
+[I ProcessGroupNCCL.cpp:2787] Rank 0 using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+gpu:76739:76739 [0] NCCL INFO Bootstrap : Using eno8303:10.5.30.82<0>
+gpu:76739:76739 [0] NCCL INFO NET/Plugin : Plugin load (libnccl-net.so) returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory
+gpu:76739:76739 [0] NCCL INFO NET/Plugin : No plugin found, using internal implementation
+gpu:76739:76739 [0] NCCL INFO cudaDriverVersion 12020
+NCCL version 2.18.1+cuda12.1
+gpu:76739:76808 [0] NCCL INFO Failed to open libibverbs.so[.1]
+gpu:76739:76808 [0] NCCL INFO NET/Socket : Using [0]eno8303:10.5.30.82<0>
+gpu:76739:76808 [0] NCCL INFO Using network Socket
+gpu:76739:76808 [0] NCCL INFO Setting affinity for GPU 0 to aaaaaaaa
+gpu:76739:76808 [0] NCCL INFO Channel 00/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 01/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 02/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 03/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 04/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 05/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 06/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 07/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 08/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 09/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 10/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 11/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 12/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 13/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 14/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 15/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 16/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 17/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 18/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 19/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 20/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 21/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 22/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 23/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 24/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 25/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 26/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 27/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 28/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 29/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 30/32 :    0
+gpu:76739:76808 [0] NCCL INFO Channel 31/32 :    0
+gpu:76739:76808 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+gpu:76739:76808 [0] NCCL INFO P2P Chunksize set to 131072
+gpu:76739:76808 [0] NCCL INFO Connected all rings
+gpu:76739:76808 [0] NCCL INFO Connected all trees
+gpu:76739:76808 [0] NCCL INFO 32 coll channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+gpu:76739:76808 [0] NCCL INFO comm 0x8e37790 rank 0 nranks 1 cudaDev 0 busId ca000 commId 0xb79eac88ae4ed300 - Init COMPLETE
+[I ProcessGroupNCCL.cpp:1342] NCCL_DEBUG: INFO
+2024-02-02 15:30:07,889 [INFO] 
+=====  Running Parameters    =====
+2024-02-02 15:30:07,890 [INFO] {
+    "accum_grad_iters": 1,
+    "amp": true,
+    "batch_size_eval": 1,
+    "batch_size_train": 32,
+    "device": "cuda",
+    "dist_backend": "nccl",
+    "dist_url": "env://",
+    "distributed": true,
+    "evaluate": true,
+    "find_unused_parameters": true,
+    "gpu": 0,
+    "init_lr": 1e-05,
+    "lr_sched": "linear_warmup_cosine_lr",
+    "max_epoch": 5,
+    "max_len": 30,
+    "min_len": 8,
+    "min_lr": 0,
+    "num_beams": 5,
+    "num_workers": 0,
+    "output_dir": "expts/causalvidqa_infer/02_02_2024_15_30_02",
+    "rank": 0,
+    "resume_ckpt_path": null,
+    "seed": 42,
+    "task": "videoqa",
+    "test_splits": [
+        "test"
+    ],
+    "train_splits": [
+        "train"
+    ],
+    "valid_splits": [
+        "val"
+    ],
+    "warmup_lr": 1e-08,
+    "warmup_steps": 200,
+    "weight_decay": 0.05,
+    "world_size": 1
+}
+2024-02-02 15:30:07,891 [INFO] 
+======  Dataset Attributes  ======
+2024-02-02 15:30:07,891 [INFO] 
+======== causalvidqa =======
+2024-02-02 15:30:07,891 [INFO] {
+    "build_info": {
+        "annotations": {
+            "test": {
+                "storage": "/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/test.json",
+                "url": "/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/test.json"
+            },
+            "train": {
+                "storage": "/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/train.json",
+                "url": "/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/train.json"
+            },
+            "val": {
+                "storage": "/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/val.json",
+                "url": "/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/val.json"
+            }
+        },
+        "videos": {
+            "storage": "/home/shreyasjena/BTP/SeViLA/data/videos"
+        }
+    },
+    "data_type": "videos",
+    "text_processor": {
+        "eval": {
+            "max_words": 50,
+            "name": "blip_question"
+        }
+    },
+    "vis_processor": {
+        "eval": {
+            "image_size": 224,
+            "n_frms": 32,
+            "name": "blip_video_eval"
+        }
+    }
+}
+2024-02-02 15:30:07,891 [INFO] 
+======  Model Attributes  ======
+2024-02-02 15:30:07,891 [INFO] {
+    "answer_num": 5,
+    "arch": "sevila",
+    "drop_path_rate": 0,
+    "finetuned": "lavis/expts/causalvidqa_ft/24_01_2024_10_58_49/checkpoint_best.pth",
+    "frame_num": 4,
+    "freeze_vit": true,
+    "image_size": 224,
+    "load_finetuned": true,
+    "model_type": "pretrain_flant5xl",
+    "num_query_token": 32,
+    "pretrained": "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth",
+    "prompt": "",
+    "qformer_input_text": false,
+    "t5_model": "google/flan-t5-xl",
+    "task": "qvh_freeze_loc_freeze_qa_vid",
+    "use_grad_checkpoint": false,
+    "vit_precision": "fp16"
+}
+Dataset config :  {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/train.json', 'storage': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/train.json'}, 'val': {'url': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/val.json', 'storage': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/val.json'}, 'test': {'url': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/test.json', 'storage': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/test.json'}}, 'videos': {'storage': '/home/shreyasjena/BTP/SeViLA/data/videos'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Config keys :  dict_keys(['data_type', 'build_info', 'vis_processor', 'text_processor'])
+Config : 
+
+ {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/train.json', 'storage': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/train.json'}, 'val': {'url': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/val.json', 'storage': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/val.json'}, 'test': {'url': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/test.json', 'storage': '/home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/test.json'}}, 'videos': {'storage': '/home/shreyasjena/BTP/SeViLA/data/videos'}}, 'vis_processor': {'eval': {'name': 'blip_video_eval', 'n_frms': 32, 'image_size': 224}}, 'text_processor': {'eval': {'name': 'blip_question', 'max_words': 50}}}
+Building datasets in base task ...
+2024-02-02 15:30:07,892 [INFO] Using existing file /home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/train.json.
+2024-02-02 15:30:07,892 [INFO] Using existing file /home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/val.json.
+2024-02-02 15:30:07,892 [INFO] Using existing file /home/shreyasjena/BTP/SeViLA/data/annotations/mixtral/test.json.
+2024-02-02 15:30:07,892 [INFO] Building datasets...
+Inside build processors ...
+Config name :  blip_video_eval
+Config name :  blip_question
+in build() fn, Processors built
+2024-02-02 15:30:23,285 [INFO] freeze vision encoder
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.68s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.04s/it]
+2024-02-02 15:30:32,398 [INFO] Missing keys ['query_tokens_loc', 'visual_encoder.cls_token', 'visual_encoder.pos_embed', 'visual_encoder.patch_embed.proj.weight', 'visual_encoder.patch_embed.proj.bias', 'visual_encoder.blocks.0.norm1.weight', 'visual_encoder.blocks.0.norm1.bias', 'visual_encoder.blocks.0.attn.q_bias', 'visual_encoder.blocks.0.attn.v_bias', 'visual_encoder.blocks.0.attn.qkv.weight', 'visual_encoder.blocks.0.attn.proj.weight', 'visual_encoder.blocks.0.attn.proj.bias', 'visual_encoder.blocks.0.norm2.weight', 'visual_encoder.blocks.0.norm2.bias', 'visual_encoder.blocks.0.mlp.fc1.weight', 'visual_encoder.blocks.0.mlp.fc1.bias', 'visual_encoder.blocks.0.mlp.fc2.weight', 'visual_encoder.blocks.0.mlp.fc2.bias', 'visual_encoder.blocks.1.norm1.weight', 'visual_encoder.blocks.1.norm1.bias', 'visual_encoder.blocks.1.attn.q_bias', 'visual_encoder.blocks.1.attn.v_bias', 'visual_encoder.blocks.1.attn.qkv.weight', 'visual_encoder.blocks.1.attn.proj.weight', 'visual_encoder.blocks.1.attn.proj.bias', 'visual_encoder.blocks.1.norm2.weight', 'visual_encoder.blocks.1.norm2.bias', 'visual_encoder.blocks.1.mlp.fc1.weight', 'visual_encoder.blocks.1.mlp.fc1.bias', 'visual_encoder.blocks.1.mlp.fc2.weight', 'visual_encoder.blocks.1.mlp.fc2.bias', 'visual_encoder.blocks.2.norm1.weight', 'visual_encoder.blocks.2.norm1.bias', 'visual_encoder.blocks.2.attn.q_bias', 'visual_encoder.blocks.2.attn.v_bias', 'visual_encoder.blocks.2.attn.qkv.weight', 'visual_encoder.blocks.2.attn.proj.weight', 'visual_encoder.blocks.2.attn.proj.bias', 'visual_encoder.blocks.2.norm2.weight', 'visual_encoder.blocks.2.norm2.bias', 'visual_encoder.blocks.2.mlp.fc1.weight', 'visual_encoder.blocks.2.mlp.fc1.bias', 'visual_encoder.blocks.2.mlp.fc2.weight', 'visual_encoder.blocks.2.mlp.fc2.bias', 'visual_encoder.blocks.3.norm1.weight', 'visual_encoder.blocks.3.norm1.bias', 'visual_encoder.blocks.3.attn.q_bias', 'visual_encoder.blocks.3.attn.v_bias', 'visual_encoder.blocks.3.attn.qkv.weight', 'visual_encoder.blocks.3.attn.proj.weight', 'visual_encoder.blocks.3.attn.proj.bias', 'visual_encoder.blocks.3.norm2.weight', 'visual_encoder.blocks.3.norm2.bias', 'visual_encoder.blocks.3.mlp.fc1.weight', 'visual_encoder.blocks.3.mlp.fc1.bias', 'visual_encoder.blocks.3.mlp.fc2.weight', 'visual_encoder.blocks.3.mlp.fc2.bias', 'visual_encoder.blocks.4.norm1.weight', 'visual_encoder.blocks.4.norm1.bias', 'visual_encoder.blocks.4.attn.q_bias', 'visual_encoder.blocks.4.attn.v_bias', 'visual_encoder.blocks.4.attn.qkv.weight', 'visual_encoder.blocks.4.attn.proj.weight', 'visual_encoder.blocks.4.attn.proj.bias', 'visual_encoder.blocks.4.norm2.weight', 'visual_encoder.blocks.4.norm2.bias', 'visual_encoder.blocks.4.mlp.fc1.weight', 'visual_encoder.blocks.4.mlp.fc1.bias', 'visual_encoder.blocks.4.mlp.fc2.weight', 'visual_encoder.blocks.4.mlp.fc2.bias', 'visual_encoder.blocks.5.norm1.weight', 'visual_encoder.blocks.5.norm1.bias', 'visual_encoder.blocks.5.attn.q_bias', 'visual_encoder.blocks.5.attn.v_bias', 'visual_encoder.blocks.5.attn.qkv.weight', 'visual_encoder.blocks.5.attn.proj.weight', 'visual_encoder.blocks.5.attn.proj.bias', 'visual_encoder.blocks.5.norm2.weight', 'visual_encoder.blocks.5.norm2.bias', 'visual_encoder.blocks.5.mlp.fc1.weight', 'visual_encoder.blocks.5.mlp.fc1.bias', 'visual_encoder.blocks.5.mlp.fc2.weight', 'visual_encoder.blocks.5.mlp.fc2.bias', 'visual_encoder.blocks.6.norm1.weight', 'visual_encoder.blocks.6.norm1.bias', 'visual_encoder.blocks.6.attn.q_bias', 'visual_encoder.blocks.6.attn.v_bias', 'visual_encoder.blocks.6.attn.qkv.weight', 'visual_encoder.blocks.6.attn.proj.weight', 'visual_encoder.blocks.6.attn.proj.bias', 'visual_encoder.blocks.6.norm2.weight', 'visual_encoder.blocks.6.norm2.bias', 'visual_encoder.blocks.6.mlp.fc1.weight', 'visual_encoder.blocks.6.mlp.fc1.bias', 'visual_encoder.blocks.6.mlp.fc2.weight', 'visual_encoder.blocks.6.mlp.fc2.bias', 'visual_encoder.blocks.7.norm1.weight', 'visual_encoder.blocks.7.norm1.bias', 'visual_encoder.blocks.7.attn.q_bias', 'visual_encoder.blocks.7.attn.v_bias', 'visual_encoder.blocks.7.attn.qkv.weight', 'visual_encoder.blocks.7.attn.proj.weight', 'visual_encoder.blocks.7.attn.proj.bias', 'visual_encoder.blocks.7.norm2.weight', 'visual_encoder.blocks.7.norm2.bias', 'visual_encoder.blocks.7.mlp.fc1.weight', 'visual_encoder.blocks.7.mlp.fc1.bias', 'visual_encoder.blocks.7.mlp.fc2.weight', 'visual_encoder.blocks.7.mlp.fc2.bias', 'visual_encoder.blocks.8.norm1.weight', 'visual_encoder.blocks.8.norm1.bias', 'visual_encoder.blocks.8.attn.q_bias', 'visual_encoder.blocks.8.attn.v_bias', 'visual_encoder.blocks.8.attn.qkv.weight', 'visual_encoder.blocks.8.attn.proj.weight', 'visual_encoder.blocks.8.attn.proj.bias', 'visual_encoder.blocks.8.norm2.weight', 'visual_encoder.blocks.8.norm2.bias', 'visual_encoder.blocks.8.mlp.fc1.weight', 'visual_encoder.blocks.8.mlp.fc1.bias', 'visual_encoder.blocks.8.mlp.fc2.weight', 'visual_encoder.blocks.8.mlp.fc2.bias', 'visual_encoder.blocks.9.norm1.weight', 'visual_encoder.blocks.9.norm1.bias', 'visual_encoder.blocks.9.attn.q_bias', 'visual_encoder.blocks.9.attn.v_bias', 'visual_encoder.blocks.9.attn.qkv.weight', 'visual_encoder.blocks.9.attn.proj.weight', 'visual_encoder.blocks.9.attn.proj.bias', 'visual_encoder.blocks.9.norm2.weight', 'visual_encoder.blocks.9.norm2.bias', 'visual_encoder.blocks.9.mlp.fc1.weight', 'visual_encoder.blocks.9.mlp.fc1.bias', 'visual_encoder.blocks.9.mlp.fc2.weight', 'visual_encoder.blocks.9.mlp.fc2.bias', 'visual_encoder.blocks.10.norm1.weight', 'visual_encoder.blocks.10.norm1.bias', 'visual_encoder.blocks.10.attn.q_bias', 'visual_encoder.blocks.10.attn.v_bias', 'visual_encoder.blocks.10.attn.qkv.weight', 'visual_encoder.blocks.10.attn.proj.weight', 'visual_encoder.blocks.10.attn.proj.bias', 'visual_encoder.blocks.10.norm2.weight', 'visual_encoder.blocks.10.norm2.bias', 'visual_encoder.blocks.10.mlp.fc1.weight', 'visual_encoder.blocks.10.mlp.fc1.bias', 'visual_encoder.blocks.10.mlp.fc2.weight', 'visual_encoder.blocks.10.mlp.fc2.bias', 'visual_encoder.blocks.11.norm1.weight', 'visual_encoder.blocks.11.norm1.bias', 'visual_encoder.blocks.11.attn.q_bias', 'visual_encoder.blocks.11.attn.v_bias', 'visual_encoder.blocks.11.attn.qkv.weight', 'visual_encoder.blocks.11.attn.proj.weight', 'visual_encoder.blocks.11.attn.proj.bias', 'visual_encoder.blocks.11.norm2.weight', 'visual_encoder.blocks.11.norm2.bias', 'visual_encoder.blocks.11.mlp.fc1.weight', 'visual_encoder.blocks.11.mlp.fc1.bias', 'visual_encoder.blocks.11.mlp.fc2.weight', 'visual_encoder.blocks.11.mlp.fc2.bias', 'visual_encoder.blocks.12.norm1.weight', 'visual_encoder.blocks.12.norm1.bias', 'visual_encoder.blocks.12.attn.q_bias', 'visual_encoder.blocks.12.attn.v_bias', 'visual_encoder.blocks.12.attn.qkv.weight', 'visual_encoder.blocks.12.attn.proj.weight', 'visual_encoder.blocks.12.attn.proj.bias', 'visual_encoder.blocks.12.norm2.weight', 'visual_encoder.blocks.12.norm2.bias', 'visual_encoder.blocks.12.mlp.fc1.weight', 'visual_encoder.blocks.12.mlp.fc1.bias', 'visual_encoder.blocks.12.mlp.fc2.weight', 'visual_encoder.blocks.12.mlp.fc2.bias', 'visual_encoder.blocks.13.norm1.weight', 'visual_encoder.blocks.13.norm1.bias', 'visual_encoder.blocks.13.attn.q_bias', 'visual_encoder.blocks.13.attn.v_bias', 'visual_encoder.blocks.13.attn.qkv.weight', 'visual_encoder.blocks.13.attn.proj.weight', 'visual_encoder.blocks.13.attn.proj.bias', 'visual_encoder.blocks.13.norm2.weight', 'visual_encoder.blocks.13.norm2.bias', 'visual_encoder.blocks.13.mlp.fc1.weight', 'visual_encoder.blocks.13.mlp.fc1.bias', 'visual_encoder.blocks.13.mlp.fc2.weight', 'visual_encoder.blocks.13.mlp.fc2.bias', 'visual_encoder.blocks.14.norm1.weight', 'visual_encoder.blocks.14.norm1.bias', 'visual_encoder.blocks.14.attn.q_bias', 'visual_encoder.blocks.14.attn.v_bias', 'visual_encoder.blocks.14.attn.qkv.weight', 'visual_encoder.blocks.14.attn.proj.weight', 'visual_encoder.blocks.14.attn.proj.bias', 'visual_encoder.blocks.14.norm2.weight', 'visual_encoder.blocks.14.norm2.bias', 'visual_encoder.blocks.14.mlp.fc1.weight', 'visual_encoder.blocks.14.mlp.fc1.bias', 'visual_encoder.blocks.14.mlp.fc2.weight', 'visual_encoder.blocks.14.mlp.fc2.bias', 'visual_encoder.blocks.15.norm1.weight', 'visual_encoder.blocks.15.norm1.bias', 'visual_encoder.blocks.15.attn.q_bias', 'visual_encoder.blocks.15.attn.v_bias', 'visual_encoder.blocks.15.attn.qkv.weight', 'visual_encoder.blocks.15.attn.proj.weight', 'visual_encoder.blocks.15.attn.proj.bias', 'visual_encoder.blocks.15.norm2.weight', 'visual_encoder.blocks.15.norm2.bias', 'visual_encoder.blocks.15.mlp.fc1.weight', 'visual_encoder.blocks.15.mlp.fc1.bias', 'visual_encoder.blocks.15.mlp.fc2.weight', 'visual_encoder.blocks.15.mlp.fc2.bias', 'visual_encoder.blocks.16.norm1.weight', 'visual_encoder.blocks.16.norm1.bias', 'visual_encoder.blocks.16.attn.q_bias', 'visual_encoder.blocks.16.attn.v_bias', 'visual_encoder.blocks.16.attn.qkv.weight', 'visual_encoder.blocks.16.attn.proj.weight', 'visual_encoder.blocks.16.attn.proj.bias', 'visual_encoder.blocks.16.norm2.weight', 'visual_encoder.blocks.16.norm2.bias', 'visual_encoder.blocks.16.mlp.fc1.weight', 'visual_encoder.blocks.16.mlp.fc1.bias', 'visual_encoder.blocks.16.mlp.fc2.weight', 'visual_encoder.blocks.16.mlp.fc2.bias', 'visual_encoder.blocks.17.norm1.weight', 'visual_encoder.blocks.17.norm1.bias', 'visual_encoder.blocks.17.attn.q_bias', 'visual_encoder.blocks.17.attn.v_bias', 'visual_encoder.blocks.17.attn.qkv.weight', 'visual_encoder.blocks.17.attn.proj.weight', 'visual_encoder.blocks.17.attn.proj.bias', 'visual_encoder.blocks.17.norm2.weight', 'visual_encoder.blocks.17.norm2.bias', 'visual_encoder.blocks.17.mlp.fc1.weight', 'visual_encoder.blocks.17.mlp.fc1.bias', 'visual_encoder.blocks.17.mlp.fc2.weight', 'visual_encoder.blocks.17.mlp.fc2.bias', 'visual_encoder.blocks.18.norm1.weight', 'visual_encoder.blocks.18.norm1.bias', 'visual_encoder.blocks.18.attn.q_bias', 'visual_encoder.blocks.18.attn.v_bias', 'visual_encoder.blocks.18.attn.qkv.weight', 'visual_encoder.blocks.18.attn.proj.weight', 'visual_encoder.blocks.18.attn.proj.bias', 'visual_encoder.blocks.18.norm2.weight', 'visual_encoder.blocks.18.norm2.bias', 'visual_encoder.blocks.18.mlp.fc1.weight', 'visual_encoder.blocks.18.mlp.fc1.bias', 'visual_encoder.blocks.18.mlp.fc2.weight', 'visual_encoder.blocks.18.mlp.fc2.bias', 'visual_encoder.blocks.19.norm1.weight', 'visual_encoder.blocks.19.norm1.bias', 'visual_encoder.blocks.19.attn.q_bias', 'visual_encoder.blocks.19.attn.v_bias', 'visual_encoder.blocks.19.attn.qkv.weight', 'visual_encoder.blocks.19.attn.proj.weight', 'visual_encoder.blocks.19.attn.proj.bias', 'visual_encoder.blocks.19.norm2.weight', 'visual_encoder.blocks.19.norm2.bias', 'visual_encoder.blocks.19.mlp.fc1.weight', 'visual_encoder.blocks.19.mlp.fc1.bias', 'visual_encoder.blocks.19.mlp.fc2.weight', 'visual_encoder.blocks.19.mlp.fc2.bias', 'visual_encoder.blocks.20.norm1.weight', 'visual_encoder.blocks.20.norm1.bias', 'visual_encoder.blocks.20.attn.q_bias', 'visual_encoder.blocks.20.attn.v_bias', 'visual_encoder.blocks.20.attn.qkv.weight', 'visual_encoder.blocks.20.attn.proj.weight', 'visual_encoder.blocks.20.attn.proj.bias', 'visual_encoder.blocks.20.norm2.weight', 'visual_encoder.blocks.20.norm2.bias', 'visual_encoder.blocks.20.mlp.fc1.weight', 'visual_encoder.blocks.20.mlp.fc1.bias', 'visual_encoder.blocks.20.mlp.fc2.weight', 'visual_encoder.blocks.20.mlp.fc2.bias', 'visual_encoder.blocks.21.norm1.weight', 'visual_encoder.blocks.21.norm1.bias', 'visual_encoder.blocks.21.attn.q_bias', 'visual_encoder.blocks.21.attn.v_bias', 'visual_encoder.blocks.21.attn.qkv.weight', 'visual_encoder.blocks.21.attn.proj.weight', 'visual_encoder.blocks.21.attn.proj.bias', 'visual_encoder.blocks.21.norm2.weight', 'visual_encoder.blocks.21.norm2.bias', 'visual_encoder.blocks.21.mlp.fc1.weight', 'visual_encoder.blocks.21.mlp.fc1.bias', 'visual_encoder.blocks.21.mlp.fc2.weight', 'visual_encoder.blocks.21.mlp.fc2.bias', 'visual_encoder.blocks.22.norm1.weight', 'visual_encoder.blocks.22.norm1.bias', 'visual_encoder.blocks.22.attn.q_bias', 'visual_encoder.blocks.22.attn.v_bias', 'visual_encoder.blocks.22.attn.qkv.weight', 'visual_encoder.blocks.22.attn.proj.weight', 'visual_encoder.blocks.22.attn.proj.bias', 'visual_encoder.blocks.22.norm2.weight', 'visual_encoder.blocks.22.norm2.bias', 'visual_encoder.blocks.22.mlp.fc1.weight', 'visual_encoder.blocks.22.mlp.fc1.bias', 'visual_encoder.blocks.22.mlp.fc2.weight', 'visual_encoder.blocks.22.mlp.fc2.bias', 'visual_encoder.blocks.23.norm1.weight', 'visual_encoder.blocks.23.norm1.bias', 'visual_encoder.blocks.23.attn.q_bias', 'visual_encoder.blocks.23.attn.v_bias', 'visual_encoder.blocks.23.attn.qkv.weight', 'visual_encoder.blocks.23.attn.proj.weight', 'visual_encoder.blocks.23.attn.proj.bias', 'visual_encoder.blocks.23.norm2.weight', 'visual_encoder.blocks.23.norm2.bias', 'visual_encoder.blocks.23.mlp.fc1.weight', 'visual_encoder.blocks.23.mlp.fc1.bias', 'visual_encoder.blocks.23.mlp.fc2.weight', 'visual_encoder.blocks.23.mlp.fc2.bias', 'visual_encoder.blocks.24.norm1.weight', 'visual_encoder.blocks.24.norm1.bias', 'visual_encoder.blocks.24.attn.q_bias', 'visual_encoder.blocks.24.attn.v_bias', 'visual_encoder.blocks.24.attn.qkv.weight', 'visual_encoder.blocks.24.attn.proj.weight', 'visual_encoder.blocks.24.attn.proj.bias', 'visual_encoder.blocks.24.norm2.weight', 'visual_encoder.blocks.24.norm2.bias', 'visual_encoder.blocks.24.mlp.fc1.weight', 'visual_encoder.blocks.24.mlp.fc1.bias', 'visual_encoder.blocks.24.mlp.fc2.weight', 'visual_encoder.blocks.24.mlp.fc2.bias', 'visual_encoder.blocks.25.norm1.weight', 'visual_encoder.blocks.25.norm1.bias', 'visual_encoder.blocks.25.attn.q_bias', 'visual_encoder.blocks.25.attn.v_bias', 'visual_encoder.blocks.25.attn.qkv.weight', 'visual_encoder.blocks.25.attn.proj.weight', 'visual_encoder.blocks.25.attn.proj.bias', 'visual_encoder.blocks.25.norm2.weight', 'visual_encoder.blocks.25.norm2.bias', 'visual_encoder.blocks.25.mlp.fc1.weight', 'visual_encoder.blocks.25.mlp.fc1.bias', 'visual_encoder.blocks.25.mlp.fc2.weight', 'visual_encoder.blocks.25.mlp.fc2.bias', 'visual_encoder.blocks.26.norm1.weight', 'visual_encoder.blocks.26.norm1.bias', 'visual_encoder.blocks.26.attn.q_bias', 'visual_encoder.blocks.26.attn.v_bias', 'visual_encoder.blocks.26.attn.qkv.weight', 'visual_encoder.blocks.26.attn.proj.weight', 'visual_encoder.blocks.26.attn.proj.bias', 'visual_encoder.blocks.26.norm2.weight', 'visual_encoder.blocks.26.norm2.bias', 'visual_encoder.blocks.26.mlp.fc1.weight', 'visual_encoder.blocks.26.mlp.fc1.bias', 'visual_encoder.blocks.26.mlp.fc2.weight', 'visual_encoder.blocks.26.mlp.fc2.bias', 'visual_encoder.blocks.27.norm1.weight', 'visual_encoder.blocks.27.norm1.bias', 'visual_encoder.blocks.27.attn.q_bias', 'visual_encoder.blocks.27.attn.v_bias', 'visual_encoder.blocks.27.attn.qkv.weight', 'visual_encoder.blocks.27.attn.proj.weight', 'visual_encoder.blocks.27.attn.proj.bias', 'visual_encoder.blocks.27.norm2.weight', 'visual_encoder.blocks.27.norm2.bias', 'visual_encoder.blocks.27.mlp.fc1.weight', 'visual_encoder.blocks.27.mlp.fc1.bias', 'visual_encoder.blocks.27.mlp.fc2.weight', 'visual_encoder.blocks.27.mlp.fc2.bias', 'visual_encoder.blocks.28.norm1.weight', 'visual_encoder.blocks.28.norm1.bias', 'visual_encoder.blocks.28.attn.q_bias', 'visual_encoder.blocks.28.attn.v_bias', 'visual_encoder.blocks.28.attn.qkv.weight', 'visual_encoder.blocks.28.attn.proj.weight', 'visual_encoder.blocks.28.attn.proj.bias', 'visual_encoder.blocks.28.norm2.weight', 'visual_encoder.blocks.28.norm2.bias', 'visual_encoder.blocks.28.mlp.fc1.weight', 'visual_encoder.blocks.28.mlp.fc1.bias', 'visual_encoder.blocks.28.mlp.fc2.weight', 'visual_encoder.blocks.28.mlp.fc2.bias', 'visual_encoder.blocks.29.norm1.weight', 'visual_encoder.blocks.29.norm1.bias', 'visual_encoder.blocks.29.attn.q_bias', 'visual_encoder.blocks.29.attn.v_bias', 'visual_encoder.blocks.29.attn.qkv.weight', 'visual_encoder.blocks.29.attn.proj.weight', 'visual_encoder.blocks.29.attn.proj.bias', 'visual_encoder.blocks.29.norm2.weight', 'visual_encoder.blocks.29.norm2.bias', 'visual_encoder.blocks.29.mlp.fc1.weight', 'visual_encoder.blocks.29.mlp.fc1.bias', 'visual_encoder.blocks.29.mlp.fc2.weight', 'visual_encoder.blocks.29.mlp.fc2.bias', 'visual_encoder.blocks.30.norm1.weight', 'visual_encoder.blocks.30.norm1.bias', 'visual_encoder.blocks.30.attn.q_bias', 'visual_encoder.blocks.30.attn.v_bias', 'visual_encoder.blocks.30.attn.qkv.weight', 'visual_encoder.blocks.30.attn.proj.weight', 'visual_encoder.blocks.30.attn.proj.bias', 'visual_encoder.blocks.30.norm2.weight', 'visual_encoder.blocks.30.norm2.bias', 'visual_encoder.blocks.30.mlp.fc1.weight', 'visual_encoder.blocks.30.mlp.fc1.bias', 'visual_encoder.blocks.30.mlp.fc2.weight', 'visual_encoder.blocks.30.mlp.fc2.bias', 'visual_encoder.blocks.31.norm1.weight', 'visual_encoder.blocks.31.norm1.bias', 'visual_encoder.blocks.31.attn.q_bias', 'visual_encoder.blocks.31.attn.v_bias', 'visual_encoder.blocks.31.attn.qkv.weight', 'visual_encoder.blocks.31.attn.proj.weight', 'visual_encoder.blocks.31.attn.proj.bias', 'visual_encoder.blocks.31.norm2.weight', 'visual_encoder.blocks.31.norm2.bias', 'visual_encoder.blocks.31.mlp.fc1.weight', 'visual_encoder.blocks.31.mlp.fc1.bias', 'visual_encoder.blocks.31.mlp.fc2.weight', 'visual_encoder.blocks.31.mlp.fc2.bias', 'visual_encoder.blocks.32.norm1.weight', 'visual_encoder.blocks.32.norm1.bias', 'visual_encoder.blocks.32.attn.q_bias', 'visual_encoder.blocks.32.attn.v_bias', 'visual_encoder.blocks.32.attn.qkv.weight', 'visual_encoder.blocks.32.attn.proj.weight', 'visual_encoder.blocks.32.attn.proj.bias', 'visual_encoder.blocks.32.norm2.weight', 'visual_encoder.blocks.32.norm2.bias', 'visual_encoder.blocks.32.mlp.fc1.weight', 'visual_encoder.blocks.32.mlp.fc1.bias', 'visual_encoder.blocks.32.mlp.fc2.weight', 'visual_encoder.blocks.32.mlp.fc2.bias', 'visual_encoder.blocks.33.norm1.weight', 'visual_encoder.blocks.33.norm1.bias', 'visual_encoder.blocks.33.attn.q_bias', 'visual_encoder.blocks.33.attn.v_bias', 'visual_encoder.blocks.33.attn.qkv.weight', 'visual_encoder.blocks.33.attn.proj.weight', 'visual_encoder.blocks.33.attn.proj.bias', 'visual_encoder.blocks.33.norm2.weight', 'visual_encoder.blocks.33.norm2.bias', 'visual_encoder.blocks.33.mlp.fc1.weight', 'visual_encoder.blocks.33.mlp.fc1.bias', 'visual_encoder.blocks.33.mlp.fc2.weight', 'visual_encoder.blocks.33.mlp.fc2.bias', 'visual_encoder.blocks.34.norm1.weight', 'visual_encoder.blocks.34.norm1.bias', 'visual_encoder.blocks.34.attn.q_bias', 'visual_encoder.blocks.34.attn.v_bias', 'visual_encoder.blocks.34.attn.qkv.weight', 'visual_encoder.blocks.34.attn.proj.weight', 'visual_encoder.blocks.34.attn.proj.bias', 'visual_encoder.blocks.34.norm2.weight', 'visual_encoder.blocks.34.norm2.bias', 'visual_encoder.blocks.34.mlp.fc1.weight', 'visual_encoder.blocks.34.mlp.fc1.bias', 'visual_encoder.blocks.34.mlp.fc2.weight', 'visual_encoder.blocks.34.mlp.fc2.bias', 'visual_encoder.blocks.35.norm1.weight', 'visual_encoder.blocks.35.norm1.bias', 'visual_encoder.blocks.35.attn.q_bias', 'visual_encoder.blocks.35.attn.v_bias', 'visual_encoder.blocks.35.attn.qkv.weight', 'visual_encoder.blocks.35.attn.proj.weight', 'visual_encoder.blocks.35.attn.proj.bias', 'visual_encoder.blocks.35.norm2.weight', 'visual_encoder.blocks.35.norm2.bias', 'visual_encoder.blocks.35.mlp.fc1.weight', 'visual_encoder.blocks.35.mlp.fc1.bias', 'visual_encoder.blocks.35.mlp.fc2.weight', 'visual_encoder.blocks.35.mlp.fc2.bias', 'visual_encoder.blocks.36.norm1.weight', 'visual_encoder.blocks.36.norm1.bias', 'visual_encoder.blocks.36.attn.q_bias', 'visual_encoder.blocks.36.attn.v_bias', 'visual_encoder.blocks.36.attn.qkv.weight', 'visual_encoder.blocks.36.attn.proj.weight', 'visual_encoder.blocks.36.attn.proj.bias', 'visual_encoder.blocks.36.norm2.weight', 'visual_encoder.blocks.36.norm2.bias', 'visual_encoder.blocks.36.mlp.fc1.weight', 'visual_encoder.blocks.36.mlp.fc1.bias', 'visual_encoder.blocks.36.mlp.fc2.weight', 'visual_encoder.blocks.36.mlp.fc2.bias', 'visual_encoder.blocks.37.norm1.weight', 'visual_encoder.blocks.37.norm1.bias', 'visual_encoder.blocks.37.attn.q_bias', 'visual_encoder.blocks.37.attn.v_bias', 'visual_encoder.blocks.37.attn.qkv.weight', 'visual_encoder.blocks.37.attn.proj.weight', 'visual_encoder.blocks.37.attn.proj.bias', 'visual_encoder.blocks.37.norm2.weight', 'visual_encoder.blocks.37.norm2.bias', 'visual_encoder.blocks.37.mlp.fc1.weight', 'visual_encoder.blocks.37.mlp.fc1.bias', 'visual_encoder.blocks.37.mlp.fc2.weight', 'visual_encoder.blocks.37.mlp.fc2.bias', 'visual_encoder.blocks.38.norm1.weight', 'visual_encoder.blocks.38.norm1.bias', 'visual_encoder.blocks.38.attn.q_bias', 'visual_encoder.blocks.38.attn.v_bias', 'visual_encoder.blocks.38.attn.qkv.weight', 'visual_encoder.blocks.38.attn.proj.weight', 'visual_encoder.blocks.38.attn.proj.bias', 'visual_encoder.blocks.38.norm2.weight', 'visual_encoder.blocks.38.norm2.bias', 'visual_encoder.blocks.38.mlp.fc1.weight', 'visual_encoder.blocks.38.mlp.fc1.bias', 'visual_encoder.blocks.38.mlp.fc2.weight', 'visual_encoder.blocks.38.mlp.fc2.bias', 't5_model.shared.weight', 't5_model.encoder.block.0.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.0.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.0.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.0.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight', 't5_model.encoder.block.0.layer.0.layer_norm.weight', 't5_model.encoder.block.0.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.0.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.0.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.0.layer.1.layer_norm.weight', 't5_model.encoder.block.1.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.1.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.1.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.1.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.1.layer.0.layer_norm.weight', 't5_model.encoder.block.1.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.1.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.1.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.1.layer.1.layer_norm.weight', 't5_model.encoder.block.2.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.2.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.2.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.2.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.2.layer.0.layer_norm.weight', 't5_model.encoder.block.2.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.2.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.2.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.2.layer.1.layer_norm.weight', 't5_model.encoder.block.3.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.3.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.3.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.3.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.3.layer.0.layer_norm.weight', 't5_model.encoder.block.3.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.3.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.3.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.3.layer.1.layer_norm.weight', 't5_model.encoder.block.4.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.4.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.4.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.4.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.4.layer.0.layer_norm.weight', 't5_model.encoder.block.4.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.4.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.4.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.4.layer.1.layer_norm.weight', 't5_model.encoder.block.5.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.5.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.5.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.5.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.5.layer.0.layer_norm.weight', 't5_model.encoder.block.5.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.5.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.5.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.5.layer.1.layer_norm.weight', 't5_model.encoder.block.6.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.6.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.6.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.6.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.6.layer.0.layer_norm.weight', 't5_model.encoder.block.6.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.6.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.6.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.6.layer.1.layer_norm.weight', 't5_model.encoder.block.7.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.7.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.7.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.7.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.7.layer.0.layer_norm.weight', 't5_model.encoder.block.7.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.7.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.7.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.7.layer.1.layer_norm.weight', 't5_model.encoder.block.8.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.8.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.8.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.8.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.8.layer.0.layer_norm.weight', 't5_model.encoder.block.8.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.8.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.8.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.8.layer.1.layer_norm.weight', 't5_model.encoder.block.9.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.9.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.9.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.9.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.9.layer.0.layer_norm.weight', 't5_model.encoder.block.9.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.9.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.9.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.9.layer.1.layer_norm.weight', 't5_model.encoder.block.10.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.10.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.10.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.10.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.10.layer.0.layer_norm.weight', 't5_model.encoder.block.10.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.10.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.10.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.10.layer.1.layer_norm.weight', 't5_model.encoder.block.11.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.11.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.11.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.11.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.11.layer.0.layer_norm.weight', 't5_model.encoder.block.11.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.11.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.11.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.11.layer.1.layer_norm.weight', 't5_model.encoder.block.12.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.12.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.12.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.12.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.12.layer.0.layer_norm.weight', 't5_model.encoder.block.12.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.12.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.12.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.12.layer.1.layer_norm.weight', 't5_model.encoder.block.13.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.13.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.13.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.13.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.13.layer.0.layer_norm.weight', 't5_model.encoder.block.13.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.13.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.13.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.13.layer.1.layer_norm.weight', 't5_model.encoder.block.14.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.14.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.14.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.14.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.14.layer.0.layer_norm.weight', 't5_model.encoder.block.14.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.14.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.14.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.14.layer.1.layer_norm.weight', 't5_model.encoder.block.15.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.15.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.15.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.15.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.15.layer.0.layer_norm.weight', 't5_model.encoder.block.15.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.15.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.15.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.15.layer.1.layer_norm.weight', 't5_model.encoder.block.16.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.16.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.16.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.16.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.16.layer.0.layer_norm.weight', 't5_model.encoder.block.16.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.16.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.16.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.16.layer.1.layer_norm.weight', 't5_model.encoder.block.17.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.17.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.17.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.17.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.17.layer.0.layer_norm.weight', 't5_model.encoder.block.17.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.17.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.17.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.17.layer.1.layer_norm.weight', 't5_model.encoder.block.18.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.18.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.18.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.18.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.18.layer.0.layer_norm.weight', 't5_model.encoder.block.18.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.18.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.18.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.18.layer.1.layer_norm.weight', 't5_model.encoder.block.19.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.19.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.19.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.19.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.19.layer.0.layer_norm.weight', 't5_model.encoder.block.19.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.19.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.19.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.19.layer.1.layer_norm.weight', 't5_model.encoder.block.20.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.20.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.20.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.20.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.20.layer.0.layer_norm.weight', 't5_model.encoder.block.20.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.20.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.20.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.20.layer.1.layer_norm.weight', 't5_model.encoder.block.21.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.21.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.21.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.21.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.21.layer.0.layer_norm.weight', 't5_model.encoder.block.21.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.21.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.21.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.21.layer.1.layer_norm.weight', 't5_model.encoder.block.22.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.22.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.22.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.22.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.22.layer.0.layer_norm.weight', 't5_model.encoder.block.22.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.22.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.22.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.22.layer.1.layer_norm.weight', 't5_model.encoder.block.23.layer.0.SelfAttention.q.weight', 't5_model.encoder.block.23.layer.0.SelfAttention.k.weight', 't5_model.encoder.block.23.layer.0.SelfAttention.v.weight', 't5_model.encoder.block.23.layer.0.SelfAttention.o.weight', 't5_model.encoder.block.23.layer.0.layer_norm.weight', 't5_model.encoder.block.23.layer.1.DenseReluDense.wi_0.weight', 't5_model.encoder.block.23.layer.1.DenseReluDense.wi_1.weight', 't5_model.encoder.block.23.layer.1.DenseReluDense.wo.weight', 't5_model.encoder.block.23.layer.1.layer_norm.weight', 't5_model.encoder.final_layer_norm.weight', 't5_model.decoder.block.0.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.0.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.0.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.0.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight', 't5_model.decoder.block.0.layer.0.layer_norm.weight', 't5_model.decoder.block.0.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.0.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.0.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.0.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.0.layer.1.layer_norm.weight', 't5_model.decoder.block.0.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.0.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.0.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.0.layer.2.layer_norm.weight', 't5_model.decoder.block.1.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.1.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.1.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.1.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.1.layer.0.layer_norm.weight', 't5_model.decoder.block.1.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.1.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.1.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.1.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.1.layer.1.layer_norm.weight', 't5_model.decoder.block.1.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.1.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.1.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.1.layer.2.layer_norm.weight', 't5_model.decoder.block.2.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.2.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.2.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.2.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.2.layer.0.layer_norm.weight', 't5_model.decoder.block.2.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.2.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.2.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.2.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.2.layer.1.layer_norm.weight', 't5_model.decoder.block.2.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.2.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.2.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.2.layer.2.layer_norm.weight', 't5_model.decoder.block.3.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.3.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.3.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.3.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.3.layer.0.layer_norm.weight', 't5_model.decoder.block.3.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.3.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.3.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.3.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.3.layer.1.layer_norm.weight', 't5_model.decoder.block.3.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.3.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.3.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.3.layer.2.layer_norm.weight', 't5_model.decoder.block.4.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.4.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.4.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.4.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.4.layer.0.layer_norm.weight', 't5_model.decoder.block.4.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.4.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.4.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.4.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.4.layer.1.layer_norm.weight', 't5_model.decoder.block.4.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.4.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.4.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.4.layer.2.layer_norm.weight', 't5_model.decoder.block.5.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.5.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.5.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.5.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.5.layer.0.layer_norm.weight', 't5_model.decoder.block.5.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.5.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.5.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.5.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.5.layer.1.layer_norm.weight', 't5_model.decoder.block.5.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.5.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.5.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.5.layer.2.layer_norm.weight', 't5_model.decoder.block.6.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.6.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.6.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.6.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.6.layer.0.layer_norm.weight', 't5_model.decoder.block.6.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.6.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.6.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.6.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.6.layer.1.layer_norm.weight', 't5_model.decoder.block.6.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.6.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.6.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.6.layer.2.layer_norm.weight', 't5_model.decoder.block.7.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.7.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.7.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.7.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.7.layer.0.layer_norm.weight', 't5_model.decoder.block.7.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.7.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.7.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.7.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.7.layer.1.layer_norm.weight', 't5_model.decoder.block.7.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.7.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.7.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.7.layer.2.layer_norm.weight', 't5_model.decoder.block.8.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.8.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.8.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.8.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.8.layer.0.layer_norm.weight', 't5_model.decoder.block.8.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.8.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.8.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.8.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.8.layer.1.layer_norm.weight', 't5_model.decoder.block.8.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.8.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.8.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.8.layer.2.layer_norm.weight', 't5_model.decoder.block.9.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.9.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.9.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.9.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.9.layer.0.layer_norm.weight', 't5_model.decoder.block.9.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.9.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.9.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.9.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.9.layer.1.layer_norm.weight', 't5_model.decoder.block.9.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.9.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.9.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.9.layer.2.layer_norm.weight', 't5_model.decoder.block.10.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.10.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.10.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.10.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.10.layer.0.layer_norm.weight', 't5_model.decoder.block.10.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.10.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.10.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.10.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.10.layer.1.layer_norm.weight', 't5_model.decoder.block.10.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.10.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.10.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.10.layer.2.layer_norm.weight', 't5_model.decoder.block.11.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.11.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.11.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.11.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.11.layer.0.layer_norm.weight', 't5_model.decoder.block.11.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.11.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.11.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.11.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.11.layer.1.layer_norm.weight', 't5_model.decoder.block.11.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.11.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.11.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.11.layer.2.layer_norm.weight', 't5_model.decoder.block.12.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.12.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.12.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.12.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.12.layer.0.layer_norm.weight', 't5_model.decoder.block.12.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.12.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.12.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.12.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.12.layer.1.layer_norm.weight', 't5_model.decoder.block.12.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.12.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.12.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.12.layer.2.layer_norm.weight', 't5_model.decoder.block.13.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.13.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.13.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.13.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.13.layer.0.layer_norm.weight', 't5_model.decoder.block.13.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.13.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.13.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.13.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.13.layer.1.layer_norm.weight', 't5_model.decoder.block.13.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.13.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.13.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.13.layer.2.layer_norm.weight', 't5_model.decoder.block.14.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.14.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.14.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.14.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.14.layer.0.layer_norm.weight', 't5_model.decoder.block.14.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.14.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.14.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.14.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.14.layer.1.layer_norm.weight', 't5_model.decoder.block.14.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.14.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.14.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.14.layer.2.layer_norm.weight', 't5_model.decoder.block.15.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.15.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.15.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.15.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.15.layer.0.layer_norm.weight', 't5_model.decoder.block.15.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.15.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.15.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.15.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.15.layer.1.layer_norm.weight', 't5_model.decoder.block.15.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.15.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.15.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.15.layer.2.layer_norm.weight', 't5_model.decoder.block.16.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.16.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.16.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.16.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.16.layer.0.layer_norm.weight', 't5_model.decoder.block.16.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.16.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.16.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.16.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.16.layer.1.layer_norm.weight', 't5_model.decoder.block.16.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.16.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.16.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.16.layer.2.layer_norm.weight', 't5_model.decoder.block.17.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.17.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.17.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.17.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.17.layer.0.layer_norm.weight', 't5_model.decoder.block.17.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.17.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.17.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.17.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.17.layer.1.layer_norm.weight', 't5_model.decoder.block.17.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.17.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.17.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.17.layer.2.layer_norm.weight', 't5_model.decoder.block.18.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.18.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.18.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.18.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.18.layer.0.layer_norm.weight', 't5_model.decoder.block.18.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.18.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.18.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.18.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.18.layer.1.layer_norm.weight', 't5_model.decoder.block.18.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.18.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.18.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.18.layer.2.layer_norm.weight', 't5_model.decoder.block.19.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.19.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.19.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.19.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.19.layer.0.layer_norm.weight', 't5_model.decoder.block.19.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.19.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.19.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.19.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.19.layer.1.layer_norm.weight', 't5_model.decoder.block.19.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.19.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.19.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.19.layer.2.layer_norm.weight', 't5_model.decoder.block.20.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.20.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.20.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.20.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.20.layer.0.layer_norm.weight', 't5_model.decoder.block.20.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.20.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.20.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.20.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.20.layer.1.layer_norm.weight', 't5_model.decoder.block.20.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.20.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.20.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.20.layer.2.layer_norm.weight', 't5_model.decoder.block.21.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.21.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.21.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.21.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.21.layer.0.layer_norm.weight', 't5_model.decoder.block.21.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.21.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.21.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.21.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.21.layer.1.layer_norm.weight', 't5_model.decoder.block.21.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.21.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.21.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.21.layer.2.layer_norm.weight', 't5_model.decoder.block.22.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.22.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.22.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.22.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.22.layer.0.layer_norm.weight', 't5_model.decoder.block.22.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.22.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.22.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.22.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.22.layer.1.layer_norm.weight', 't5_model.decoder.block.22.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.22.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.22.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.22.layer.2.layer_norm.weight', 't5_model.decoder.block.23.layer.0.SelfAttention.q.weight', 't5_model.decoder.block.23.layer.0.SelfAttention.k.weight', 't5_model.decoder.block.23.layer.0.SelfAttention.v.weight', 't5_model.decoder.block.23.layer.0.SelfAttention.o.weight', 't5_model.decoder.block.23.layer.0.layer_norm.weight', 't5_model.decoder.block.23.layer.1.EncDecAttention.q.weight', 't5_model.decoder.block.23.layer.1.EncDecAttention.k.weight', 't5_model.decoder.block.23.layer.1.EncDecAttention.v.weight', 't5_model.decoder.block.23.layer.1.EncDecAttention.o.weight', 't5_model.decoder.block.23.layer.1.layer_norm.weight', 't5_model.decoder.block.23.layer.2.DenseReluDense.wi_0.weight', 't5_model.decoder.block.23.layer.2.DenseReluDense.wi_1.weight', 't5_model.decoder.block.23.layer.2.DenseReluDense.wo.weight', 't5_model.decoder.block.23.layer.2.layer_norm.weight', 't5_model.decoder.final_layer_norm.weight', 't5_model.lm_head.weight', 'Qformer_loc.bert.embeddings.LayerNorm.weight', 'Qformer_loc.bert.embeddings.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.0.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.0.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.0.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.0.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.0.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.0.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.0.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.0.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.0.crossattention.self.query.weight', 'Qformer_loc.bert.encoder.layer.0.crossattention.self.query.bias', 'Qformer_loc.bert.encoder.layer.0.crossattention.self.key.weight', 'Qformer_loc.bert.encoder.layer.0.crossattention.self.key.bias', 'Qformer_loc.bert.encoder.layer.0.crossattention.self.value.weight', 'Qformer_loc.bert.encoder.layer.0.crossattention.self.value.bias', 'Qformer_loc.bert.encoder.layer.0.crossattention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.0.crossattention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.0.crossattention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.0.crossattention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.0.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.0.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.0.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.0.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.0.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.0.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.1.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.1.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.1.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.1.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.1.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.1.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.1.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.1.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.1.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.1.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.1.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.1.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.1.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.1.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.2.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.2.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.2.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.2.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.2.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.2.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.2.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.2.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.2.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.2.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.2.crossattention.self.query.weight', 'Qformer_loc.bert.encoder.layer.2.crossattention.self.query.bias', 'Qformer_loc.bert.encoder.layer.2.crossattention.self.key.weight', 'Qformer_loc.bert.encoder.layer.2.crossattention.self.key.bias', 'Qformer_loc.bert.encoder.layer.2.crossattention.self.value.weight', 'Qformer_loc.bert.encoder.layer.2.crossattention.self.value.bias', 'Qformer_loc.bert.encoder.layer.2.crossattention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.2.crossattention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.2.crossattention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.2.crossattention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.2.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.2.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.2.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.2.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.2.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.2.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.3.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.3.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.3.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.3.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.3.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.3.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.3.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.3.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.3.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.3.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.3.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.3.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.3.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.3.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.3.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.3.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.4.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.4.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.4.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.4.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.4.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.4.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.4.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.4.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.4.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.4.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.4.crossattention.self.query.weight', 'Qformer_loc.bert.encoder.layer.4.crossattention.self.query.bias', 'Qformer_loc.bert.encoder.layer.4.crossattention.self.key.weight', 'Qformer_loc.bert.encoder.layer.4.crossattention.self.key.bias', 'Qformer_loc.bert.encoder.layer.4.crossattention.self.value.weight', 'Qformer_loc.bert.encoder.layer.4.crossattention.self.value.bias', 'Qformer_loc.bert.encoder.layer.4.crossattention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.4.crossattention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.4.crossattention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.4.crossattention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.4.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.4.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.4.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.4.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.4.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.4.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.5.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.5.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.5.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.5.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.5.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.5.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.5.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.5.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.5.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.5.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.5.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.5.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.5.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.5.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.5.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.5.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.6.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.6.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.6.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.6.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.6.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.6.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.6.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.6.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.6.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.6.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.6.crossattention.self.query.weight', 'Qformer_loc.bert.encoder.layer.6.crossattention.self.query.bias', 'Qformer_loc.bert.encoder.layer.6.crossattention.self.key.weight', 'Qformer_loc.bert.encoder.layer.6.crossattention.self.key.bias', 'Qformer_loc.bert.encoder.layer.6.crossattention.self.value.weight', 'Qformer_loc.bert.encoder.layer.6.crossattention.self.value.bias', 'Qformer_loc.bert.encoder.layer.6.crossattention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.6.crossattention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.6.crossattention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.6.crossattention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.6.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.6.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.6.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.6.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.6.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.6.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.7.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.7.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.7.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.7.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.7.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.7.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.7.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.7.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.7.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.7.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.7.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.7.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.7.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.7.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.7.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.7.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.8.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.8.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.8.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.8.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.8.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.8.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.8.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.8.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.8.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.8.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.8.crossattention.self.query.weight', 'Qformer_loc.bert.encoder.layer.8.crossattention.self.query.bias', 'Qformer_loc.bert.encoder.layer.8.crossattention.self.key.weight', 'Qformer_loc.bert.encoder.layer.8.crossattention.self.key.bias', 'Qformer_loc.bert.encoder.layer.8.crossattention.self.value.weight', 'Qformer_loc.bert.encoder.layer.8.crossattention.self.value.bias', 'Qformer_loc.bert.encoder.layer.8.crossattention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.8.crossattention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.8.crossattention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.8.crossattention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.8.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.8.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.8.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.8.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.8.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.8.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.9.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.9.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.9.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.9.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.9.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.9.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.9.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.9.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.9.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.9.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.9.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.9.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.9.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.9.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.9.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.9.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.10.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.10.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.10.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.10.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.10.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.10.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.10.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.10.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.10.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.10.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.10.crossattention.self.query.weight', 'Qformer_loc.bert.encoder.layer.10.crossattention.self.query.bias', 'Qformer_loc.bert.encoder.layer.10.crossattention.self.key.weight', 'Qformer_loc.bert.encoder.layer.10.crossattention.self.key.bias', 'Qformer_loc.bert.encoder.layer.10.crossattention.self.value.weight', 'Qformer_loc.bert.encoder.layer.10.crossattention.self.value.bias', 'Qformer_loc.bert.encoder.layer.10.crossattention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.10.crossattention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.10.crossattention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.10.crossattention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.10.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.10.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.10.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.10.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.10.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.10.output_query.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.11.attention.self.query.weight', 'Qformer_loc.bert.encoder.layer.11.attention.self.query.bias', 'Qformer_loc.bert.encoder.layer.11.attention.self.key.weight', 'Qformer_loc.bert.encoder.layer.11.attention.self.key.bias', 'Qformer_loc.bert.encoder.layer.11.attention.self.value.weight', 'Qformer_loc.bert.encoder.layer.11.attention.self.value.bias', 'Qformer_loc.bert.encoder.layer.11.attention.output.dense.weight', 'Qformer_loc.bert.encoder.layer.11.attention.output.dense.bias', 'Qformer_loc.bert.encoder.layer.11.attention.output.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.11.attention.output.LayerNorm.bias', 'Qformer_loc.bert.encoder.layer.11.intermediate_query.dense.weight', 'Qformer_loc.bert.encoder.layer.11.intermediate_query.dense.bias', 'Qformer_loc.bert.encoder.layer.11.output_query.dense.weight', 'Qformer_loc.bert.encoder.layer.11.output_query.dense.bias', 'Qformer_loc.bert.encoder.layer.11.output_query.LayerNorm.weight', 'Qformer_loc.bert.encoder.layer.11.output_query.LayerNorm.bias']
+2024-02-02 15:30:32,398 [INFO] load checkpoint from lavis/expts/causalvidqa_ft/24_01_2024_10_58_49/checkpoint_best.pth
+Run config :  {'task': 'videoqa', 'lr_sched': 'linear_warmup_cosine_lr', 'init_lr': 1e-05, 'min_lr': 0, 'warmup_lr': 1e-08, 'warmup_steps': 200, 'weight_decay': 0.05, 'max_epoch': 5, 'batch_size_train': 32, 'batch_size_eval': 1, 'num_workers': 0, 'accum_grad_iters': 1, 'max_len': 30, 'min_len': 8, 'num_beams': 5, 'seed': 42, 'output_dir': 'expts/causalvidqa_infer/02_02_2024_15_30_02', 'amp': True, 'resume_ckpt_path': None, 'evaluate': True, 'train_splits': ['train'], 'valid_splits': ['val'], 'test_splits': ['test'], 'device': 'cuda', 'world_size': 1, 'dist_url': 'env://', 'distributed': True, 'find_unused_parameters': True, 'rank': 0, 'gpu': 0, 'dist_backend': 'nccl'}
+Evaluating ...
+evaluate(); Test splits :  ['test']
+2024-02-02 15:30:32,405 [INFO] dataset_ratios not specified, datasets will be concatenated (map-style datasets) or chained (webdataset.DataPipeline).
+2024-02-02 15:30:32,405 [INFO] Loaded 6551 records for train split from the dataset.
+2024-02-02 15:30:32,405 [INFO] Loaded 935 records for val split from the dataset.
+2024-02-02 15:30:32,405 [INFO] Loaded 1872 records for test split from the dataset.
+Inference with localizer ...
+/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:394: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+QID :  ['4Lp6Euu5lz0_000045_000055_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [   0/1872]  eta: 2:06:39    time: 4.0596  data: 0.4453  max mem: 12003
+Inference with localizer ...
+QID :  ['4Lp6Euu5lz0_000045_000055_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['4Lp6Euu5lz0_000045_000055_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['4Lp6Euu5lz0_000045_000055_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['UQP7HxkH_UE_000140_000150_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['UQP7HxkH_UE_000140_000150_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['UQP7HxkH_UE_000140_000150_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['UQP7HxkH_UE_000140_000150_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['uuGnjdK-_o4_000018_000028_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['uuGnjdK-_o4_000018_000028_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['uuGnjdK-_o4_000018_000028_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [  10/1872]  eta: 4:12:53    time: 8.1488  data: 0.2326  max mem: 13905
+Inference with localizer ...
+QID :  ['uuGnjdK-_o4_000018_000028_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['PeGYd-ETSnA_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['PeGYd-ETSnA_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['PeGYd-ETSnA_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['4x8uTVNf3FY_000082_000092_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['4x8uTVNf3FY_000082_000092_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['4x8uTVNf3FY_000082_000092_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['Hf5g9j3jcmo_000048_000058_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['Hf5g9j3jcmo_000048_000058_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['Hf5g9j3jcmo_000048_000058_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [  20/1872]  eta: 4:48:37    time: 9.6151  data: 0.1493  max mem: 15272
+Inference with localizer ...
+QID :  ['Hf5g9j3jcmo_000048_000058_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['E9_mbVHKUsI_000116_000126_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['E9_mbVHKUsI_000116_000126_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['E9_mbVHKUsI_000116_000126_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['E9_mbVHKUsI_000116_000126_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['EhPlyn6lAHE_000042_000052_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['EhPlyn6lAHE_000042_000052_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['EhPlyn6lAHE_000042_000052_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['KUvcud3mfk8_000004_000014_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['KUvcud3mfk8_000004_000014_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [  30/1872]  eta: 4:16:00    time: 8.4438  data: 0.0881  max mem: 15272
+Inference with localizer ...
+QID :  ['KUvcud3mfk8_000004_000014_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['KUvcud3mfk8_000004_000014_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['0VCPV_Jff9w_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['0VCPV_Jff9w_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['0VCPV_Jff9w_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['0VCPV_Jff9w_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['z_9-AlY4MpQ_000047_000057_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['z_9-AlY4MpQ_000047_000057_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['z_9-AlY4MpQ_000047_000057_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['z_9-AlY4MpQ_000047_000057_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [  40/1872]  eta: 4:05:01    time: 6.6324  data: 0.1096  max mem: 15272
+Inference with localizer ...
+QID :  ['FBrWWkV4I4A_000079_000089_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['FBrWWkV4I4A_000079_000089_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['FBrWWkV4I4A_000079_000089_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['FBrWWkV4I4A_000079_000089_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['KO0BkD5xQSE_000010_000020_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['KO0BkD5xQSE_000010_000020_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['KO0BkD5xQSE_000010_000020_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['KO0BkD5xQSE_000010_000020_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['gMKtwIMf4UU_000047_000057_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['gMKtwIMf4UU_000047_000057_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [  50/1872]  eta: 4:03:28    time: 7.5204  data: 0.1439  max mem: 15806
+Inference with localizer ...
+QID :  ['gMKtwIMf4UU_000047_000057_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['gMKtwIMf4UU_000047_000057_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['6l5-oU2IVP0_000005_000015_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['6l5-oU2IVP0_000005_000015_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['6l5-oU2IVP0_000005_000015_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['6l5-oU2IVP0_000005_000015_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['BZnPh1OLlgs_000110_000120_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['BZnPh1OLlgs_000110_000120_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['BZnPh1OLlgs_000110_000120_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['L-baiEeY9qU_000006_000016_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [  60/1872]  eta: 3:55:44    time: 7.3587  data: 0.1508  max mem: 15806
+Inference with localizer ...
+QID :  ['L-baiEeY9qU_000006_000016_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['L-baiEeY9qU_000006_000016_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['L-baiEeY9qU_000006_000016_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['CKcGtJcZ9UY_000033_000043_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['CKcGtJcZ9UY_000033_000043_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['CKcGtJcZ9UY_000033_000043_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['CKcGtJcZ9UY_000033_000043_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['xirgehbTzeo_000362_000372_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['xirgehbTzeo_000362_000372_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['xirgehbTzeo_000362_000372_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [  70/1872]  eta: 3:56:51    time: 7.5508  data: 0.1197  max mem: 17330
+Inference with localizer ...
+QID :  ['xirgehbTzeo_000362_000372_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['OE45pzRJwCk_000139_000149_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['OE45pzRJwCk_000139_000149_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['OE45pzRJwCk_000139_000149_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['OE45pzRJwCk_000139_000149_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['2bfOTRWXv7M_000060_000070_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['2bfOTRWXv7M_000060_000070_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['9JQawq0er5s_000390_000400_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['9JQawq0er5s_000390_000400_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['9JQawq0er5s_000390_000400_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [  80/1872]  eta: 3:53:20    time: 7.8324  data: 0.1412  max mem: 17330
+Inference with localizer ...
+QID :  ['9JQawq0er5s_000390_000400_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['aqsgZSo8dso_000021_000031_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['aqsgZSo8dso_000021_000031_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['aqsgZSo8dso_000021_000031_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['aqsgZSo8dso_000021_000031_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['9VS6_d7v3i4_000078_000088_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['9VS6_d7v3i4_000078_000088_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['9VS6_d7v3i4_000078_000088_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['9VS6_d7v3i4_000078_000088_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['_w-Yg2GU5qE_000401_000411_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [  90/1872]  eta: 3:51:02    time: 7.3985  data: 0.1717  max mem: 17330
+Inference with localizer ...
+QID :  ['_w-Yg2GU5qE_000401_000411_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['_w-Yg2GU5qE_000401_000411_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['AwNvbshVnqo_000084_000094_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['AwNvbshVnqo_000084_000094_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['AwNvbshVnqo_000084_000094_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['AwNvbshVnqo_000084_000094_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['SVVSVcsl6r0_000072_000082_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['SVVSVcsl6r0_000072_000082_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['SVVSVcsl6r0_000072_000082_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['SVVSVcsl6r0_000072_000082_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 100/1872]  eta: 3:51:38    time: 7.9681  data: 0.1811  max mem: 17330
+Inference with localizer ...
+QID :  ['aMG43l2Z9CQ_000038_000048_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['aMG43l2Z9CQ_000038_000048_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['aMG43l2Z9CQ_000038_000048_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['aMG43l2Z9CQ_000038_000048_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['EeoGyWjuR1I_000186_000196_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['EeoGyWjuR1I_000186_000196_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['EeoGyWjuR1I_000186_000196_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['EeoGyWjuR1I_000186_000196_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['mmRPgq_YjJw_000032_000042_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['mmRPgq_YjJw_000032_000042_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 110/1872]  eta: 3:51:34    time: 8.3693  data: 0.1746  max mem: 17330
+Inference with localizer ...
+QID :  ['mmRPgq_YjJw_000032_000042_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['mmRPgq_YjJw_000032_000042_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['QWkaGI2Lpjg_000171_000181_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['QWkaGI2Lpjg_000171_000181_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['QWkaGI2Lpjg_000171_000181_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['WcrzDpjwI8k_000080_000090_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['WcrzDpjwI8k_000080_000090_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['WcrzDpjwI8k_000080_000090_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['WcrzDpjwI8k_000080_000090_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['S52EOwSEnKY_000040_000050_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 120/1872]  eta: 3:54:20    time: 8.9440  data: 0.1469  max mem: 17330
+Inference with localizer ...
+QID :  ['S52EOwSEnKY_000040_000050_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['S52EOwSEnKY_000040_000050_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['S52EOwSEnKY_000040_000050_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['sAoM-6v260I_000016_000026_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['sAoM-6v260I_000016_000026_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['sAoM-6v260I_000016_000026_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['sAoM-6v260I_000016_000026_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['RTiK83yIt54_000124_000134_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['RTiK83yIt54_000124_000134_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['RTiK83yIt54_000124_000134_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 130/1872]  eta: 4:02:13    time: 10.8809  data: 0.1515  max mem: 17330
+Inference with localizer ...
+QID :  ['ik4BW3-SCts_000001_000011_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['ik4BW3-SCts_000001_000011_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['ik4BW3-SCts_000001_000011_predictive']
+Qn type :  ['predictive'] predictive
+
+Error while read file idx
+video is: aXG95hUegFk_000020_000030
+Inference with localizer ...
+QID :  ['ik4BW3-SCts_000001_000011_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+
+Error while read file idx
+video is: aXG95hUegFk_000020_000030
+Inference with localizer ...
+QID :  ['TdyRnC2JK8Q_000031_000041_predictive']
+Qn type :  ['predictive'] predictive
+
+Error while read file idx
+video is: aXG95hUegFk_000020_000030
+Inference with localizer ...
+QID :  ['PXE-flKOdDY_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+
+Error while read file idx
+video is: aXG95hUegFk_000020_000030
+Inference with localizer ...
+QID :  ['gMKtwIMf4UU_000047_000057_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['dxal8BT5a-Q_000189_000199_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['28cpQ_ES69Y_000079_000089_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['28cpQ_ES69Y_000079_000089_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 140/1872]  eta: 4:03:34    time: 10.9347  data: 0.1785  max mem: 17330
+Inference with localizer ...
+QID :  ['28cpQ_ES69Y_000079_000089_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['28cpQ_ES69Y_000079_000089_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['uKVHPSvjTKQ_000321_000331_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['uKVHPSvjTKQ_000321_000331_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['uKVHPSvjTKQ_000321_000331_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['uKVHPSvjTKQ_000321_000331_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['VEq5ehMSlmE_000001_000011_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['VEq5ehMSlmE_000001_000011_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['VEq5ehMSlmE_000001_000011_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['xJ6JjbHBO8I_000132_000142_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 150/1872]  eta: 4:06:56    time: 10.3154  data: 0.1458  max mem: 17330
+Inference with localizer ...
+QID :  ['xJ6JjbHBO8I_000132_000142_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['xJ6JjbHBO8I_000132_000142_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['xJ6JjbHBO8I_000132_000142_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['lIWeDi819t8_000128_000138_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['lIWeDi819t8_000128_000138_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['lIWeDi819t8_000128_000138_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['BAbS29Gi_2w_000247_000257_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['BAbS29Gi_2w_000247_000257_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['BAbS29Gi_2w_000247_000257_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['BAbS29Gi_2w_000247_000257_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 160/1872]  eta: 4:06:47    time: 10.1357  data: 0.1189  max mem: 17330
+Inference with localizer ...
+QID :  ['BDcItM8xCmo_000012_000022_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['BDcItM8xCmo_000012_000022_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['BDcItM8xCmo_000012_000022_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['BDcItM8xCmo_000012_000022_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['oeL4-Ue7zkk_000047_000057_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['oeL4-Ue7zkk_000047_000057_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['oeL4-Ue7zkk_000047_000057_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['cyQKaWbUQeg_000191_000201_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['cyQKaWbUQeg_000191_000201_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['cyQKaWbUQeg_000191_000201_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 170/1872]  eta: 4:07:05    time: 9.5168  data: 0.1519  max mem: 17330
+Inference with localizer ...
+QID :  ['wHvu5OTdBCU_000003_000013_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['wHvu5OTdBCU_000003_000013_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['wHvu5OTdBCU_000003_000013_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['wHvu5OTdBCU_000003_000013_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['v_yC1KipJqU_000100_000110_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['v_yC1KipJqU_000100_000110_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['v_yC1KipJqU_000100_000110_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['v_yC1KipJqU_000100_000110_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['uIiMgKEsvgM_000002_000012_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['uIiMgKEsvgM_000002_000012_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 180/1872]  eta: 4:04:41    time: 8.9030  data: 0.1436  max mem: 17330
+Inference with localizer ...
+QID :  ['uIiMgKEsvgM_000002_000012_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['uIiMgKEsvgM_000002_000012_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['odWGnyYAw5A_000126_000136_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['odWGnyYAw5A_000126_000136_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['odWGnyYAw5A_000126_000136_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['odWGnyYAw5A_000126_000136_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['yF6DZ-N0uKs_000001_000011_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['yF6DZ-N0uKs_000001_000011_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['yF6DZ-N0uKs_000001_000011_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['yF6DZ-N0uKs_000001_000011_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 190/1872]  eta: 4:09:12    time: 10.4165  data: 0.1241  max mem: 17330
+Inference with localizer ...
+QID :  ['sKJbgEtovNg_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['sKJbgEtovNg_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['sKJbgEtovNg_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['sKJbgEtovNg_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['kFw0YnxLSF0_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['kFw0YnxLSF0_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['kFw0YnxLSF0_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['SfWl5dc_HlU_000071_000081_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['SfWl5dc_HlU_000071_000081_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['SfWl5dc_HlU_000071_000081_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 200/1872]  eta: 4:08:54    time: 11.2419  data: 0.1106  max mem: 17330
+Inference with localizer ...
+QID :  ['SfWl5dc_HlU_000071_000081_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['gfs55DSkaKw_000031_000041_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['gfs55DSkaKw_000031_000041_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['gfs55DSkaKw_000031_000041_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['gfs55DSkaKw_000031_000041_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['879IIIgD_es_000092_000102_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['879IIIgD_es_000092_000102_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['879IIIgD_es_000092_000102_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['879IIIgD_es_000092_000102_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['Ub55QO_MvUM_000014_000024_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 210/1872]  eta: 4:05:40    time: 8.6763  data: 0.1267  max mem: 17330
+Inference with localizer ...
+QID :  ['Ub55QO_MvUM_000014_000024_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['Ub55QO_MvUM_000014_000024_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['Ub55QO_MvUM_000014_000024_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['UnI7qUqhC20_000077_000087_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['UnI7qUqhC20_000077_000087_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['UnI7qUqhC20_000077_000087_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['UnI7qUqhC20_000077_000087_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['vJmUpZcHm4U_000104_000114_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['vJmUpZcHm4U_000104_000114_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['vJmUpZcHm4U_000104_000114_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 220/1872]  eta: 4:03:53    time: 8.1116  data: 0.1633  max mem: 17330
+Inference with localizer ...
+QID :  ['vJmUpZcHm4U_000104_000114_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['8wbDi-7PqW8_000042_000052_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['8wbDi-7PqW8_000042_000052_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['8wbDi-7PqW8_000042_000052_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['8wbDi-7PqW8_000042_000052_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['PXE-flKOdDY_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['PXE-flKOdDY_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['PXE-flKOdDY_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['PXE-flKOdDY_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['KpuW4N_YOhA_000227_000237_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 230/1872]  eta: 4:03:35    time: 9.2367  data: 0.1650  max mem: 17330
+Inference with localizer ...
+QID :  ['KpuW4N_YOhA_000227_000237_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['KpuW4N_YOhA_000227_000237_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['KpuW4N_YOhA_000227_000237_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['vM2OUzFNyfs_000008_000018_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['vM2OUzFNyfs_000008_000018_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['vM2OUzFNyfs_000008_000018_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['vM2OUzFNyfs_000008_000018_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['U2-OzJ5FHjo_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['U2-OzJ5FHjo_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['U2-OzJ5FHjo_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 240/1872]  eta: 4:02:43    time: 9.6485  data: 0.1370  max mem: 17330
+Inference with localizer ...
+QID :  ['U2-OzJ5FHjo_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['d8ZUZTN2aLY_000049_000059_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['d8ZUZTN2aLY_000049_000059_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['d8ZUZTN2aLY_000049_000059_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['d8ZUZTN2aLY_000049_000059_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['wNvkEUqv8jI_000209_000219_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['wNvkEUqv8jI_000209_000219_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['wNvkEUqv8jI_000209_000219_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['wNvkEUqv8jI_000209_000219_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['zcF-4yoOnJ0_000117_000127_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 250/1872]  eta: 3:59:21    time: 8.3159  data: 0.1195  max mem: 17330
+Inference with localizer ...
+QID :  ['zcF-4yoOnJ0_000117_000127_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['zcF-4yoOnJ0_000117_000127_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['zcF-4yoOnJ0_000117_000127_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['itFQBcXrCNQ_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['itFQBcXrCNQ_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['itFQBcXrCNQ_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['itFQBcXrCNQ_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['e-3uz9TvcIo_000085_000095_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['e-3uz9TvcIo_000085_000095_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['e-3uz9TvcIo_000085_000095_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 260/1872]  eta: 3:57:32    time: 7.8507  data: 0.1160  max mem: 17330
+Inference with localizer ...
+QID :  ['e-3uz9TvcIo_000085_000095_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['-9Y2XKgvdL0_000019_000029_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['-9Y2XKgvdL0_000019_000029_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['-9Y2XKgvdL0_000019_000029_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['-9Y2XKgvdL0_000019_000029_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['PGQl0hnMppQ_000086_000096_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['PGQl0hnMppQ_000086_000096_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['PGQl0hnMppQ_000086_000096_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['PGQl0hnMppQ_000086_000096_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['j4g3ZTth1oI_000014_000024_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 270/1872]  eta: 3:55:40    time: 8.4828  data: 0.0989  max mem: 17330
+Inference with localizer ...
+QID :  ['j4g3ZTth1oI_000014_000024_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['hZLnk9KChSE_000057_000067_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['hZLnk9KChSE_000057_000067_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['hZLnk9KChSE_000057_000067_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['hZLnk9KChSE_000057_000067_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['XbDQXAK39b0_000077_000087_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['XbDQXAK39b0_000077_000087_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['XbDQXAK39b0_000077_000087_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['XbDQXAK39b0_000077_000087_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['h63pP6OgjwE_000166_000176_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 280/1872]  eta: 3:53:27    time: 8.2422  data: 0.1055  max mem: 17330
+Inference with localizer ...
+QID :  ['h63pP6OgjwE_000166_000176_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['h63pP6OgjwE_000166_000176_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['h63pP6OgjwE_000166_000176_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['OlnogoX-21U_000085_000095_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['OlnogoX-21U_000085_000095_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['OlnogoX-21U_000085_000095_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['aQjA2mitFK0_000015_000025_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['aQjA2mitFK0_000015_000025_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['aQjA2mitFK0_000015_000025_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['aQjA2mitFK0_000015_000025_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 290/1872]  eta: 3:50:06    time: 7.3769  data: 0.1100  max mem: 17330
+Inference with localizer ...
+QID :  ['g47s75LQupc_000051_000061_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['g47s75LQupc_000051_000061_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['g47s75LQupc_000051_000061_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['g47s75LQupc_000051_000061_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['OzWygnm2yFQ_000006_000016_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['OzWygnm2yFQ_000006_000016_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['OzWygnm2yFQ_000006_000016_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['OzWygnm2yFQ_000006_000016_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['VTIykCUbB30_000036_000046_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['VTIykCUbB30_000036_000046_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 300/1872]  eta: 3:46:05    time: 6.2482  data: 0.0856  max mem: 17330
+Inference with localizer ...
+QID :  ['VTIykCUbB30_000036_000046_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['OtwVKnEZ9rQ_000078_000088_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['OtwVKnEZ9rQ_000078_000088_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['OtwVKnEZ9rQ_000078_000088_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['OtwVKnEZ9rQ_000078_000088_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['aqebo0iSSbE_000007_000017_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['aqebo0iSSbE_000007_000017_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['aqebo0iSSbE_000007_000017_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['6_DfXAxY9DU_000003_000013_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['6_DfXAxY9DU_000003_000013_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 310/1872]  eta: 3:43:59    time: 6.8122  data: 0.1013  max mem: 17330
+Inference with localizer ...
+QID :  ['6_DfXAxY9DU_000003_000013_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['6_DfXAxY9DU_000003_000013_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['T2vdUqfvJEU_000013_000023_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['T2vdUqfvJEU_000013_000023_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['T2vdUqfvJEU_000013_000023_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['EuT2hlwBbmA_000008_000018_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['MdW5MlP22t8_000081_000091_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['MdW5MlP22t8_000081_000091_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['MdW5MlP22t8_000081_000091_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['MdW5MlP22t8_000081_000091_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 320/1872]  eta: 3:41:09    time: 7.3518  data: 0.1530  max mem: 17330
+Inference with localizer ...
+QID :  ['V98hstBShMM_000076_000086_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['V98hstBShMM_000076_000086_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['V98hstBShMM_000076_000086_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['V98hstBShMM_000076_000086_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['44oF-GJ3JYQ_000011_000021_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['44oF-GJ3JYQ_000011_000021_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['44oF-GJ3JYQ_000011_000021_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['44oF-GJ3JYQ_000011_000021_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['UapAgyXVtcU_000018_000028_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['UapAgyXVtcU_000018_000028_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 330/1872]  eta: 3:38:32    time: 6.9364  data: 0.1403  max mem: 17330
+Inference with localizer ...
+QID :  ['r81d5eNm9Rs_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['r81d5eNm9Rs_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['r81d5eNm9Rs_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['r81d5eNm9Rs_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['1jY2y71F3Y0_000003_000013_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['1jY2y71F3Y0_000003_000013_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['1jY2y71F3Y0_000003_000013_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['1jY2y71F3Y0_000003_000013_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['3POK0jovdao_000004_000014_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['3POK0jovdao_000004_000014_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 340/1872]  eta: 3:36:27    time: 7.3152  data: 0.1335  max mem: 17330
+Inference with localizer ...
+QID :  ['3POK0jovdao_000004_000014_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['fSw2ZtQuueg_000012_000022_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['fSw2ZtQuueg_000012_000022_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['fSw2ZtQuueg_000012_000022_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['3wziVLAwDaQ_000004_000014_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['3wziVLAwDaQ_000004_000014_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['3wziVLAwDaQ_000004_000014_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['3wziVLAwDaQ_000004_000014_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['Egzk1_cW2gM_000031_000041_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['Egzk1_cW2gM_000031_000041_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 350/1872]  eta: 3:38:12    time: 10.2322  data: 0.1319  max mem: 17330
+Inference with localizer ...
+QID :  ['Egzk1_cW2gM_000031_000041_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['Egzk1_cW2gM_000031_000041_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['NRd7LqoMpO8_000019_000029_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['NRd7LqoMpO8_000019_000029_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['NRd7LqoMpO8_000019_000029_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['NRd7LqoMpO8_000019_000029_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['ABlPx20zCu4_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['ABlPx20zCu4_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['ABlPx20zCu4_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['lsUHXUkb3s8_000006_000016_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 360/1872]  eta: 3:37:31    time: 11.2668  data: 0.0947  max mem: 17330
+Inference with localizer ...
+QID :  ['lsUHXUkb3s8_000006_000016_explanatory']
+Qn type :  ['explanatory'] explanatory
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+Inference with localizer ...
+QID :  ['lsUHXUkb3s8_000006_000016_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+
+Error while read file idx
+video is: xGxJno-8mfs_000268_000278
+Inference with localizer ...
+QID :  ['WYpiNCHLNVw_000025_000035_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['IIElmSIn004_000486_000496_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['ycRku9dsaaA_000073_000083_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['ycRku9dsaaA_000073_000083_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['ycRku9dsaaA_000073_000083_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['ycRku9dsaaA_000073_000083_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['Lcx-VJm6jZ8_000125_000135_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['Lcx-VJm6jZ8_000125_000135_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 370/1872]  eta: 3:36:44    time: 9.6509  data: 0.1236  max mem: 17330
+Inference with localizer ...
+QID :  ['Lcx-VJm6jZ8_000125_000135_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['Lcx-VJm6jZ8_000125_000135_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['-XVZPMwgYzQ_000140_000150_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['-XVZPMwgYzQ_000140_000150_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['-XVZPMwgYzQ_000140_000150_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['-XVZPMwgYzQ_000140_000150_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['x28b00W_6g8_000002_000012_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['x28b00W_6g8_000002_000012_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['x28b00W_6g8_000002_000012_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['x28b00W_6g8_000002_000012_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 380/1872]  eta: 3:35:49    time: 9.5398  data: 0.1473  max mem: 17330
+Inference with localizer ...
+QID :  ['FqL2VPlyZiI_000009_000019_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['FqL2VPlyZiI_000009_000019_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['FqL2VPlyZiI_000009_000019_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['_d5fNbIF7iM_000017_000027_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['_d5fNbIF7iM_000017_000027_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['_d5fNbIF7iM_000017_000027_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['fko_IKgH2uA_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['fko_IKgH2uA_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['fko_IKgH2uA_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['fko_IKgH2uA_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 390/1872]  eta: 3:36:04    time: 10.4100  data: 0.1452  max mem: 17330
+Inference with localizer ...
+QID :  ['y2jAfG8P_HM_000026_000036_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['y2jAfG8P_HM_000026_000036_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['y2jAfG8P_HM_000026_000036_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['y2jAfG8P_HM_000026_000036_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['qzleJDvedyA_000031_000041_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['qzleJDvedyA_000031_000041_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['qzleJDvedyA_000031_000041_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['qzleJDvedyA_000031_000041_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['xCwJyTBxQDA_000009_000019_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['xCwJyTBxQDA_000009_000019_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 400/1872]  eta: 3:37:31    time: 12.4292  data: 0.1199  max mem: 17330
+Inference with localizer ...
+QID :  ['xCwJyTBxQDA_000009_000019_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['xCwJyTBxQDA_000009_000019_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['N4oN_8nyxyI_000006_000016_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['N4oN_8nyxyI_000006_000016_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['N4oN_8nyxyI_000006_000016_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['z-NKGF1CTDM_000107_000117_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['z-NKGF1CTDM_000107_000117_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['z-NKGF1CTDM_000107_000117_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['oT_2NsBu-6U_000013_000023_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['oT_2NsBu-6U_000013_000023_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 410/1872]  eta: 3:37:18    time: 12.2391  data: 0.1139  max mem: 17330
+Inference with localizer ...
+QID :  ['oT_2NsBu-6U_000013_000023_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['oT_2NsBu-6U_000013_000023_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['VJ4T6irlhVY_000098_000108_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['VJ4T6irlhVY_000098_000108_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['VJ4T6irlhVY_000098_000108_predictive']
+Qn type :  ['predictive'] predictive
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+Inference with localizer ...
+QID :  ['VJ4T6irlhVY_000098_000108_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+Inference with localizer ...
+QID :  ['tzGvZJKXaWo_000051_000061_explanatory']
+Qn type :  ['explanatory'] explanatory
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+Inference with localizer ...
+QID :  ['OlnogoX-21U_000085_000095_predictive']
+Qn type :  ['predictive'] predictive
+
+Error while read file idx
+video is: ScKw5M2erm4_000000_000010
+Inference with localizer ...
+QID :  ['gAOsSDTkxhk_000026_000036_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['879IIIgD_es_000092_000102_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 420/1872]  eta: 3:35:27    time: 9.6430  data: 0.1359  max mem: 17330
+Inference with localizer ...
+QID :  ['bgxh6cb0XU8_000032_000042_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['bgxh6cb0XU8_000032_000042_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['bgxh6cb0XU8_000032_000042_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['bgxh6cb0XU8_000032_000042_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['d4Dd8BFamOY_000054_000064_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['d4Dd8BFamOY_000054_000064_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['d4Dd8BFamOY_000054_000064_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['B9Xeyt09MIE_000009_000019_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['B9Xeyt09MIE_000009_000019_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['B9Xeyt09MIE_000009_000019_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 430/1872]  eta: 3:35:04    time: 9.5931  data: 0.1141  max mem: 17330
+Inference with localizer ...
+QID :  ['B9Xeyt09MIE_000009_000019_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['WEpZjjUicqE_000016_000026_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['WEpZjjUicqE_000016_000026_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['WEpZjjUicqE_000016_000026_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['WEpZjjUicqE_000016_000026_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['W-vjclcL7N0_000001_000011_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['W-vjclcL7N0_000001_000011_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['W-vjclcL7N0_000001_000011_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['pG5MkMpsL8o_000121_000131_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['pG5MkMpsL8o_000121_000131_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 440/1872]  eta: 3:34:44    time: 10.9775  data: 0.1052  max mem: 17330
+Inference with localizer ...
+QID :  ['pG5MkMpsL8o_000121_000131_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['pG5MkMpsL8o_000121_000131_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['5dkTGTqUUWc_000116_000126_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['5dkTGTqUUWc_000116_000126_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['5dkTGTqUUWc_000116_000126_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['5dkTGTqUUWc_000116_000126_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['FmIxPnhH87c_000040_000050_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['FmIxPnhH87c_000040_000050_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['FmIxPnhH87c_000040_000050_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['FmIxPnhH87c_000040_000050_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 450/1872]  eta: 3:33:40    time: 10.4534  data: 0.1265  max mem: 17330
+Inference with localizer ...
+QID :  ['T8LBurT-I_8_000011_000021_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['T8LBurT-I_8_000011_000021_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['T8LBurT-I_8_000011_000021_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['lNtAaowp1V4_000015_000025_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['lNtAaowp1V4_000015_000025_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['tzGvZJKXaWo_000051_000061_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['tzGvZJKXaWo_000051_000061_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['tzGvZJKXaWo_000051_000061_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['tzGvZJKXaWo_000051_000061_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['UlYUJj-tDlY_000018_000028_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 460/1872]  eta: 3:31:25    time: 8.6962  data: 0.1074  max mem: 17330
+Inference with localizer ...
+QID :  ['UlYUJj-tDlY_000018_000028_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['UlYUJj-tDlY_000018_000028_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['UlYUJj-tDlY_000018_000028_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['zB3ECX9zFvs_000119_000129_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['zB3ECX9zFvs_000119_000129_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['zB3ECX9zFvs_000119_000129_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['zB3ECX9zFvs_000119_000129_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['8A7iyZQWhGA_000008_000018_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['8A7iyZQWhGA_000008_000018_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['8A7iyZQWhGA_000008_000018_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 470/1872]  eta: 3:29:59    time: 8.3351  data: 0.1067  max mem: 17330
+Inference with localizer ...
+QID :  ['bn-L-5V99Og_000096_000106_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['bn-L-5V99Og_000096_000106_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['bn-L-5V99Og_000096_000106_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['bn-L-5V99Og_000096_000106_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['nx_N0Zwsarw_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['nx_N0Zwsarw_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['nx_N0Zwsarw_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['nx_N0Zwsarw_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['ancJGUsIGfA_000002_000012_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['ancJGUsIGfA_000002_000012_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 480/1872]  eta: 3:28:01    time: 8.5649  data: 0.1173  max mem: 17330
+Inference with localizer ...
+QID :  ['ancJGUsIGfA_000002_000012_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['vnloqTyXM7w_000006_000016_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['vnloqTyXM7w_000006_000016_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['vnloqTyXM7w_000006_000016_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['TdjsYw64a-4_000023_000033_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['TdjsYw64a-4_000023_000033_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['TdjsYw64a-4_000023_000033_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['TdjsYw64a-4_000023_000033_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['2191eK8DxP4_000038_000048_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['2191eK8DxP4_000038_000048_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 490/1872]  eta: 3:26:25    time: 8.3708  data: 0.1299  max mem: 17330
+Inference with localizer ...
+QID :  ['2191eK8DxP4_000038_000048_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['2191eK8DxP4_000038_000048_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['qisITRa-m3Y_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['qisITRa-m3Y_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['qisITRa-m3Y_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['Cz_UOScLFyw_000026_000036_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['Cz_UOScLFyw_000026_000036_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['Cz_UOScLFyw_000026_000036_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['Cz_UOScLFyw_000026_000036_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['IIElmSIn004_000486_000496_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 500/1872]  eta: 3:23:49    time: 7.6334  data: 0.1440  max mem: 17330
+Inference with localizer ...
+QID :  ['IIElmSIn004_000486_000496_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['IIElmSIn004_000486_000496_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['IIElmSIn004_000486_000496_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['FHvmtRTsVbA_000018_000028_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['FHvmtRTsVbA_000018_000028_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['FHvmtRTsVbA_000018_000028_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['FHvmtRTsVbA_000018_000028_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['uHetIjXQRyQ_000454_000464_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['uHetIjXQRyQ_000454_000464_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['uHetIjXQRyQ_000454_000464_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 510/1872]  eta: 3:21:59    time: 7.3279  data: 0.1287  max mem: 17330
+Inference with localizer ...
+QID :  ['lbS1XHMxtmc_000002_000012_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['lbS1XHMxtmc_000002_000012_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['lbS1XHMxtmc_000002_000012_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['lbS1XHMxtmc_000002_000012_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['2JXSyntee7U_000002_000012_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['2JXSyntee7U_000002_000012_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['2JXSyntee7U_000002_000012_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['2JXSyntee7U_000002_000012_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['Wkk_xwly1-w_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['Wkk_xwly1-w_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Evaluation  [ 520/1872]  eta: 3:20:12    time: 8.1590  data: 0.1144  max mem: 17330
+Inference with localizer ...
+QID :  ['Wkk_xwly1-w_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['Wkk_xwly1-w_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['9mKMbPq8Suo_000011_000021_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['9mKMbPq8Suo_000011_000021_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['9mKMbPq8Suo_000011_000021_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['9mKMbPq8Suo_000011_000021_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['QXz6Px3HtI0_000036_000046_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['QXz6Px3HtI0_000036_000046_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['QXz6Px3HtI0_000036_000046_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['QXz6Px3HtI0_000036_000046_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Evaluation  [ 530/1872]  eta: 3:18:30    time: 8.2892  data: 0.1113  max mem: 17330
+Inference with localizer ...
+QID :  ['LorMY5YM_mw_000105_000115_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['LorMY5YM_mw_000105_000115_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['LorMY5YM_mw_000105_000115_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['LorMY5YM_mw_000105_000115_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['5lUMCCWKcng_000009_000019_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['5lUMCCWKcng_000009_000019_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['5lUMCCWKcng_000009_000019_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['wKizbmgxqQQ_000001_000011_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['wKizbmgxqQQ_000001_000011_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['wKizbmgxqQQ_000001_000011_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 540/1872]  eta: 3:16:33    time: 8.0602  data: 0.1295  max mem: 17330
+Inference with localizer ...
+QID :  ['wKizbmgxqQQ_000001_000011_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['Qtr0wD63UKI_000001_000011_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['Qtr0wD63UKI_000001_000011_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['GOwo4z1Rzm0_000124_000134_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['GOwo4z1Rzm0_000124_000134_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['GOwo4z1Rzm0_000124_000134_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['GOwo4z1Rzm0_000124_000134_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['8m9HCzeqMWk_000118_000128_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['8m9HCzeqMWk_000118_000128_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['8m9HCzeqMWk_000118_000128_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 550/1872]  eta: 3:15:20    time: 8.6148  data: 0.1977  max mem: 17330
+Inference with localizer ...
+QID :  ['8m9HCzeqMWk_000118_000128_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['f5yoCHHJnUo_000000_000010_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['f5yoCHHJnUo_000000_000010_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['f5yoCHHJnUo_000000_000010_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['f5yoCHHJnUo_000000_000010_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['nO3gaYfI48o_000056_000066_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['nO3gaYfI48o_000056_000066_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['nO3gaYfI48o_000056_000066_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['nO3gaYfI48o_000056_000066_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['WYpiNCHLNVw_000025_000035_descriptive']
+Qn type :  ['descriptive'] descriptive
+Evaluation  [ 560/1872]  eta: 3:14:36    time: 10.1278  data: 0.1847  max mem: 17330
+Inference with localizer ...
+QID :  ['WYpiNCHLNVw_000025_000035_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['WYpiNCHLNVw_000025_000035_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['WYpiNCHLNVw_000025_000035_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['XFHST6Tv1lo_000046_000056_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['XFHST6Tv1lo_000046_000056_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['XFHST6Tv1lo_000046_000056_predictive']
+Qn type :  ['predictive'] predictive
+Inference with localizer ...
+QID :  ['XFHST6Tv1lo_000046_000056_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['g0x-J4Nz-P0_000012_000022_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['g0x-J4Nz-P0_000012_000022_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+QID :  ['g0x-J4Nz-P0_000012_000022_predictive']
+Qn type :  ['predictive'] predictive
+Evaluation  [ 570/1872]  eta: 3:12:57    time: 9.6318  data: 0.1369  max mem: 17330
+Inference with localizer ...
+QID :  ['g0x-J4Nz-P0_000012_000022_counterfactual']
+Qn type :  ['counterfactual'] counterfactual
+Inference with localizer ...
+QID :  ['iffsQFQaD2I_000040_000050_descriptive']
+Qn type :  ['descriptive'] descriptive
+Inference with localizer ...
+QID :  ['iffsQFQaD2I_000040_000050_explanatory']
+Qn type :  ['explanatory'] explanatory
+Inference with localizer ...
+[2024-02-02 16:56:08,758] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: -9) local_rank: 0 (pid: 76739) of binary: /home/shreyasjena/anaconda3/envs/sevila/bin/python
+Traceback (most recent call last):
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/site-packages/torch/distributed/run.py", line 810, in <module>
+    main()
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/shreyasjena/anaconda3/envs/sevila/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+======================================================
+evaluate.py FAILED
+------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-02-02_16:56:08
+  host      : gpu
+  rank      : 0 (local_rank: 0)
+  exitcode  : -9 (pid: 76739)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 76739
+======================================================
